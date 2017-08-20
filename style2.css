@@ -1,0 +1,208 @@
+body
+{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 800px;
+    width: 550px;
+	color: white;
+	background-image: url("tlo.jpg");
+}
+
+
+
+#skrzynki1
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+
+#page
+{
+	width: 550px;
+	height: 800px;
+    margin-top: -60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:auto;
+	
+	
+}
+
+#skrzynki2
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+#skrzynki3
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+#skrzynki4
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+#skrzynki5
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+#skrzynki6
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+		margin:20px;
+}
+#skrzynki7
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+#skrzynki8
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki9
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+
+#skrzynki10
+{
+	background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+
+#skrzynki11
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki12
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	border: 2px solid black;
+	float: left;
+	margin:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#reset
+{
+
+	background-image: url("boxreset.jpg");
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin-top:20px;
+	margin-left:205px;
+	
+}
+#menu
+
+{
+	width:139px;
+	height:124px;	
+		float: left;
+	border: 2px solid black;
+	margin:20px;
+	
+}
+	
+
+
+#lock1
+{
+	width:139px;
+	height:124px;
+	
+	margin-left: 205px;
+	margin-top: -20px;
+	margin-right: auto;
+	float: left;
+	}
+
+#lock
+{
+	width:100px;
+	height:124px;
+	font-size: 25px;
+	margin-left: 10px;
+	text-align: center;
+	
+	float: left;
+	}
+

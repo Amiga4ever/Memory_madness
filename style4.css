@@ -1,0 +1,76 @@
+body
+{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 600px;
+    width: 500px;
+	color: white;
+	background-image: url("tlo.jpg");
+}
+
+a:link
+{
+	text-decoration: none;
+	color: white;
+	}
+
+a:visited
+{
+	text-decoration: none;
+	color: white;
+	}
+
+#page
+{
+	width: 630px;
+	height: 200px;
+    margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:auto;
+	
+	
+	}
+
+#mobile
+{
+	background-image: url("tabletf.png");
+	width:225px;
+	height: 209px;
+	margin-left: 90px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+	
+	
+}
+
+
+#tablet
+{
+	background-image: url("tabletm.png");
+	width:225px;
+	height: 209px;
+	margin-left: 90px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+	
+	
+	}
+	
+	#memory
+{
+	background-image: url("tabletf.png");
+	width:225px;
+	height: 209px;
+	margin-left: 90px;
+	margin-right: auto;
+	
+	
+	

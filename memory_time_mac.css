@@ -1,0 +1,375 @@
+body
+{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+    width: 1920px;
+    height:900px;
+	color: white;
+	background-image: url("tlo2.jpg");
+}
+
+
+#page
+{
+	width: 900px;
+	height: 801px;
+	margin-right: auto;
+	margin-left: 100;		
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#poziom
+{
+	background-image: url("poziom.png");
+	float: left;
+	width:250px;
+	height: 87px;
+	margin-left: -10px;
+	position: absolute;
+	float: left;
+}
+#poziom_ilosc
+{
+    margin-top: 18px;
+	margin-left: 240px;
+	position: absolute;
+	float: left;
+	color: yellow;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+
+#skrzynki1
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki2
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki3
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+	
+}
+
+#skrzynki4
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+#skrzynki5
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#fires
+{
+	position: absolute;    
+	z-index: 100;
+	margin-left: 200px;
+	}
+
+
+#fire1
+{
+		background-image: url("fire1.png");
+	
+	width:200px;
+	height: 200px;
+	margin-top: 20px;
+	float: left;
+	margin-left:280px;
+	position: fixed;    
+	z-index: 100;
+}
+
+#fire2
+{
+	background-image: url("fire2.png");
+	width:300px;
+	height: 288px;
+	float: left;
+	margin-left:30px;
+	position: fixed;   
+	z-index: 100;
+	
+}
+
+#fire3
+{
+	background-image: url("fire3.png");
+	width:299px;
+	height: 300px;
+	float: left;
+	margin-left:100px;
+	position: fixed;    
+	z-index: 100;
+	margin-top: 280px;
+}
+
+
+#skrzynki6
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki7
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki8
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki9
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki10
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki11
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+#skrzynki12
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 5px;
+}
+
+
+#licznik
+{
+	margin-top: 40px;
+	margin-left:20px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	float: left;
+	letter-spacing: 2px;
+	}
+	
+#ilosc
+{
+	margin-top: 40px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	margin-left:10px;
+	color: yellow;
+	font-size: 32px;
+	font-weight: bold;
+	}
+	
+#points
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom:30px;
+}
+	
+#game
+{
+	position: fixed;    
+	z-index: 100;
+	background-image: url("over.png");
+	width:556px;
+    height:196px;
+    margin-top:  -100px;
+	}
+	
+	#combo
+{
+	position: fixed;    
+	z-index: 100;
+	background-image: url("combo.png");
+	width:556px;
+    height:196px;
+	margin-left: 200px;
+	margin-top: 150px;
+    
+	}
+	
+	
+	
+	
+	
+	
+#summary
+{
+	position: fixed;    
+	z-index: 100;
+	background-image: url("punkty.png");
+	width:556px;
+    height:196px;
+    float: left;
+    margin-left: 30px;
+    margin-top:  100px;
+	}
+	
+	
+#wynik
+{
+	position: fixed;    
+	z-index: 100;
+	margin-left: 30px;
+	width:50px;
+    height:196px;
+    font-size: 106px;
+	font-weight: bold;
+	color: yellow;
+	text-shadow: -20px 7px 6px  black;
+    margin-left: 260px;
+    margin-top:  240px;
+}
+
+#napisy
+{
+	position: fixed;    
+	z-index: 100;
+	margin-top:  -100px;
+}
+
+#ile_punktow
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	margin-left:10px;
+	color: yellow;
+	font-size: 32px;
+	font-weight: bold;
+}
+	
+#zegar
+{
+	margin-top: 20px;
+	margin-left:20px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	float: left;
+	letter-spacing: 2px;
+     font-weight: bold;
+	text-shadow: -20px 7px 6px  black;
+	}
+	
+#wartosczegara
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	font-size: 35px;
+	margin-left:10px;
+	color: green;
+	font-size: 35px;
+	font-weight: bold;
+	text-shadow: -20px 7px 6px  black;
+}
+
+#info
+{
+	width:200px;
+	margin-top:100px;
+	float: left;
+}
+
+#boxes
+{
+	 margin-left:80px;
+	 margin-top:100px;
+	 margin-right:auto;
+	 float: left;
+}
+

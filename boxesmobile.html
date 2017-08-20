@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<audio id="mymatch">
+  <source src="magic.ogg" type="audio/ogg">
+  <source src="magic.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio2">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio3">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio4">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio5">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio6">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio7">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio8">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio9">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio10">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio11">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio12">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.wav" type="audio/wav">
+</audio>
+<script   src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+<script>
+var x = document.getElementById("myAudio"); 
+var x2 = document.getElementById("myAudio2"); 
+var x3 = document.getElementById("myAudio3"); 
+var x4 = document.getElementById("myAudio4"); 
+var x5 = document.getElementById("myAudio5"); 
+var x6 = document.getElementById("myAudio6"); 
+var x7 = document.getElementById("myAudio7"); 
+var x8 = document.getElementById("myAudio8"); 
+var x9 = document.getElementById("myAudio9"); 
+var x10 = document.getElementById("myAudio10"); 
+var x11 = document.getElementById("myAudio11"); 
+var x12 = document.getElementById("myAudio12"); 
+var x13= document.getElementById("mymatch"); 
+
+
+
+var para1=0;
+var para2=0;
+var jaka3=0;
+var para4=0;
+var para5=0;
+var para6=0;
+var para6=0;
+var para6=0;
+var para7=0;
+var para8=0;
+var para9=0;
+var para10=0;
+var para11=0;
+var para12=0;
+
+
+var chest1 = 0;
+var chest2 = 0;
+var chest3 = 0;
+var chest4 = 0;
+var chest5 = 0;
+var chest6 = 0;
+var chest7 = 0;
+var chest8 = 0;
+var chest9 = 0;
+var chest10 = 0;
+var chest11 = 0;
+var chest12 = 0;
+var check = 0;
+
+
+
+function fadeout()
+{
+$("#xbutton").fadeOut(1);
+$("#skrzynki1").fadeOut(1);
+$("#skrzynki2").fadeOut(1);
+$("#skrzynki3").fadeOut(1);
+$("#skrzynki4").fadeOut(1);
+$("#skrzynki5").fadeOut(1);
+$("#skrzynki6").fadeOut(1);
+$("#skrzynki7").fadeOut(1);
+$("#skrzynki8").fadeOut(1);
+$("#skrzynki9").fadeOut(1);
+$("#skrzynki10").fadeOut(1);
+$("#skrzynki11").fadeOut(1);
+$("#skrzynki12").fadeOut(1);
+	
+}
+	
+function fadein()
+{
+$("#xbutton").fadeIn(1000);
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+$("#skrzynki5").fadeIn(1000);
+$("#skrzynki6").fadeIn(1000);
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+$("#skrzynki11").fadeIn(1000);
+$("#skrzynki12").fadeIn(1000);
+	
+	
+	}
+
+function reopen()
+{
+	document.getElementById("skrzynki1").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki2").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki3").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki4").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki5").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki6").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki7").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki8").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki9").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki10").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki11").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki12").style.backgroundImage = "url('chest.jpg')";
+	
+}
+
+
+	function hideall()
+	{
+		if(check>2)
+		{
+x13.play(); 
+reopen();
+fadeout();
+fadein();
+check = 0;
+ chest1 = 0;
+ chest2 = 0;
+ chest3 = 0;
+ chest4 = 0;
+ chest5 = 0;
+ chest6 = 0;
+ chest7 = 0;
+ chest8 = 0;
+ chest9 = 0;
+ chest10 = 0;
+ chest11 = 0;
+ chest12 = 0;
+		
+		zestaw();
+		}
+		}
+	
+			
+function box1()
+{
+document.getElementById("skrzynki1").style.backgroundImage = "url('otwarta" + para1 +".jpg\')";
+}
+
+function box2()
+{
+document.getElementById("skrzynki2").style.backgroundImage = "url('otwarta" + para2 +".jpg\')";
+
+}
+
+
+function box3()
+{
+document.getElementById("skrzynki3").style.backgroundImage = "url('otwarta" + para3 +".jpg\')";
+}
+	
+	
+function box4()
+{
+document.getElementById("skrzynki4").style.backgroundImage = "url('otwarta" + para4 +".jpg\')";
+}
+			
+function box5()
+{
+document.getElementById("skrzynki5").style.backgroundImage = "url('otwarta" + para5 +".jpg\')";
+}
+			
+function box6()
+{
+document.getElementById("skrzynki6").style.backgroundImage = "url('otwarta" + para6 +".jpg\')";
+}
+			
+function box7()
+{
+document.getElementById("skrzynki7").style.backgroundImage = "url('otwarta" + para7 +".jpg\')";
+}
+			
+					
+function box8()
+{
+document.getElementById("skrzynki8").style.backgroundImage = "url('otwarta" + para8 +".jpg\')";
+}
+			
+			
+function box9()
+{
+document.getElementById("skrzynki9").style.backgroundImage = "url('otwarta" + para9 +".jpg\')";
+}
+			
+function box10()
+{
+document.getElementById("skrzynki10").style.backgroundImage = "url('otwarta" + para10 +".jpg\')";
+}
+
+function box11()
+{
+document.getElementById("skrzynki11").style.backgroundImage = "url('otwarta" + para11 +".jpg\')";
+}
+	
+function box12()
+{
+document.getElementById("skrzynki12").style.backgroundImage = "url('otwarta" + para12 +".jpg\')";
+}
+		
+	
+	
+	
+
+	
+			
+function playAudio1() 
+{    
+	if(chest1==0)
+	{
+	chest1=1;
+   check++;
+    x.play(); 
+    document.getElementById("skrzynki1").style.backgroundImage = "url('open.jpg\')";   
+    setTimeout(box1, 500); 
+    }
+	
+} 
+
+
+
+function playAudio2() 
+{ 
+	if(chest2==0)
+	{
+	chest2=1;
+	check++;
+    x2.play(); 
+	document.getElementById("skrzynki2").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box2, 500); 
+	
+	}
+    
+} 
+
+function playAudio3() 
+{ 
+	if(chest3==0)
+	{
+	chest3=1;
+	check++;
+    x3.play(); 
+	document.getElementById("skrzynki3").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box3,500); 
+	
+    }
+    
+} 
+
+function playAudio4() 
+{ 	
+if(chest4==0)
+	{
+	chest4=1;
+	check++;
+     x4.play();  
+	document.getElementById("skrzynki4").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box4, 500); 
+    }
+} 
+
+
+function playAudio5() 
+{ 
+	
+	if(chest5==0)
+	{
+	chest5=1;
+	check++;
+     x5.play(); 
+	document.getElementById("skrzynki5").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box5, 500); 
+    }
+} 
+
+function playAudio6() 
+{
+	if(chest6==0)
+	{
+	chest6=1;
+	check++;
+     x6.play(); 
+	document.getElementById("skrzynki6").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box6, 500); 
+    }
+} 
+
+function playAudio7() 
+{
+	if(chest7==0)
+	{
+	chest7=1;
+	check++;
+    x7.play(); 
+	document.getElementById("skrzynki7").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box7, 500); 
+    }
+} 
+
+function playAudio8() 
+{ 	
+if(chest8==0)
+	{
+	chest8=1;
+	check++;
+    x8.play(); 
+	document.getElementById("skrzynki8").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box8, 500); 
+    }
+} 
+
+function playAudio9() 
+{ 
+	if(chest9==0)
+	{
+	chest9=1;
+	check++;
+    x9.play(); 
+	document.getElementById("skrzynki9").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box9, 500); 
+    }
+} 
+
+function playAudio10() 
+{ 
+	if(chest10==0)
+	{
+	chest10=1;
+	check++;
+    x10.play(); 
+	document.getElementById("skrzynki10").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box10, 500); 
+    }
+} 
+
+
+function playAudio11() 
+{ 
+	if(chest11==0)
+	{
+	chest11=1;
+	check++;
+    x11.play(); 
+	document.getElementById("skrzynki11").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box11, 500); 
+    }
+} 
+
+
+
+function playAudio12() 
+{ 
+	if(chest12==0)
+	{
+	chest12=1;
+	check++;
+     x12.play(); 
+	document.getElementById("skrzynki12").style.backgroundImage = "url('open.jpg\')";   
+	setTimeout(box12, 500); 
+    }
+} 
+
+
+
+
+
+
+
+function zestaw()
+{
+	para1 = Math.floor(Math.random()*3)+1;
+	para2 = Math.floor(Math.random()*3)+4;
+	para3 = Math.floor(Math.random()*3)+7;
+	para4 = Math.floor(Math.random()*3)+10;
+	para5 = Math.floor(Math.random()*3)+13;
+	para6 = Math.floor(Math.random()*3)+16;
+	para7 = Math.floor(Math.random()*3)+19;
+	para8 = Math.floor(Math.random()*3)+22;
+	para9 = Math.floor(Math.random()*3)+25;
+	para10 = Math.floor(Math.random()*3)+28;
+	para11 = Math.floor(Math.random()*3)+31;
+	para12 = Math.floor(Math.random()*3)+35;
+	
+}
+		
+
+
+
+
+
+</script>
+</head>
+
+<body onload="zestaw();">
+	
+	
+	
+	
+<div id="page">
+	
+<div id="lock1"  onclick="bonus();"> </div>
+
+<div style="clear: both;"> </div>
+
+<div id="skrzynki1" onclick="playAudio1();"> </div>
+<div id="skrzynki2" onclick="playAudio2();"> </div>
+<div id="skrzynki3" onclick="playAudio3();"> </div>
+<div id="xbutton" onclick="hideall();"> </div>
+<div style="clear: both;"> </div>
+<div id="skrzynki4" onclick="playAudio4();"> </div>
+<div id="skrzynki5" onclick="playAudio5();"> </div>
+<div id="skrzynki6" onclick="playAudio6();"> </div>
+<div style="clear: both;"> </div>
+<div id="skrzynki7"  onclick="playAudio7();"> </div>
+<div id="skrzynki8"  onclick="playAudio8();"> </div>
+<div id="skrzynki9"  onclick="playAudio9();"> </div>
+<div style="clear:both"; > </div>
+<div id="skrzynki10"  onclick="playAudio10();"> </div>
+<div id="skrzynki11"  onclick="playAudio11();"> </div>
+<div id="skrzynki12"  onclick="playAudio12();"> </div>
+
+
+
+
+
+
+<div/>
+
+
+</body>
+</html>

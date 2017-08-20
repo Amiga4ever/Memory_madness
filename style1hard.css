@@ -1,0 +1,332 @@
+body
+{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+    width: 850px;
+    height:1000px;
+	color: white;
+	background-image: url("tlo.jpg");
+}
+
+
+
+#skrzynki1
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#page
+{
+	width: 850px;
+	height: 1000px;
+    margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+#skrzynki2
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki3
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#xbutton
+{
+	background-image: url("xbutton.png");
+	
+	width:74px;
+	height: 82px;
+	
+	float: left;
+}
+
+#skrzynki4
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki5
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#fires
+{
+	position: absolute;    
+	z-index: 100;
+	}
+
+
+#fire1
+{
+		background-image: url("fire1.png");
+	
+	width:200px;
+	height: 200px;
+	margin-top: 20px;
+	float: left;
+	margin-left:280px;
+	position: absolute;    
+	z-index: 100;
+}
+#fire2
+{
+		background-image: url("fire2.png");
+	
+	width:300px;
+	height: 288px;
+	float: left;
+	margin-left:30px;
+	position: fixed;   
+	z-index: 100;
+	
+}
+
+#fire3
+{
+		background-image: url("fire3.png");
+	
+	width:299px;
+	height: 300px;
+	
+	float: left;
+	margin-left:100px;
+	position: relative;    
+	z-index: 100;
+	margin-top: 280px;
+}
+
+
+#skrzynki6
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+		margin:20px;
+}
+#skrzynki7
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki8
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki9
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki10
+{
+	background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki11
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki12
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#button
+{
+
+	background-image: url("button2.png");
+	width: 150px;
+	height: 150px;
+	
+	float: left;
+	margin-top:20px;
+	margin-left:280px;
+	
+}
+#menu
+
+{
+	width:139px;
+	height:124px;	
+		float: left;
+	border: 2px solid black;
+	margin: 20px;
+	
+}
+	
+
+
+
+
+#licznik
+{
+	margin-top: 20px;
+	margin-left:20px;
+	text-align: center;
+	font-size: 26px;
+	text-weight: bold;
+	float: left;
+	}
+	
+#ilosc
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	margin-left:10px;
+	color: yellow;
+	font-size: 26px;
+	text-weight: bold;
+	}
+	
+#points
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	color: white;
+	font-size: 26px;
+	text-weight: bold;
+	margin-left: 30px;
+	}
+	
+#game
+{
+	position: fixed;    
+	z-index: 100;
+	background-image: url("over.png");
+	width:556px;
+    height:196px;
+    margin-top:  -100px;
+	}
+	
+	#summary
+{
+	position: fixed;    
+	z-index: 100;
+	background-image: url("punkty.png");
+	width:556px;
+    height:196px;
+    float: left;
+    margin-left: 30px;
+    margin-top:  100px;
+	}
+#wynik
+{
+	position: fixed;    
+	z-index: 100;
+	margin-left: 30px;
+	
+	width:50px;
+    height:196px;
+    font-size: 106px;
+	text-weight: bold;
+	color: yellow;
+	text-shadow: -20px 7px 6px  black;
+    margin-left: 260px;
+    margin-top:  70px;
+	}
+
+#napisy
+{
+	position: fxed;    
+	z-index: 100;
+	margin-top:  -200px;
+	
+	}
+
+#ile_punktow
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	margin-left:10px;
+	color: yellow;
+	font-size: 26px;
+	text-weight: bold;
+	
+	}
+

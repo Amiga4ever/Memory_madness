@@ -1,0 +1,641 @@
+body
+{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+    width: 1000px;
+    height:900px;
+	color: white;
+	background-image: url("tlo2.png");
+}
+
+
+#page
+{
+	width: 990px;
+	height: 801px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	margin-bottom: auto;
+	position: relative;
+
+}
+
+
+
+#poziom
+{
+	background-image: url("level.png");
+	float: left;
+	width:150px;
+	height: 50px;
+	margin-left: -30px;
+	position: absolute;
+	float: left;
+	margin-top: 30px;
+}
+#poziom_ilosc
+{
+    margin-top: 30px;
+	margin-left: 150px;
+	position: absolute;
+	float: left;
+	color: yellow;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+
+#skrzynki1
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-block; 
+	margin: 15px;
+	
+	
+	
+}
+
+#skrzynki2
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-block; 
+	margin: 15px;
+	
+	
+	
+}
+
+#skrzynki3
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-block; 
+	margin: 15px;
+	
+	
+	
+}
+
+#skrzynki4
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+	
+	
+}
+#skrzynki5
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#fires
+{
+	position: absolute;    
+	z-index: 500;
+	margin-left: 200px;
+	}
+
+
+#fire1
+{
+		background-image: url("fire1.png");
+	
+	width:200px;
+	height: 200px;
+	margin-top: 20px;
+	float: left;
+	margin-left:280px;
+	
+	
+}
+
+#fire2
+{
+	background-image: url("fire2.png");
+	width:300px;
+	height: 288px;
+	float: left;
+	margin-left:30px;
+	
+	
+}
+
+#fire3
+{
+	background-image: url("fire3.png");
+	width:299px;
+	height: 300px;
+	float: left;
+	margin-left:100px;
+	margin-top: 10px;
+}
+
+
+#skrzynki6
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#skrzynki7
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#skrzynki8
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#skrzynki9
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#skrzynki10
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#skrzynki11
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+#skrzynki12
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+}
+
+
+#licznik
+{
+	margin-top: 40px;
+	margin-left:20px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	float: left;
+	letter-spacing: 3px;
+	}
+	
+#ilosc
+{
+	margin-top: 40px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	margin-left:10px;
+	color: yellow;
+	font-size: 32px;
+	font-weight: bold;
+	}
+	
+#points
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom:30px;
+	letter-spacing: 3px;
+	
+}
+	
+
+	
+	#combo
+{
+	position: absolute;    
+	z-index: 500;
+	background-image: url("combo.png");
+	width:566px;
+    height:270px;
+	margin-left: 270px;
+	margin-top: 150px;
+    
+	}
+	
+
+
+
+
+
+#ile_punktow
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	margin-left:10px;
+	color: yellow;
+	font-size: 32px;
+	font-weight: bold;
+	
+}
+	
+	
+#zegar
+{
+	
+	margin-top: 20px;
+	margin-left:20px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	float: left;
+	letter-spacing: 7px;
+    font-weight: bold;
+	text-shadow: -20px 7px 6px  black;
+	}
+	
+#wartosczegara
+{
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+	font-size: 35px;
+	margin-left:10px;
+	color: green;
+	font-size: 35px;
+	font-weight: bold;
+	text-shadow: -20px 7px 6px  black;
+}
+
+#info
+{
+	width:260px;
+	margin-top:100px;
+	float: left;
+	margin-left: -20px;
+	
+}
+
+#boxes
+{
+	 margin-left:50px;
+	 margin-top:60px;
+	 margin-right:auto;
+	 float: left;
+	 z-index: 100;
+	position: relative;   
+	
+}
+
+#bonus
+{
+	height: 200px;
+	width:700px;
+	
+	position: absolute;    
+	z-index: 500;
+	
+	margin-left:  330px;
+}
+
+
+#bonus_napis
+{
+	background-image: url("bonus.png");
+	width:566px;
+    height:196px;
+    margin-left: -40px;
+    
+	}
+
+
+#bonus1
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 124px;  
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -20px 7px 6px  black;
+	
+
+	
+}
+#bonus2
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+		text-align: center;
+    vertical-align: middle;
+    line-height: 124px;  
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -20px 7px 6px  black;
+}
+
+#bonus3
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin: 15px;
+		text-align: center;
+    vertical-align: middle;
+    line-height: 124px;  
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -20px 7px 6px  black;
+}
+
+#bonus_wynik
+{
+	margin-left: 180px;
+    font-size: 126px;
+	font-weight: bold;
+	color: red;
+	text-shadow: -20px 7px 6px  black;
+    
+}
+
+
+
+#napisy
+{
+	position: absolute;    
+	z-index: 500;
+	margin-top:  100px;
+	margin-left:  180px;
+}
+#game
+{
+	background-image: url("over.png");
+	width:556px;
+    height:196px;
+    margin-top:  -70px;
+    margin-left: 50px;
+	}
+
+
+#summary
+{
+	background-image: url("pointseng.png");
+	width:556px;
+    height:196px;
+    float: left;
+    margin-left: 30px;
+    margin-top:  -80px;
+	}
+	
+	
+#wynik
+{
+	margin-left: 30px;
+	width:50px;
+    height:196px;
+    font-size: 106px;
+	font-weight: bold;
+	color: yellow;
+	text-shadow: -20px 7px 6px  black;
+    margin-left: 260px;
+    margin-top:  -20px;
+}
+
+
+
+
+
+#rekord
+{
+	margin-top: 260px;
+	margin-left: 20px;
+    font-size: 24px;
+	font-weight: bold;
+	color: yellow;
+	text-shadow: -20px 7px 6px  black;
+   
+   float:left;
+   position: absolute;    
+}
+
+
+
+#pointsmax
+{
+	margin-top: 305px;
+	margin-left: 20px;
+    font-size: 24px;
+	font-weight: bold;
+	color: aqua;
+	text-shadow: -20px 7px 6px  black;
+   
+   float:left;
+   position: absolute;    
+}
+#pointsmax1
+{
+	margin-top: 305px;
+	margin-left: 120px;
+    font-size: 24px;
+	font-weight: bold;
+	color: aqua;
+	text-shadow: -20px 7px 6px  black;
+  
+   float:left;
+   position: absolute;    
+}
+
+
+#bonusextrainfo
+{
+	margin-top: 420px;
+	margin-left: 30px;
+    font-size: 42px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -20px 7px 6px  black;
+    width:139px;
+    height: 124px;
+   float:left;
+   
+   position: absolute;    
+   background-image: url("otwarta51.jpg");
+}
+
+
+#tap
+{
+	margin-top: 560px;
+	margin-left: 50px;
+    font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -20px 7px 6px  black;
+    width:139px;
+    height: 124px;
+   float:left;
+   
+   position: absolute;    
+   
+}
+
+
+
+
+#levelmax
+{
+	margin-top: 350px;
+	margin-left: 20px;
+    font-size: 24px;
+	font-weight: bold;
+	color: aqua;
+	text-shadow: -20px 7px 6px  black;
+  
+   float:left;
+   position: absolute;    
+}
+
+
+
+
+#levelmax1
+{
+	margin-top: 350px;
+	margin-left: 120px;
+    font-size: 24px;
+	font-weight: bold;
+	color: aqua;
+	text-shadow: -20px 7px 6px  black;
+  
+   float:left;
+   position: absolute;    
+}
+
+
+#combodiv
+{
+	margin-top: -10px;
+	text-align: center;
+	float: left;
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom:30px;
+	letter-spacing: 2px;
+	
+}
+	
+	
+	
+	#combo_ilosc
+{
+	margin-top: -10px;
+	text-align: center;
+	float: left;
+	margin-left:8px;
+	color: yellow;
+	font-size: 32px;
+	font-weight: bold;
+	
+}
+
+	#combo_req
+{
+	margin-top: -68px;
+	text-align: center;
+	float: left;
+	margin-left: 195px;
+	color: yellow;
+	font-size: 32px;
+	font-weight: bold;
+	
+}
+	
+	
+	
+	
+
+

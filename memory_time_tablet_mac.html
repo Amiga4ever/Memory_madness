@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" href="memory_time_mac.css" type="text/css" />
+
+<audio id="play" src="boom.ogg"></audio>
+
+
+<audio id="play2" src="boom2.ogg"></audio>
+
+<audio id="play3" src="koniec.ogg"></audio>
+
+<audio id="play4" src="combo.ogg"></audio>
+
+<audio id="play5" src="combo2.ogg"></audio>
+
+<audio id="play6" src="combo3.ogg"></audio>
+
+<audio id="play7" src="combo4.ogg"></audio>
+
+<audio id="clock" src="clock.ogg"></audio>
+
+<audio id="mymatch">
+  <source src="magic.ogg" type="audio/ogg">
+  <source src="magic.ogg" type="audio/wav">
+</audio>
+
+<audio id="firesound">
+<source src="boom.ogg" type="audio/ogg">
+<source src="boom.ogg" type="audio/ogg">
+</audio>
+
+
+<audio id="myAudio">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio2">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio3">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio4">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio5">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio6">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio7">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio8">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio9">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio10">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio11">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio12">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="clock2">
+  <source src="clock.ogg" type="audio/ogg">
+  <source src="clock.ogg" type="audio/wav">
+</audio>
+
+<script   src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	
+<script>
+
+var x = document.getElementById("myAudio"); 
+var x2 = document.getElementById("myAudio2"); 
+var x3 = document.getElementById("myAudio3"); 
+var x4 = document.getElementById("myAudio4"); 
+var x5 = document.getElementById("myAudio5"); 
+var x6 = document.getElementById("myAudio6"); 
+var x7 = document.getElementById("myAudio7"); 
+var x8 = document.getElementById("myAudio8"); 
+var x9 = document.getElementById("myAudio9"); 
+var x10 = document.getElementById("myAudio10"); 
+var x11 = document.getElementById("myAudio11"); 
+var x12 = document.getElementById("myAudio12"); 
+var x13 = document.getElementById("mymatch"); 
+var x14 = document.getElementById("firesound"); 
+var x15 = document.getElementById("clock2"); 
+var jaka1 ;
+var jaka2 ;
+var jaka3 ;
+var jaka4 ;
+var jaka5 ;
+var jaka6 ;
+var jaka7 ;
+var jaka8 ;
+var jaka9 ;
+var jaka10 ;
+var jaka11 ;
+var jaka12 ;
+
+var para1;
+var para2;
+var jaka3;
+var para4;
+var para5;
+var para6;
+
+
+
+var chest1 = 1;
+var chest2 = 1;
+var chest3 = 1;
+var chest4 = 1;
+var chest5 = 1;
+var chest6 = 1;
+var chest7 = 1;
+var chest8 = 1;
+var chest9 = 1;
+var chest10 = 1;
+var chest11 = 1;
+var chest12 = 1;
+var check = 0;
+var pierwsza = 1;
+var druga = 1;
+var numer1;
+var numer2;
+var para = 1;
+var testuj;
+var numeruj;
+var znaleziona=0;
+var zanik1;
+var zanik2;
+var level=0;
+var myvar;
+var ilosc_ruchu=3;
+var ile_punktow2=0;
+var czas=1800;
+var odliczanie_sec = 15;
+var stopuj = 1;
+var newgame = 0;
+var poziom_value = 1;
+var combo = 0;
+var parax = 0;
+
+function fadeall()
+{
+	
+	
+	check=0;
+	ilosc_ruchu=3;
+	ile_punktow2=0;
+	level=0 ;
+	czas=3000;
+	
+	$("#skrzynki1").fadeOut(600);
+		
+	$("#skrzynki2").fadeOut(600);
+
+	$("#skrzynki3").fadeOut(600);
+
+	$("#skrzynki4").fadeOut(600);
+
+	$("#skrzynki5").fadeOut(600);
+
+	$("#skrzynki6").fadeOut(600);
+	
+
+	$("#skrzynki7").fadeOut(600);
+
+	$("#skrzynki8").fadeOut(600);
+
+	$("#skrzynki9").fadeOut(600);
+
+	$("#skrzynki10").fadeOut(600);
+
+	$("#skrzynki11").fadeOut(600);
+
+	$("#skrzynki12").fadeOut(600)
+	
+	setTimeout(zestaw1, 700);
+	}
+	
+	
+
+
+function pokaz4()
+{
+	hideall();
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+$("#skrzynki5").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+$("#skrzynki11").fadeIn(1000);
+}
+
+
+
+function pokaz3()
+{
+	hideall();
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+}
+
+
+
+
+function pokaz2()
+{
+	hideall();
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+
+}
+
+function pokaz1()
+{
+	hideall();
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+
+}
+
+
+function pokaz()
+{
+	hideall();
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+$("#skrzynki5").fadeIn(1000);
+$("#skrzynki6").fadeIn(1000);
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+$("#skrzynki11").fadeIn(1000);
+$("#skrzynki12").fadeIn(1000);
+
+	}
+
+function playSound() 
+{
+    document.getElementById('play').play();
+}
+
+function playSound2() 
+{
+    document.getElementById('play2').play();
+}
+function playSound3() 
+{
+    document.getElementById('play3').play();
+}
+
+function playSound4() 
+{
+    document.getElementById('play4').play();
+}
+
+function playSound5() 
+{
+    document.getElementById('play5').play();
+}
+
+function playSound6() 
+{
+    document.getElementById('play6').play();
+}
+
+function playSound7() 
+{
+    document.getElementById('play7').play();
+}
+
+
+function clock() 
+{
+    document.getElementById('clock').play();
+}
+
+
+
+function fading()
+{
+	
+	if(zanik1==1)
+	$("#skrzynki1").fadeOut(1000);
+	if(zanik1==2)
+	$("#skrzynki2").fadeOut(1000);
+	if(zanik1==3)
+	$("#skrzynki3").fadeOut(1000);
+	if(zanik1==4)
+	$("#skrzynki4").fadeOut(1000);
+	if(zanik1==5)
+	$("#skrzynki5").fadeOut(1000);
+	if(zanik1==6)
+	$("#skrzynki6").fadeOut(1000);
+	if(zanik2==1)
+	$("#skrzynki7").fadeOut(1000);
+	if(zanik2==2)
+	$("#skrzynki8").fadeOut(1000);
+	if(zanik2==3)
+	$("#skrzynki9").fadeOut(1000);
+	if(zanik2==4)
+	$("#skrzynki10").fadeOut(1000);
+	if(zanik2==5)
+	$("#skrzynki11").fadeOut(1000);
+	if(zanik2==6)
+	$("#skrzynki12").fadeOut(1000);
+	
+	
+	if((znaleziona==2)&&(level<1))
+	{
+	 poziom_value++;
+	 stopuj = 1;
+	 document.getElementById("poziom_ilosc").innerHTML = poziom_value;
+	  odliczanie_sec = 	odliczanie_sec + 5;
+	 document.getElementById("wartosczegara").style.color = "green" ;
+	czas=czas-300;
+	playSound2();
+	ilosc_ruchu = 3;
+	level=1;
+	setTimeout(fireworks1);
+	}
+	
+	if((znaleziona==3)&&(level<2))
+	{
+    poziom_value++;
+	stopuj = 1;
+	 odliczanie_sec = odliczanie_sec + 10;
+	 document.getElementById("poziom_ilosc").innerHTML = poziom_value;
+	 document.getElementById("wartosczegara").style.color = "green" ;
+	czas=czas-300;
+	playSound();
+	ilosc_ruchu = 4;
+	level = 2;
+	setTimeout(fireworks2, 800);
+	}
+	
+	if((znaleziona==4)&&(level<3))
+	{
+    poziom_value++;
+	stopuj = 1;
+	 odliczanie_sec = odliczanie_sec + 10;
+	 document.getElementById("poziom_ilosc").innerHTML = poziom_value;
+	document.getElementById("wartosczegara").style.color = "green" ;
+	czas=czas-400;
+	playSound2();
+	ilosc_ruchu = 5;
+	level = 3;
+	setTimeout(fireworks3, 800);
+	}
+  
+  if((znaleziona==5)&&(level<4))
+	{
+		 poziom_value++;
+	stopuj = 1;
+	 odliczanie_sec = odliczanie_sec + 10;
+	 document.getElementById("poziom_ilosc").innerHTML = poziom_value;
+    document.getElementById("wartosczegara").style.color = "green" ;
+	czas=czas-400;
+	playSound();
+	ilosc_ruchu = 6;
+	level = 4;
+	setTimeout(fireworks4, 800);
+	}
+  if(znaleziona==6)
+  {
+  	 poziom_value++;
+  stopuj = 1;
+  odliczanie_sec = odliczanie_sec + 15;
+   document.getElementById("poziom_ilosc").innerHTML = poziom_value;
+  document.getElementById("wartosczegara").style.color = "green" ;
+  czas=czas-200;
+  if(czas<300)
+  czas=300;
+  playSound();
+  ilosc_ruchu = 6;
+   setTimeout(fireworks4, 800);
+	}
+  
+        document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+	    check=0;
+		pierwsza=0;
+		druga=0;
+}
+	
+	
+
+
+function paircheck()
+{      parax = 0;
+		if((pierwsza==druga)||(druga==pierwsza))
+		{
+		  parax = 1;
+		  combo++;
+		  
+		  if(combo==2)
+		  {
+		  $("#combo").fadeIn(700);
+		  $("#combo").fadeOut(700);
+		  playSound4(); 
+		  odliczanie_sec = odliczanie_sec + 2; 
+		  document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+		   ile_punktow2++;
+          znaleziona++;
+          document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+          document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+          x13.play(); 
+		  fading();
+		  }	  
+		   else if(combo==3)
+		   {
+		  $("#combo").fadeIn(900);
+		  $("#combo").fadeOut(900);
+		  playSound5(); 
+		  odliczanie_sec = odliczanie_sec + 3; 
+		  document.getElementById("combo").style.backgroundImage = "url('combo2.png')";
+		  document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+		   ile_punktow2++;
+          znaleziona++;
+          document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+          document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+          x13.play(); 
+		  fading();
+		  }
+		  
+		  else if(combo==4)
+		   {
+		  $("#combo").fadeIn(900);
+		  $("#combo").fadeOut(900);
+		  playSound6(); 
+		  odliczanie_sec = odliczanie_sec + 4; 
+		  document.getElementById("combo").style.backgroundImage = "url('combo3.png')";
+		  document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+		   ile_punktow2++;
+          znaleziona++;
+          document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+          document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+          x13.play(); 
+		  fading();
+		  }
+		  
+		  else if(combo==5)
+		   {
+		  $("#combo").fadeIn(900);
+		  $("#combo").fadeOut(900);
+		  playSound7(); 
+		  odliczanie_sec = odliczanie_sec + 5; 
+		  document.getElementById("combo").style.backgroundImage = "url('combo4.png')";
+		  document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+		  combo = 0;
+		   ile_punktow2++;
+          znaleziona++;
+          document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+          document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+          x13.play(); 
+		  fading();
+		  }
+		  
+		  else
+		  {
+		  ile_punktow2++;
+          znaleziona++;
+          document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+          document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+          x13.play(); 
+		  fading();
+		  }
+     
+		}
+        
+
+		if(parax==0)
+		{
+		combo = 0;
+		ilosc_ruchu=ilosc_ruchu-1;
+		document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+		
+		if(ilosc_ruchu==0)
+		{
+		playSound3(); 
+		stopuj = 1;
+		$("#napisy").fadeIn(2000);
+		document.getElementById("wynik").innerHTML=ile_punktow2;
+		document.getElementById("game").style.backgroundImage = "url('brakruchu.png')";
+		newgame=1;		
+		}
+		
+		}
+		
+		setTimeout(hideall, czas);
+		}
+		
+	
+
+
+	
+	function hideall()
+	{
+		check=0;
+	    pierwsza=0;
+	    druga=0;
+		document.getElementById("skrzynki1").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki2").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki3").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki4").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki5").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki6").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki7").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki8").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki9").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki10").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki11").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki12").style.backgroundImage = "url('chest.jpg')";
+		}
+	
+			
+function box1()
+{
+document.getElementById("skrzynki1").style.backgroundImage = "url('otwarta" + para1 +".jpg\')";
+}
+
+function box2()
+{
+document.getElementById("skrzynki2").style.backgroundImage = "url('otwarta" + para2 +".jpg\')";
+
+}
+
+
+
+function box3()
+{
+document.getElementById("skrzynki3").style.backgroundImage = "url('otwarta" + para3 +".jpg\')";
+}
+	
+	
+function box4()
+{
+document.getElementById("skrzynki4").style.backgroundImage = "url('otwarta" + para4 +".jpg\')";
+}
+			
+function box5()
+{
+document.getElementById("skrzynki5").style.backgroundImage = "url('otwarta" + para5 +".jpg\')";
+}
+			
+function box6()
+{
+document.getElementById("skrzynki6").style.backgroundImage = "url('otwarta" + para6 +".jpg\')";
+}
+			
+function box7()
+{
+document.getElementById("skrzynki7").style.backgroundImage = "url('otwarta" + para1a +".jpg\')";
+}
+			
+					
+function box8()
+{
+document.getElementById("skrzynki8").style.backgroundImage = "url('otwarta" + para2a +".jpg\')";
+}
+			
+			
+			
+function box9()
+{
+document.getElementById("skrzynki9").style.backgroundImage = "url('otwarta" + para3a +".jpg\')";
+}
+			
+function box10()
+{
+document.getElementById("skrzynki10").style.backgroundImage = "url('otwarta" + para4a +".jpg\')";
+}
+
+function box11()
+{
+document.getElementById("skrzynki11").style.backgroundImage = "url('otwarta" + para5a +".jpg\')";
+}
+	
+function box12()
+{
+document.getElementById("skrzynki12").style.backgroundImage = "url('otwarta" + para6a +".jpg\')";
+}
+		
+	
+	
+	
+
+	
+			
+function playAudio1() 
+{  
+    if(check<2)
+	{
+	stopuj = 0;
+    zanik1=1;
+	pierwsza=para1;
+    x.play(); 
+    document.getElementById("skrzynki1").style.backgroundImage = "url('open.jpg\')";   
+    box1(); 
+    check++;
+   
+    if(check==2)
+    paircheck(); 
+	 }
+	
+} 
+
+
+
+function playAudio2() 
+{ 
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik1=2;
+    pierwsza=para2;
+    x2.play();  
+	document.getElementById("skrzynki2").style.backgroundImage = "url('open.jpg\')";   
+	box2(); 
+	check++;
+	
+	if(check==2)
+	paircheck();
+	}
+} 
+
+
+function playAudio3() 
+{ 
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik1=3;
+	pierwsza=para3;
+	numer1="skrzynki3";
+    x3.play();  
+	document.getElementById("skrzynki3").style.backgroundImage = "url('open.jpg\')";   
+	box3(); 
+	check++;
+	
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function playAudio4() 
+{ 	
+      
+      if(check<2)
+	{
+	stopuj = 0;
+	zanik1=4;
+	pierwsza=para4;
+	numer1="skrzynki4";
+     x4.play();  
+	document.getElementById("skrzynki4").style.backgroundImage = "url('open.jpg\')";   
+	box4(); 
+	check++;
+	
+	if(check==2)
+	paircheck();
+    }
+} 
+
+
+function playAudio5() 
+{    
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik1=5;
+	pierwsza=para5;
+	numer1="skrzynki5";
+     x5.play();  
+	document.getElementById("skrzynki5").style.backgroundImage = "url('open.jpg\')";   
+	box5(); 
+	check++;
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function playAudio6() 
+{
+   
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik1=6;
+	pierwsza=para6;
+	numer1="skrzynki6";
+     x6.play();  
+	document.getElementById("skrzynki6").style.backgroundImage = "url('open.jpg\')";   
+	box6(); 
+	check++;
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function playAudio7() 
+  {
+    
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik2=1;
+	druga=para1a;
+     x7.play();  
+	document.getElementById("skrzynki7").style.backgroundImage = "url('open.jpg\')";   
+	box7(); 
+	check++;
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function playAudio8() 
+{   
+     if(check<2)
+	{
+	stopuj = 0;
+	zanik2=2;
+	druga=para2a;
+    x8.play(); 
+	document.getElementById("skrzynki8").style.backgroundImage = "url('open.jpg\')";   
+	box8(); 
+	check++;
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function playAudio9() 
+{ 
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik2=3;
+	druga=para3a;
+	numer2="skrzynki9";
+    x9.play(); 
+	document.getElementById("skrzynki9").style.backgroundImage = "url('open.jpg\')";   
+	box9();
+	check++;
+    
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function playAudio10() 
+{  
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik2=4;
+	druga=para4a;
+    x10.play(); 
+	document.getElementById("skrzynki10").style.backgroundImage = "url('open.jpg\')";   
+	box10(); 
+	check++;
+	
+	if(check==2)
+	paircheck();
+    }
+} 
+
+
+function playAudio11() 
+{ 
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik2=5;
+	
+	druga=para5a;
+	numer2="skrzynki11";
+    x11.play(); 
+	document.getElementById("skrzynki11").style.backgroundImage = "url('open.jpg\')";   
+	box11(); 
+	check++;
+	
+	if(check==2)
+	paircheck();
+    }
+} 
+
+
+
+function playAudio12() 
+{ 
+	if(check<2)
+	{
+	stopuj = 0;
+	zanik2=6;
+	druga=para6a;
+     x12.play(); 
+	document.getElementById("skrzynki12").style.backgroundImage = "url('open.jpg\')";   
+	box12(); 
+	check++;
+	
+	if(check==2)
+	paircheck();
+    }
+} 
+
+function shuffle4()
+{
+	
+	var losowa = Math.floor(Math.random()*5)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para4;
+	para4a = para5;
+	para5a = para1;
+	
+	}
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para3;
+	para4a = para4;
+	para5a = para5;
+	
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para2;
+	para2a = para5;
+	para3a = para4;
+	para4a = para3;
+	para5a = para1;
+	
+	}
+	if(losowa==4)
+	{
+	para1a = para3;
+	para2a = para5;
+	para3a = para1;
+	para4a = para2;
+	para5a = para4;
+	
+	}
+	if(losowa==5)
+	{
+	para1a = para4;
+	para2a = para1;
+	para3a = para5;
+	para4a = para2;
+	para5a = para3;
+	
+	}
+}
+
+
+
+function shuffle3()
+{
+	var losowa = Math.floor(Math.random()*4)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para4;
+	para4a = para1;
+	}
+	
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para3;
+	para4a = para4;
+	
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para4;
+	para4a = para3;
+	
+	}
+	if(losowa==4)
+	{
+	para1a = para4;
+	para2a = para3;
+	para3a = para1;
+	para4a = para2;
+	
+	}
+	
+}
+
+
+function shuffle2()
+{
+	var losowa = Math.floor(Math.random()*5)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para1;
+	
+	}
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para3;
+	para3a = para2;
+	
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para3;
+	para2a = para1;
+	para3a = para2;
+	
+	}
+	if(losowa==4)
+	{
+	para1a = para3;
+	para2a = para2;
+	para3a = para1;
+	
+	}
+	if(losowa==5)
+	{
+	para1a = para2;
+	para2a = para1;
+	para3a = para3;
+	}
+
+}
+
+
+
+
+function shuffle1()
+{
+	var losowa = Math.floor(Math.random()*2)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para1;
+	para2a = para2;
+	}
+	
+	if(losowa==2)
+	{
+	para1a = para2;
+	para2a = para1;
+	}
+	}
+	
+
+function shuffle()
+{
+	var losowa = Math.floor(Math.random()*5)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para4;
+	para4a = para5;
+	para5a = para6;
+	para6a = para1;
+	}
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para3;
+	para4a = para4;
+	para5a = para5;
+	para6a = para6;
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para6;
+	para2a = para5;
+	para3a = para4;
+	para4a = para3;
+	para5a = para1;
+	para6a = para2;
+	}
+	if(losowa==4)
+	{
+	para1a = para6;
+	para2a = para5;
+	para3a = para1;
+	para4a = para2;
+	para5a = para4;
+	para6a = para3;
+	}
+	if(losowa==5)
+	{
+	para1a = para4;
+	para2a = para1;
+	para3a = para6;
+	para4a = para2;
+	para5a = para3;
+	para6a = para5;
+	}
+
+}
+
+function zestaw4()
+{
+	
+
+	para1 = Math.floor(Math.random()*5)+33;
+	para2 = Math.floor(Math.random()*6)+1;
+	para3 = Math.floor(Math.random()*8)+14;
+	para4 = Math.floor(Math.random()*5)+22;
+	para5 = Math.floor(Math.random()*3)+28;
+	
+
+	
+	$("#skrzynki6").fadeOut(1);
+	$("#skrzynki12").fadeOut(1);
+	
+	shuffle4();
+	znaleziona=0;
+	pokaz4();
+	}
+
+
+function zestaw3()
+{
+	
+
+	para1 = Math.floor(Math.random()*5)+33;
+	para2 = Math.floor(Math.random()*6)+1;
+	para3 = Math.floor(Math.random()*8)+14;
+	para4 = Math.floor(Math.random()*5)+22;
+	
+	
+    $("#skrzynki4").fadeOut(1);
+	$("#skrzynki5").fadeOut(1);
+	$("#skrzynki6").fadeOut(1);
+	
+	$("#skrzynki10").fadeOut(1);
+	$("#skrzynki11").fadeOut(1);
+	$("#skrzynki12").fadeOut(1);
+	
+	shuffle3();
+	znaleziona=0;
+	pokaz3();
+	}
+
+
+
+function fireworks4()
+	{
+	
+	$("#fire1").fadeIn(1);
+	$("#fire1").fadeOut(2000);
+
+	
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw, 1100); 
+	}
+
+
+
+
+function fireworks3()
+	{
+	
+	$("#fire1").fadeIn(1);
+	$("#fire1").fadeOut(2000);
+
+	
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw4, 1100); 
+	}
+
+
+
+
+	function fireworks2()
+	{
+	
+	$("#fire1").fadeIn(1);
+	$("#fire1").fadeOut(2000);
+
+	
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw3, 1100); 
+	}
+
+	
+	
+	function fireworks1()
+	{
+	
+	$("#fire1").fadeIn(1);
+	$("#fire1").fadeOut(2000);
+
+	
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	
+function fireworks4()
+{
+	$("#fire1").fadeIn(1);
+	$("#fire1").fadeOut(2000);
+
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	
+	setTimeout(zestaw, 1100); 
+}
+
+
+function fireworks3()
+{
+	$("#fire3").fadeIn(1);
+	$("#fire3").fadeOut(2000);
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	$("#fire1").fadeIn(500);
+	$("#fire1").fadeOut(1000);
+	setTimeout(zestaw4, 1100); 
+	}
+
+	function fireworks2()
+	{
+	$("#fire2").fadeIn(1);
+	$("#fire2").fadeOut(2000);
+	$("#fire1").fadeIn(300);
+	$("#fire1").fadeOut(3500);
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw3, 1100); 
+	}
+
+	function fireworks1()
+	{
+	$("#fire1").fadeIn(1);
+	$("#fire1").fadeOut(2000);
+	$("#fire2").fadeIn(300);
+	$("#fire2").fadeOut(3500);
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw2, 1100); 
+}
+	$("#fire3").fadeIn(500);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw2, 1100); 
+	}
+
+
+function zestaw2()
+{
+	
+	
+	para1 = Math.floor(Math.random()*5)+33;
+	para2 = Math.floor(Math.random()*5)+22;
+	para3 = Math.floor(Math.random()*8)+14;
+	
+	$("#skrzynki4").fadeOut(1);
+
+	$("#skrzynki5").fadeOut(1);
+
+	$("#skrzynki6").fadeOut(1);
+	
+	$("#skrzynki10").fadeOut(1);
+
+	$("#skrzynki11").fadeOut(1);
+
+	$("#skrzynki12").fadeOut(1);
+	shuffle2();
+	znaleziona=0;
+	pokaz2();
+	}
+
+function zestaw1()
+{  
+    if(newgame==1)
+	{
+	odliczanie_sec = 15;
+	ilosc_ruchu = 3;
+	newgame=0;
+	poziom_value = 1;
+	combo = 0;
+	document.getElementById("wartosczegara").style.color = "green" ;
+	hideall();
+	}
+	else
+	{
+	hideall();
+	}
+	document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+	document.getElementById("ilosc").innerHTML=ilosc_ruchu;
+
+	para1 = Math.floor(Math.random()*8)+14;
+	para2 = Math.floor(Math.random()*7)+7;
+
+	
+	$("#napisy").fadeOut(0);
+	
+	
+	$("#fire1").fadeOut(0);
+	$("#fire2").fadeOut(0);
+	$("#fire3").fadeOut(0);
+	
+	
+	
+	$("#skrzynki3").fadeOut(0);
+	$("#skrzynki4").fadeOut(0);
+
+	$("#skrzynki5").fadeOut(1);
+	$("#skrzynki6").fadeOut(1);
+	$("#skrzynki9").fadeOut(1);
+	$("#skrzynki10").fadeOut(1);
+	$("#skrzynki11").fadeOut(1);
+	$("#skrzynki12").fadeOut(1);
+
+	shuffle1();
+	znaleziona=0;
+	pokaz1();
+	}
+
+
+function zestaw()
+{
+	
+	
+	
+	para1 = Math.floor(Math.random()*6)+1;
+	para2 = Math.floor(Math.random()*7)+7;
+	para3 = Math.floor(Math.random()*8)+14;
+	para4 = Math.floor(Math.random()*5)+22;
+	para5 = Math.floor(Math.random()*3)+28;
+	para6 = Math.floor(Math.random()*5)+33;
+	shuffle();
+	$("#skrzynki1").fadeOut(1);
+		
+	$("#skrzynki2").fadeOut(1);
+
+	$("#skrzynki3").fadeOut(1);
+
+	$("#skrzynki4").fadeOut(1);
+
+	$("#skrzynki5").fadeOut(1);
+
+	$("#skrzynki6").fadeOut(1);
+	
+
+	$("#skrzynki7").fadeOut(1);
+
+	$("#skrzynki8").fadeOut(1);
+
+	$("#skrzynki9").fadeOut(1);
+
+	$("#skrzynki10").fadeOut(1);
+
+	$("#skrzynki11").fadeOut(1);
+
+	$("#skrzynki12").fadeOut(1);
+		
+		znaleziona=0;
+	pokaz();
+}
+		
+
+		
+		
+		
+	function odliczanie2()
+		{
+		    if(stopuj==0)
+			odliczanie_sec--;
+			
+			document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+			
+			if(odliczanie_sec<=5)
+			{
+			    document.getElementById("wartosczegara").style.color = "red" ;
+			x15.play();
+			}
+			else
+			{
+			x15.pause();
+			}
+			
+			if(odliczanie_sec==0)
+			{
+			    playSound3();
+				stopuj = 1;
+				document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+				$("#napisy").fadeIn(2000);
+				$("#napisy").fadeOut(6000);
+				document.getElementById("wynik").innerHTML = ile_punktow2;
+				odliczanie_sec = 15;
+				poziom_value = 1;
+				document.getElementById("wartosczegara").style.color = "green" ;
+				document.getElementById("game").style.backgroundImage = "url('koniecczasu.png')";
+				newgame = 1;
+				  
+				
+          }
+		    if(odliczanie_sec<0)
+			odliczanie_sec=0;
+
+			document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+			odliczanie();
+			}
+		
+		   function odliczanie()
+		   {
+		       setTimeout(odliczanie2, 1000);
+			   document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+			}
+			
+
+function start()
+{
+
+odliczanie();
+zestaw1();
+$("#combo").fadeOut(0);
+}
+
+function nowagra()
+{
+document.getElementById("poziom_ilosc").innerHTML = poziom_value;
+ile_punktow2 = 0;
+znaleziona = 0;
+level = 0;
+combo = 0;
+x13.play(); 
+document.getElementById("ile_punktow").innerHTML=ile_punktow2;
+document.getElementById("wartosczegara").innerHTML = odliczanie_sec;
+$("#napisy").fadeOut(1000);
+setTimeout(zestaw1, 1100); 
+}
+
+
+
+</script>
+</head>
+
+<body onload="start();">
+	
+	
+	
+	
+<div id="page">
+    <div id="combo"></div>
+	<div id="poziom"> </div>
+	<div id="poziom_ilosc"> 1</div>
+	<div style="clear: both;"> </div>
+	
+		<div id="info">
+				<div id="zegar" > Czas  : </div>
+				<div id="wartosczegara"> </div>
+				<div style="clear: both;"> </div>
+				<div id="licznik" > Ruchy : </div>
+				<div id="ilosc" > </div>
+				<div id="points" >Punkty : </div>
+				<div id="ile_punktow" > </div>
+				
+		</div>
+<div id="fires">
+			<div id="fire1"></div>
+			<div id="fire2"></div>
+			<div id="fire3"></div>
+	</div>
+	
+	
+<div id="boxes">
+			<div id="skrzynki1" onclick="playAudio1();"> 1</div>
+			<div id="skrzynki2" onclick="playAudio2();"> 2</div>
+			<div id="skrzynki3" onclick="playAudio3();"> 3</div>		
+			<div id="skrzynki4" onclick="playAudio4();"> 4</div>
+					<div style="clear: both;"> </div>
+			<div id="skrzynki5" onclick="playAudio5();"> 5</div>
+			<div id="skrzynki6" onclick="playAudio6();"> 6</div>
+			<div id="skrzynki7"  onclick="playAudio7();"> 7</div>
+			<div id="skrzynki8"  onclick="playAudio8();"> 8</div>
+				<div style="clear: both;"> </div>
+			<div id="skrzynki9"  onclick="playAudio9();"> 9</div>
+		<div id="napisy" onclick="nowagra();"> 
+				<div id="game" > </div>
+					<div style="clear: both;"> </div>
+				<div id="summary"> </div>	
+				<div id="wynik"> </div>
+		</div>
+			
+		
+			<div id="skrzynki10"  onclick="playAudio10();"> 10</div>
+			<div id="skrzynki11"  onclick="playAudio11();"> 11</div>
+			<div id="skrzynki12"  onclick="playAudio12();"> 12</div>
+	
+	
+	<div style="clear:both"; > </div>
+
+
+</body>
+</html>

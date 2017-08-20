@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" href="style1.css" type="text/css" />
+
+<audio id="play" src="boom.ogg"></audio>
+
+
+
+<audio id="mymatch">
+  <source src="magic.ogg" type="audio/ogg">
+  <source src="magic.ogg" type="audio/wav">
+</audio>
+
+<audio id="firesound">
+<source src="boom.ogg" type="audio/ogg">
+<source src="boom.ogg" type="audio/ogg">
+</audio>
+
+
+<audio id="myAudio">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio2">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio3">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio4">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio5">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio6">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio7">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio8">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<audio id="myAudio9">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio10">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+
+<audio id="myAudio11">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+
+<audio id="myAudio12">
+  <source src="klik.ogg" type="audio/ogg">
+  <source src="klik.ogg" type="audio/wav">
+</audio>
+<script   src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	
+<script>
+
+var x = document.getElementById("myAudio"); 
+var x2 = document.getElementById("myAudio2"); 
+var x3 = document.getElementById("myAudio3"); 
+var x4 = document.getElementById("myAudio4"); 
+var x5 = document.getElementById("myAudio5"); 
+var x6 = document.getElementById("myAudio6"); 
+var x7 = document.getElementById("myAudio7"); 
+var x8 = document.getElementById("myAudio8"); 
+var x9 = document.getElementById("myAudio9"); 
+var x10 = document.getElementById("myAudio10"); 
+var x11 = document.getElementById("myAudio11"); 
+var x12 = document.getElementById("myAudio12"); 
+var x13 = document.getElementById("mymatch"); 
+var x14 = document.getElementById("firesound"); 
+
+var jaka1 ;
+var jaka2 ;
+var jaka3 ;
+var jaka4 ;
+var jaka5 ;
+var jaka6 ;
+var jaka7 ;
+var jaka8 ;
+var jaka9 ;
+var jaka10 ;
+var jaka11 ;
+var jaka12 ;
+
+var para1;
+var para2;
+var jaka3;
+var para4;
+var para5;
+var para6;
+
+
+
+var chest1 = 1;
+var chest2 = 1;
+var chest3 = 1;
+var chest4 = 1;
+var chest5 = 1;
+var chest6 = 1;
+var chest7 = 1;
+var chest8 = 1;
+var chest9 = 1;
+var chest10 = 1;
+var chest11 = 1;
+var chest12 = 1;
+var check = 1;
+var pierwsza = 1;
+var druga = 1;
+var numer1;
+var numer2;
+var para=1;
+var testuj;
+var numeruj;
+var znaleziona=0;
+var zanik1;
+var zanik2;
+var level=0;
+var myvar;
+
+function pokaz4()
+{
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+$("#skrzynki5").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+$("#skrzynki11").fadeIn(1000);
+}
+
+
+
+function pokaz3()
+{
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+}
+
+
+
+
+function pokaz2()
+{
+	
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+
+}
+
+function pokaz1()
+{
+	
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+
+}
+
+
+function pokaz()
+{
+	
+$("#skrzynki1").fadeIn(1000);
+$("#skrzynki2").fadeIn(1000);
+$("#skrzynki3").fadeIn(1000);
+$("#skrzynki4").fadeIn(1000);
+$("#skrzynki5").fadeIn(1000);
+$("#skrzynki6").fadeIn(1000);
+$("#skrzynki7").fadeIn(1000);
+$("#skrzynki8").fadeIn(1000);
+$("#skrzynki9").fadeIn(1000);
+$("#skrzynki10").fadeIn(1000);
+$("#skrzynki11").fadeIn(1000);
+$("#skrzynki12").fadeIn(1000);
+
+	}
+
+function playSound () 
+{
+    document.getElementById('play').play();
+}
+
+
+function fading()
+{
+	
+	if(zanik1==1)
+	$("#skrzynki1").fadeOut(1000);
+	if(zanik1==2)
+	$("#skrzynki2").fadeOut(1000);
+	if(zanik1==3)
+	$("#skrzynki3").fadeOut(1000);
+	if(zanik1==4)
+	$("#skrzynki4").fadeOut(1000);
+	if(zanik1==5)
+	$("#skrzynki5").fadeOut(1000);
+	if(zanik1==6)
+	$("#skrzynki6").fadeOut(1000);
+	if(zanik2==1)
+	$("#skrzynki7").fadeOut(1000);
+	if(zanik2==2)
+	$("#skrzynki8").fadeOut(1000);
+	if(zanik2==3)
+	$("#skrzynki9").fadeOut(1000);
+	if(zanik2==4)
+	$("#skrzynki10").fadeOut(1000);
+	if(zanik2==5)
+	$("#skrzynki11").fadeOut(1000);
+	if(zanik2==6)
+	$("#skrzynki12").fadeOut(1000);
+	
+	
+	if((znaleziona==2)&&(level<1))
+	{
+	level=1;
+	myvar = setTimeout(fireworks1, 800);
+	}
+	
+	if((znaleziona==3)&&(level<2))
+	{
+	level=2;
+	setTimeout(fireworks2, 800);
+	}
+	
+	if((znaleziona==4)&&(level<3))
+	{
+	level=3;
+	setTimeout(fireworks3, 800);
+	}
+  
+  if((znaleziona==5)&&(level<4))
+	{
+	level=4;
+	setTimeout(fireworks4, 800);
+	}
+  if(znaleziona==6)
+	setTimeout(fireworks4, 800);
+  
+  
+	    check=1;
+		pierwsza=0;
+		druga=0;
+}
+	
+	
+	
+	
+	
+	
+
+
+
+
+function hidetwo()
+{
+	document.getElementById("skrzynki1").style.visibility = "hidden";
+	}
+
+
+	
+function pairhide()
+	{
+		
+		
+		document.getElementById(numer1).style.visibility = "hidden";
+		document.getElementById(numer2).style.visibility = "hidden";
+		znaleziona++;
+		check=1;
+		pierwsza=0;
+		druga=0;
+		if(znaleziona==7)
+		setTimeout(pokaz, 2000);
+		
+		}
+	
+	
+function paircheck()
+{
+		if((pierwsza==druga)||(druga==pierwsza))
+		{
+          znaleziona++;
+          
+	if((znaleziona==2)&&(level<1))
+	{
+	playSound();
+	fading();
+	}
+	
+	else if((znaleziona==3)&&(level<2))
+	{
+	playSound();
+	fading();
+	}
+	
+	else if((znaleziona==4)&&(level<3))
+	{
+	playSound();
+	fading();
+	}
+  
+else if((znaleziona==5)&&(level<4))
+	{
+	playSound();
+	fading();
+	}
+	
+	else if(znaleziona==6)
+	{
+	playSound();
+	fading();
+	}
+	
+else
+		{
+       x13.play(); 
+		fading();
+        }
+		 
+		
+		
+		}
+		}
+	
+
+
+	
+	function hideall()
+	{
+		document.getElementById("skrzynki1").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki2").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki3").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki4").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki5").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki6").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki7").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki8").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki9").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki10").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki11").style.backgroundImage = "url('chest.jpg')";
+		document.getElementById("skrzynki12").style.backgroundImage = "url('chest.jpg')";
+		check=1;
+		pierwsza=0;
+		druga=0;
+		numer1="nic";
+		numer2="nic";
+		}
+	
+			
+function box1()
+{
+document.getElementById("skrzynki1").style.backgroundImage = "url('otwarta" + para1 +".jpg\')";
+}
+
+function box2()
+{
+document.getElementById("skrzynki2").style.backgroundImage = "url('otwarta" + para2 +".jpg\')";
+
+}
+
+
+
+function box3()
+{
+document.getElementById("skrzynki3").style.backgroundImage = "url('otwarta" + para3 +".jpg\')";
+}
+	
+	
+function box4()
+{
+document.getElementById("skrzynki4").style.backgroundImage = "url('otwarta" + para4 +".jpg\')";
+}
+			
+function box5()
+{
+document.getElementById("skrzynki5").style.backgroundImage = "url('otwarta" + para5 +".jpg\')";
+}
+			
+function box6()
+{
+document.getElementById("skrzynki6").style.backgroundImage = "url('otwarta" + para6 +".jpg\')";
+}
+			
+function box7()
+{
+document.getElementById("skrzynki7").style.backgroundImage = "url('otwarta" + para1a +".jpg\')";
+}
+			
+					
+function box8()
+{
+document.getElementById("skrzynki8").style.backgroundImage = "url('otwarta" + para2a +".jpg\')";
+}
+			
+			
+			
+function box9()
+{
+document.getElementById("skrzynki9").style.backgroundImage = "url('otwarta" + para3a +".jpg\')";
+}
+			
+function box10()
+{
+document.getElementById("skrzynki10").style.backgroundImage = "url('otwarta" + para4a +".jpg\')";
+}
+
+function box11()
+{
+document.getElementById("skrzynki11").style.backgroundImage = "url('otwarta" + para5a +".jpg\')";
+}
+	
+function box12()
+{
+document.getElementById("skrzynki12").style.backgroundImage = "url('otwarta" + para6a +".jpg\')";
+}
+		
+	
+	
+	
+
+	
+			
+function playAudio1() 
+{  
+if(check<=2)
+	{
+     zanik1=1;
+	
+	pierwsza=para1;
+	numer1="skrzynki1";
+    x.play(); 
+    document.getElementById("skrzynki1").style.backgroundImage = "url('open.jpg\')";   
+    box1(); 
+    check++;
+    if(check>2)
+     {
+    
+    
+    paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+	}
+	 }
+	
+} 
+
+
+
+function playAudio2() 
+{ 
+	if(check<=2)
+	{
+		zanik1=2;
+	
+   pierwsza=para2;
+   numer1="skrzynki2";
+    x2.play();  
+	document.getElementById("skrzynki2").style.backgroundImage = "url('open.jpg\')";   
+	box2(); 
+	check++;
+	
+	if(check>2)
+  {
+	paircheck();
+	if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+	}
+	}
+} 
+
+
+function playAudio3() 
+{ 
+	if(check<=2)
+	{
+	zanik1=3;
+	
+	pierwsza=para3;
+	numer1="skrzynki3";
+    x3.play();  
+	document.getElementById("skrzynki3").style.backgroundImage = "url('open.jpg\')";   
+	box3(); 
+	check++;
+	
+	if(check>2)
+	{
+	
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+function playAudio4() 
+{ 	
+if(check<=2)
+	{
+	zanik1=4;
+	
+	pierwsza=para4;
+	numer1="skrzynki4";
+     x4.play();  
+	document.getElementById("skrzynki4").style.backgroundImage = "url('open.jpg\')";   
+	box4(); 
+	check++;
+	
+	if(check>2)
+	{
+	
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+
+function playAudio5() 
+{    
+	if(check<=2)
+	{
+	zanik1=5;
+	
+	pierwsza=para5;
+	numer1="skrzynki5";
+     x5.play();  
+	document.getElementById("skrzynki5").style.backgroundImage = "url('open.jpg\')";   
+	box5(); 
+	check++;
+
+	if(check>2)
+	{
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+function playAudio6() 
+{
+	if(check<=2)
+	{
+	zanik1=6;
+	
+	pierwsza=para6;
+	numer1="skrzynki6";
+     x6.play();  
+	document.getElementById("skrzynki6").style.backgroundImage = "url('open.jpg\')";   
+	box6(); 
+	check++;
+	
+	if(check>2)
+	{
+	zanik1=6;
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+function playAudio7() 
+{
+	if(check<=2)
+	{
+	zanik2=1;
+	
+	druga=para1a;
+	numer2="skrzynki7";
+     x7.play();  
+	document.getElementById("skrzynki7").style.backgroundImage = "url('open.jpg\')";   
+	box7(); 
+	check++;
+	
+	if(check>2)
+	{
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+function playAudio8() 
+{ 	
+if(check<=2)
+	{
+	zanik2=2;
+	
+	druga=para2a;
+	numer2="skrzynki8";
+    x8.play(); 
+	document.getElementById("skrzynki8").style.backgroundImage = "url('open.jpg\')";   
+	box8(); 
+	check++;
+	
+	if(check>2)
+	{
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+function playAudio9() 
+{ 
+	if(check<=2)
+	{
+	zanik2=3;
+	
+	druga=para3a;
+	numer2="skrzynki9";
+    x9.play(); 
+	document.getElementById("skrzynki9").style.backgroundImage = "url('open.jpg\')";   
+	box9();
+	check++;
+    
+	if(check>2)
+	{
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+function playAudio10() 
+{ 
+	if(check<=2)
+	{
+	zanik2=4;
+	
+	druga=para4a;
+	numer2="skrzynki10";
+    x10.play(); 
+	document.getElementById("skrzynki10").style.backgroundImage = "url('open.jpg\')";   
+	box10(); 
+	check++;
+	
+	if(check>2)
+	{
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+
+function playAudio11() 
+{ 
+	if(check<=2)
+	{
+	zanik2=5;
+	
+	druga=para5a;
+	numer2="skrzynki11";
+    x11.play(); 
+	document.getElementById("skrzynki11").style.backgroundImage = "url('open.jpg\')";   
+	box11(); 
+	check++;
+	
+	if(check>2)
+	{
+	paircheck();
+    if(para==1)
+	setTimeout(hideall, 2000); 
+	para=1;
+    }
+    }
+} 
+
+
+
+function playAudio12() 
+{ 
+	if(check<=2)
+	{
+	zanik2=6;
+	
+	druga=para6a;
+	numer2="skrzynki12";
+     x12.play(); 
+	document.getElementById("skrzynki12").style.backgroundImage = "url('open.jpg\')";   
+	box12(); 
+	check++;
+	
+	if(check>2)
+	{
+	paircheck();
+    setTimeout(hideall, 2000); 
+    }
+    }
+} 
+
+function shuffle4()
+{
+	
+	var losowa = Math.floor(Math.random()*5)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para4;
+	para4a = para5;
+	para5a = para1;
+	
+	}
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para3;
+	para4a = para4;
+	para5a = para5;
+	
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para2;
+	para2a = para5;
+	para3a = para4;
+	para4a = para3;
+	para5a = para1;
+	
+	}
+	if(losowa==4)
+	{
+	para1a = para3;
+	para2a = para5;
+	para3a = para1;
+	para4a = para2;
+	para5a = para4;
+	
+	}
+	if(losowa==5)
+	{
+	para1a = para4;
+	para2a = para1;
+	para3a = para5;
+	para4a = para2;
+	para5a = para3;
+	
+	}
+}
+
+
+
+function shuffle3()
+{
+	var losowa = Math.floor(Math.random()*4)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para4;
+	para4a = para1;
+	}
+	
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para3;
+	para4a = para4;
+	
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para4;
+	para4a = para3;
+	
+	}
+	if(losowa==4)
+	{
+	para1a = para4;
+	para2a = para3;
+	para3a = para1;
+	para4a = para2;
+	
+	}
+	
+}
+
+
+function shuffle2()
+{
+	var losowa = Math.floor(Math.random()*5)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para1;
+	
+	}
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para3;
+	para3a = para2;
+	
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para3;
+	para2a = para1;
+	para3a = para2;
+	
+	}
+	if(losowa==4)
+	{
+	para1a = para3;
+	para2a = para2;
+	para3a = para1;
+	
+	}
+	if(losowa==5)
+	{
+	para1a = para2;
+	para2a = para1;
+	para3a = para3;
+	}
+
+}
+
+
+
+
+function shuffle1()
+{
+	var losowa = Math.floor(Math.random()*2)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para1;
+	para2a = para2;
+	}
+	
+	if(losowa==2)
+	{
+	para1a = para2;
+	para2a = para1;
+	}
+	}
+	
+
+function shuffle()
+{
+	var losowa = Math.floor(Math.random()*5)+1;
+	
+	if(losowa==1)
+	{
+	para1a = para2;
+	para2a = para3;
+	para3a = para4;
+	para4a = para5;
+	para5a = para6;
+	para6a = para1;
+	}
+	if(losowa==2)
+	{
+	para1a = para1;
+	para2a = para2;
+	para3a = para3;
+	para4a = para4;
+	para5a = para5;
+	para6a = para6;
+	}
+	
+	if(losowa==3)
+	{
+	para1a = para6;
+	para2a = para5;
+	para3a = para4;
+	para4a = para3;
+	para5a = para1;
+	para6a = para2;
+	}
+	if(losowa==4)
+	{
+	para1a = para6;
+	para2a = para5;
+	para3a = para1;
+	para4a = para2;
+	para5a = para4;
+	para6a = para3;
+	}
+	if(losowa==5)
+	{
+	para1a = para4;
+	para2a = para1;
+	para3a = para6;
+	para4a = para2;
+	para5a = para3;
+	para6a = para5;
+	}
+
+}
+
+function zestaw4()
+{
+	document.getElementById("button").style.visibility = "hidden";
+	para1 = Math.floor(Math.random()*5)+33;
+	para2 = Math.floor(Math.random()*6)+1;
+	para3 = Math.floor(Math.random()*8)+14;
+	para4 = Math.floor(Math.random()*5)+22;
+	para5 = Math.floor(Math.random()*3)+28;
+	
+
+	
+	$("#skrzynki6").fadeOut(1);
+	$("#skrzynki12").fadeOut(1);
+	
+	shuffle4();
+	znaleziona=0;
+	pokaz4();
+	}
+
+
+function zestaw3()
+{
+	document.getElementById("button").style.visibility = "hidden";
+	para1 = Math.floor(Math.random()*5)+33;
+	para2 = Math.floor(Math.random()*6)+1;
+	para3 = Math.floor(Math.random()*8)+14;
+	para4 = Math.floor(Math.random()*5)+22;
+	
+	
+    $("#skrzynki4").fadeOut(1);
+	$("#skrzynki5").fadeOut(1);
+	$("#skrzynki6").fadeOut(1);
+	
+	$("#skrzynki10").fadeOut(1);
+	$("#skrzynki11").fadeOut(1);
+	$("#skrzynki12").fadeOut(1);
+	
+	shuffle3();
+	znaleziona=0;
+	pokaz3();
+	}
+
+
+
+function fireworks4()
+	{
+	$("#fire1").fadeIn(1000);
+	$("#fire1").fadeOut(1000);
+	
+	
+	$("#fire2").fadeIn(1000);
+	$("#fire2").fadeOut(1000);
+	
+	$("#fire3").fadeIn(1000);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw, 2000); 
+	}
+
+
+
+
+function fireworks3()
+	{
+	$("#fire1").fadeIn(1000);
+	$("#fire1").fadeOut(1000);
+	
+	
+	$("#fire2").fadeIn(1000);
+	$("#fire2").fadeOut(1000);
+	
+	$("#fire3").fadeIn(1000);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw4, 2000); 
+	}
+
+
+
+
+	function fireworks2()
+	{
+	$("#fire1").fadeIn(1000);
+	$("#fire1").fadeOut(1000);
+	
+	
+	$("#fire2").fadeIn(1000);
+	$("#fire2").fadeOut(1000);
+	
+	$("#fire3").fadeIn(1000);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw3, 2000); 
+	}
+
+	
+	
+	function fireworks1()
+	{
+	$("#fire1").fadeIn(1000);
+	$("#fire1").fadeOut(1000);
+
+	
+	$("#fire2").fadeIn(1000);
+	$("#fire2").fadeOut(1000);
+	
+	$("#fire3").fadeIn(1000);
+	$("#fire3").fadeOut(1000);
+	setTimeout(zestaw2, 2000); 
+	}
+
+
+function zestaw2()
+{
+	document.getElementById("button").style.visibility = "hidden";
+	para1 = Math.floor(Math.random()*5)+33;
+	para2 = Math.floor(Math.random()*5)+22;
+	para3 = Math.floor(Math.random()*8)+14;
+	
+	$("#skrzynki4").fadeOut(1);
+
+	$("#skrzynki5").fadeOut(1);
+
+	$("#skrzynki6").fadeOut(1);
+	
+	$("#skrzynki10").fadeOut(1);
+
+	$("#skrzynki11").fadeOut(1);
+
+	$("#skrzynki12").fadeOut(1);
+	shuffle2();
+	znaleziona=0;
+	pokaz2();
+	}
+
+function zestaw1()
+{
+	document.getElementById("button").style.visibility = "hidden";
+	para1 = Math.floor(Math.random()*8)+14;
+	para2 = Math.floor(Math.random()*7)+7;
+	
+	
+	$("#fire1").fadeOut(1);
+	$("#fire2").fadeOut(1);
+	$("#fire3").fadeOut(1);
+	$("#skrzynki3").fadeOut(1);
+	$("#skrzynki4").fadeOut(1);
+
+	$("#skrzynki5").fadeOut(1);
+	$("#skrzynki6").fadeOut(1);
+	$("#skrzynki9").fadeOut(1);
+	$("#skrzynki10").fadeOut(1);
+	$("#skrzynki11").fadeOut(1);
+	$("#skrzynki12").fadeOut(1);
+		shuffle1();
+	znaleziona=0;
+	pokaz1();
+	}
+
+
+function zestaw()
+{
+	document.getElementById("button").style.visibility = "hidden";
+	para1 = Math.floor(Math.random()*6)+1;
+	para2 = Math.floor(Math.random()*7)+7;
+	para3 = Math.floor(Math.random()*8)+14;
+	para4 = Math.floor(Math.random()*5)+22;
+	para5 = Math.floor(Math.random()*3)+28;
+	para6 = Math.floor(Math.random()*5)+33;
+	shuffle();
+	$("#skrzynki1").fadeOut(1);
+		
+	$("#skrzynki2").fadeOut(1);
+
+	$("#skrzynki3").fadeOut(1);
+
+	$("#skrzynki4").fadeOut(1);
+
+	$("#skrzynki5").fadeOut(1);
+
+	$("#skrzynki6").fadeOut(1);
+	
+
+	$("#skrzynki7").fadeOut(1);
+
+	$("#skrzynki8").fadeOut(1);
+
+	$("#skrzynki9").fadeOut(1);
+
+	$("#skrzynki10").fadeOut(1);
+
+	$("#skrzynki11").fadeOut(1);
+
+	$("#skrzynki12").fadeOut(1);
+		
+		znaleziona=0;
+	pokaz();
+}
+		
+
+
+
+
+
+</script>
+</head>
+
+<body onload="zestaw1();">
+	
+	
+	
+	
+<div id="page">
+	
+
+
+<div style="clear: both;"> </div>
+<div id="skrzynki1" onclick="playAudio1();"> 1</div>
+<div id="skrzynki2" onclick="playAudio2();"> 2</div>
+<div id="skrzynki3" onclick="playAudio3();"> 3</div>
+<div style="clear: both;"> </div>
+<div id="skrzynki4" onclick="playAudio4();"> 4</div>
+<div id="fire1"></div>
+<div id="skrzynki5" onclick="playAudio5();"> 5</div>
+<div id="skrzynki6" onclick="playAudio6();"> 6</div>
+<div style="clear:both"; > </div>
+<div id="skrzynki7"  onclick="playAudio7();"> 7</div>
+<div id="skrzynki8"  onclick="playAudio8();"> 8</div>
+<div id="fire2"></div>
+<div id="fire3"></div>
+<div id="skrzynki9"  onclick="playAudio9();"> 9</div>
+<div style="clear: both;"> </div>
+<div id="skrzynki10"  onclick="playAudio10();">10 </div>
+<div id="skrzynki11"  onclick="playAudio11();">11 </div>
+<div id="skrzynki12"  onclick="playAudio12();"> 12</div>
+<div id="button" onclick="zestaw();">  </div>
+<div id="pole" onclick="zestaw();"> </div>
+<div id="pole2" onclick="zestaw();"></div>
+<div style="clear:both"; > </div>
+
+
+
+
+
+
+<div/>
+
+
+</body>
+</html>

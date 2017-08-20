@@ -1,0 +1,240 @@
+body
+{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+    width: 800px;
+    height:700px;
+	color: white;
+	background-image: url("tlo.jpg");
+}
+
+
+
+#skrzynki1
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#page
+{
+	width: 800px;
+	height: 700px;
+    margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+#skrzynki2
+{
+	background-image: url("chest.jpg");
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki3
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki4
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki5
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#fire1
+{
+		background-image: url("fire1.png");
+	
+	width:200px;
+	height: 200px;
+	margin-top: -60px;
+	float: left;
+	margin-left:280px;
+}
+#fire2
+{
+		background-image: url("fire2.png");
+	
+	width:300px;
+	height: 288px;
+	
+	float: left;
+	margin-left:30px;
+	
+}
+
+#fire3
+{
+		background-image: url("fire3.png");
+	
+	width:299px;
+	height: 300px;
+	
+	float: left;
+	margin-left:130px;
+}
+
+
+#skrzynki6
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+		margin:20px;
+}
+#skrzynki7
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+#skrzynki8
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki9
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki10
+{
+	background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki11
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+#skrzynki12
+{
+		background-image: url("chest.jpg");
+	
+	width:139px;
+	height: 124px;
+	
+	float: left;
+	margin:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#button
+{
+
+	background-image: url("button2.png");
+	width: 150px;
+	height: 150px;
+	
+	float: left;
+	margin-top:20px;
+	margin-left:280px;
+	
+}
+#menu
+
+{
+	width:139px;
+	height:124px;	
+		float: left;
+	border: 2px solid black;
+	margin:20px;
+	
+}
+	
+
+
+#lock1
+{
+	width:139px;
+	height:124px;
+	
+	margin-left: 205px;
+	margin-top: -20px;
+	margin-right: auto;
+	float: left;
+	}
+
+#lock
+{
+	width:100px;
+	height:124px;
+	font-size: 25px;
+	margin-left: 10px;
+	text-align: center;
+	
+	float: left;
+	}
+

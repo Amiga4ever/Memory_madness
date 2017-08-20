@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="styleindex.css" type="text/css" />
+
+<audio id="myAudio">
+  <source src="klik.wav" type="audio/ogg">
+  <source src="klik.wav" type="audio/wav">
+</audio>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() 
+{ 
+     x.play(); 
+} 
+
+</script>
+</head>
+
+<body>
+
+<div id="page">
+	<a href="tabletmenu.html">
+<div id="tablet" onclick="playAudio();"></div></a>
+
+<div style="clear:both;"> </div>
+<a href="mobilemenu.html">
+<div id="mobile" onclick="playAudio();"></div>
+<div style="clear:both"; > </div>
+<div/>
+
+
+</body>
+</html>

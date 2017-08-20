@@ -1,0 +1,5786 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+   
+  
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=no"> mobile-->
+<!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> tablet-->
+
+        	<body onload="startx();">
+	<div  class="container text-center">
+		<div id="page">
+			<br>
+			<div id="menuglowne">
+
+				<br>
+				<br>
+				<div id="button2">POZIOM</div>
+                <div id="button4a" onclick="unlock();">UNLOCK</div>
+             <br><br>
+				<div id="button3" onclick="difficult1();">NORMALNY</div>
+				<br>
+				
+				<div id="button2a">TRYB GRY</div>
+                <div id="button1" onclick="game_mode();">WŁĄCZONY</div>
+                
+       
+                <div id="diamenty_png2">x5</div>
+                <div id="unlock1" onclick="unlock1();">BONUS x2</div>
+                <div id="unlock1opis">- chance to get extra bonus chest</div>
+                <div id="diamenty_png3">x10</div>
+                <div id="unlock2" onclick="unlock2();">JOKER</div>
+                <div id="unlock2opis">- chance to get JOKER</div>
+                <div id="diamenty_png4">x15</div>
+                <div id="unlock3" onclick="unlock3();">CHALLENGE MODE</div>
+                <div id="unlock3opis">- new game mode!</div>
+                <div id="diamenty_png5">x10</div>
+                <div id="unlock4" onclick="unlock4();">BETTER CHANCE</div>
+                <div id="unlock4opis">- one use bonus chance increased</div>
+                <div id="diamenty_png6">x10</div>
+                <div id="unlock5" onclick="unlock5();">BETTER CHANCE</div>
+                <div id="unlock5opis">- one use joker chance increased</div>
+                
+                
+                
+                <div id="diamenty_div">DIAMENTY:</div>
+                   <div id="no_diamonds">NEED MORE DIAMONDS</div>
+				
+				<br>
+			
+				<div id="button2b">JĘZYK</div>
+
+				<div id="button1a" onclick="localization();">POLSKI</div>
+				<br>
+				
+				<div id="button2c">MUZYKA</div>
+				<div id="button1b" onclick="music();">WYŁĄCZONA</div>
+				<br>
+			
+				<br>
+				<div id="button4" onclick="start();">START </div>
+
+			</div>
+         
+			<div id="combogif"></div>
+			<div id="combo"></div>
+			<div id="exit"></div>
+			<div id="exityes" onclick="nowagra();"></div>
+			<div id="exitno" onclick="niewychodz();"></div>
+			<div id="title"></div>
+            <div id="balony2"></div>
+			<br>
+			<br>
+			<div id="poziom"></div>
+			<div id="poziom_ilosc"></div>
+			<div style="clear: both;"></div>
+
+			<div id="info">
+                
+				<div id="zegar">CZAS:</div>
+				<div id="wartosczegara"></div>
+				<div style="clear: both;"></div>
+				<div id="licznik">RUCH:</div>
+				<div id="ilosc"></div>
+				<div style="clear: both;"></div>
+				<div id="points">PUNKTY:</div>
+				<div id="ile_punktow"></div>
+				<div style="clear: both;"></div>
+				<div id="combodiv">COMBO:</div>
+				<div id="combo_ilosc"></div>
+				<div id="combo_req"></div>
+				<div id="rekord">REKORD :</div>
+				<div id="levelmax">Poziom:</div>
+				<div id="levelmax1">0</div>
+				<div id="pointsmax">Punkty:</div>
+				<div id="pointsmax1">0</div>
+				<div id="combomax">Combo:</div>
+				<div id="combomax1">0</div>
+				<div id="bonusextrainfo" onclick="bonusactivation();"></div>
+				<div id="tap">NACIŚNIJ BY ZALICZYĆ DANY POZIOM</div>
+			</div>
+			<div id="fires">
+				<div id="fire1"></div>
+				<div id="fire2"></div>
+				<div id="fire3"></div>
+			</div>
+
+			<div id="bonus">
+				<div id="bonus_napis"></div>
+				<div style="clear: both;"></div>
+				<div id="bonus1" onclick="bonus1check();"></div>
+				<div id="bonus2" onclick="bonus2check();"></div>
+				<div id="bonus3" onclick="bonus3check();"></div>
+				<div style="clear: both;"></div>
+				<div id="bonus_wynik"></div>
+			</div>
+
+			<div id="napisy" onclick="nowagra();">
+				<div id="game"></div>
+				<div style="clear: both;"></div>
+				<div id="summary"></div>
+				<div id="wynik"></div>
+			</div>
+     
+			<div id="boxes">
+				<div style="clear: both;"></div>
+                <div id="diament_info"></div>
+                <div id="diament_add">+1</div>
+                 <div id="get_diamond_info">Zbierz jeszcze 140 punktów by otrzymać</div>
+                 <div id="nagroda_info"></div>
+                <div id="joker_bonus">więcej</div>
+                <div id="bonus_bonus">więcej</div>
+                 <div id="bonusx2">x2</div>
+                <div id="version">v1.5</div>
+                <div id="autor">&copy Memory madness by MK Games 2016</div>
+           
+				<div id="skrzynki1" onclick="playAudio1();"></div>
+				<div id="skrzynki2" onclick="playAudio2();"></div>
+				<div id="skrzynki3" onclick="playAudio3();"></div>
+				<div id="skrzynki4" onclick="playAudio4();"></div>
+				<div id="xbutton" onclick="wyjsciedomenu();"></div>
+				<div style="clear: both;"></div>
+				<div id="skrzynki5" onclick="playAudio5();"></div>
+				<div id="skrzynki6" onclick="playAudio6();"></div>
+				<div id="skrzynki7" onclick="playAudio7();"></div>
+				<div id="skrzynki8" onclick="playAudio8();"></div>
+				<div style="clear: both;"></div>
+				<div id="skrzynki9" onclick="playAudio9();"></div>
+				<div id="skrzynki10" onclick="playAudio10();"></div>
+				<div id="skrzynki11" onclick="playAudio11();"></div>
+				<div id="skrzynki12" onclick="playAudio12();"></div>
+               
+           
+                <div style="clear:both" ;=""></div>
+             
+			</div>
+  
+             
+
+		</div>
+                </div>
+	</body>
+        
+     <script type="text/javascript" charset="utf-8" src="js/jquery-3.1.1.js"></script>
+        			<link href="css/bootstrap.css" rel="stylesheet">
+				<script src="js/bootstrap.js"></script>
+        
+		<link rel="stylesheet" href="memory_time_pl.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+		<audio id="play" src="boom.ogg"></audio>
+
+		<audio id="play2" src="boom2.ogg"></audio>
+
+		<audio id="play3" src="koniec.ogg"></audio>
+
+		<audio id="play4" src="combo.ogg"></audio>
+
+		<audio id="play5" src="combo2.ogg"></audio>
+
+		<audio id="play6" src="combo3.ogg"></audio>
+
+		<audio id="play7" src="combo4.ogg"></audio>
+
+		<audio id="play8" src="zonk.ogg"></audio>
+
+		<audio id="play9" src="bonus.ogg"></audio>
+
+		<audio id="play10" src="breaker.ogg"></audio>
+
+		<audio id="play11" src="ultracombo.ogg"></audio>
+
+		<audio id="play13" src="laugh.ogg"></audio>
+
+		<audio id="play14" src="click.ogg"></audio>
+
+		<audio id="play15" src="music.ogg"></audio>
+        
+        <audio id="play16" src="diamond.ogg"></audio>
+        
+         <audio id="play17" src="unlock.ogg"></audio>
+
+          <audio id="play18" src="menu_music.ogg"></audio>
+        
+		<audio id="clock" src="clock.ogg"></audio>
+
+		<audio id="mymatch">
+			<source src="magic.ogg" type="audio/ogg">
+				<source src="magic.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="firesound">
+			<source src="boom.ogg" type="audio/ogg">
+				<source src="boom.ogg" type="audio/ogg">
+		</audio>
+
+		<audio id="myAudio">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+		<audio id="myAudio2">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio3">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+		<audio id="myAudio4">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio5">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+		<audio id="myAudio6">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio7">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+		<audio id="myAudio8">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+		<audio id="myAudio9">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio10">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio11">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio12">
+			<source src="klik.ogg" type="audio/ogg">
+				<source src="klik.ogg" type="audio/wav">
+		</audio>
+
+		<audio id="myAudio13">
+			<source src="laugh.ogg" type="audio/ogg">
+				<source src="laugh.ogg" type="audio/wav">
+		</audio>
+
+        
+		<audio id="clock2">
+			<source src="clock.ogg" type="audio/ogg">
+				<source src="clock.ogg" type="audio/wav">
+		</audio>
+
+		<audio loop="" id="music_tlo">
+			<source src="music.ogg">
+				<source src="music.ogg">
+		</audio>
+
+        
+        		<audio id="music_menu">
+			<source src="menu_music.ogg" type="audio/ogg">
+				<source src="menu_music.ogg" type="audio/wav">
+		</audio>
+        
+        		<audio id="joker_boom">
+			<source src="boom2.ogg" type="audio/ogg">
+				<source src="boom2.ogg" type="audio/wav">
+		</audio>
+        
+        
+        
+		<script src="jquery-3.1.1.js"></script>
+
+		<script>
+			var x = document.getElementById("myAudio"); 
+			var x2 = document.getElementById("myAudio2"); 
+			var x3 = document.getElementById("myAudio3"); 
+			var x4 = document.getElementById("myAudio4"); 
+			var x5 = document.getElementById("myAudio5"); 
+			var x6 = document.getElementById("myAudio6"); 
+			var x7 = document.getElementById("myAudio7"); 
+			var x8 = document.getElementById("myAudio8"); 
+			var x9 = document.getElementById("myAudio9"); 
+			var x10 = document.getElementById("myAudio10"); 
+			var x11 = document.getElementById("myAudio11"); 
+			var x12 = document.getElementById("myAudio12"); 
+			var x13 = document.getElementById("mymatch"); 
+			var x14 = document.getElementById("firesound"); 
+			var x15 = document.getElementById("clock2"); 
+            var x16 =  document.getElementById("music_menu"); 
+            var x17 = document.getElementById("joker_boom"); 
+			var jaka1 ;
+			var jaka2 ;
+			var jaka3 ;
+			var jaka4 ;
+			var jaka5 ;
+			var jaka6 ;
+			var jaka7 ;
+			var jaka8 ;
+			var jaka9 ;
+			var jaka10 ;
+			var jaka11 ;
+			var jaka12 ;
+			
+			var para1;
+			var para2;
+			var jaka3;
+			var para4;
+			var para5;
+			var para6;
+			var para7;
+			var para8;
+			var jaka9;
+			var para10;
+			var para11;
+			var para12;
+			
+			var obrazek_1 = 0;
+			var obrazek_2 = 0;
+			var obrazek_3 = 0;
+			var obrazek_4 = 0;
+			var obrazek_5 = 0;
+			var obrazek_6 = 0;
+			
+			var obrazek_7 = 0;
+			var obrazek_8 = 0;
+			var obrazek_9 = 0;
+			var obrazek_10 = 0;
+			var obrazek_11 = 0;
+			var obrazek_12 = 0;
+			
+			
+			
+			
+			
+			
+			var chest1 = 1;
+			var chest2 = 1;
+			var chest3 = 1;
+			var chest4 = 1;
+			var chest5 = 1;
+			var chest6 = 1;
+			var chest7 = 1;
+			var chest8 = 1;
+			var chest9 = 1;
+			var chest10 = 1;
+			var chest11 = 1;
+			var chest12 = 1;
+			var check = 0;
+			var pierwsza = 1;
+			var druga = 1;
+			var numer1;
+			var numer2;
+			var para = 1;
+			var testuj;
+			var numeruj;
+			var znaleziona=0;
+			var zanik1 = 0;
+			var zanik2 = 0;
+			var zanik3 = 0;
+			var zanik4 = 0;
+			var zanik5 = 0;
+			var zanik6 = 0;
+			var zanik7 = 0;
+			var zanik8 = 0;
+			var zanik9 = 0;
+			var zanik10 = 0;
+			var zanik11= 0;
+			var zanik12 = 0;
+			
+			
+			
+			var level=0;
+			var myvar;
+			var ilosc_ruchu = 3;
+			var ile_punktow2=0;
+			var czas=1200;
+			var odliczanie_sec = 20;
+			var stopuj = 1;
+			var newgame = 0;
+			var poziom_value = 1;
+			var combo = 0;
+			var parax = 0;
+			var bonusmove = 0;
+			var funkcjahide;
+			var dupa ;
+			var zanik_test;
+			var test1;
+			var test3;
+			var test4;
+			var temp_para = 0;
+			var parki = [combo, combo, combo];
+			
+			var powtorz1 = 0;
+			var powtorz2 = 0;
+			var powtorz3 = 0;
+			var powtorz4 = 0;
+			var powtorz5 = 0;
+			var powtorz6 = 0;
+			var powtorz7 = 0;
+			var powtorz8 = 0;
+			var powtorz9 = 0;
+			var powtorz10 = 0;
+			var powtorz11 = 0;
+			var powtorz12 = 0;
+			
+			var bonustime = 0;
+			var pomin1 = 0;
+			var pomin2 = 0;
+			var pomin3 = 0;
+			var pomin4 = 0;
+			var pomin5 = 0;
+			var pomin6 = 0;
+			var pomin7 = 0;
+			var pomin8 = 0;
+			var pomin9 = 0;
+			var pomin10 = 0;
+			var pomin11 = 0;
+			var pomin12 = 0;
+			var numerbonusu;
+			var bonuswziety1 = 0;
+			var bonuswziety2 = 0;
+			var bonuswziety3 = 0;
+			
+			var bonus_time = 0;
+			var bonus_move = 0;
+			var przedbonusem;
+			var rekordpoziomu = 0;
+			var rekordpunktow = 0;
+            var rekordpoziomu2 = 0;
+			var rekordpunktow2 = 0;
+            var rekordcombo2 = 0;
+			var combo_amount = 0;
+			var combo_counter = 5;
+			var combo_counter_add = 0;
+			var liczbabonus1 = 0;
+			var liczbabonus2 = 0;
+			var liczbabonus3 = 0;
+			var extrabonus = 0;
+			var talia = 52;
+			var bonusgrab = 0;
+			var bonussfx = 0;
+			var stopuj1 = 0;
+			var stopuj2 = 0;
+			var time = "on";
+			var skip = 0;
+			var trudnosc = "hard";
+			var timer = 1;
+			var trudnosc_level = 1;
+			var last=0;
+			var extraczas = 0;
+			var choose = 2;
+			
+			var locale = 0;
+			var rekordcombo=0;
+			var muzyka_check=0;
+			var music_play=0;
+            var bonuschance = 0;
+            var bonuschance2 = 0;
+            var jokerchance = 0;
+            var jokerchance2 = 0;
+            var value1 = 0;
+            var value2 = 0;
+            var joker_chance = 0;
+			var joker_box = 0;
+            var diamenty = 0;
+			var diamondchance = 0;
+            var diamondchance2 = 0;
+            var diament_get = 30;
+            var ilosc_diementow;
+            var unlock_menu = 0;
+            var unlock1check = 0;
+            var unlock2check = 0;
+            var unlock3check = 0;
+            var unlock4check = 0;
+            var unlock5check = 0;
+            var combo_move = 0;
+            var combo_time = 0;
+            
+            var odblokuj2 = 0;   
+            var odblokuj3 = 0;
+            var odblokuj4 = 0;
+            var odblokuj5 = 0;
+            var ile_zostalo = 0;
+            var nienaliczaj = 0;
+            var paratrafiona = 0;
+            var multiplier = 0;
+            var multiplier2 = 0;
+            var vibration_check = 0;
+            var vibration_on = 0;
+            var gamemode = 0;
+            var nagroda_typ = 0;
+            var description = "opis";
+            var nagroda_wybrana = 0;
+            var start_game = 0;
+            var nagroda_typ1 = 0;
+            var nagroda_typ2 = 0;
+            var nagroda_typ3 = 0;
+            var bonus_x2 = 0;
+            
+			document.addEventListener("deviceready", onDeviceReady, false);
+	
+			
+			    
+			    
+			function disableclick()
+			{
+				document.getElementById("skrzynki1").style.pointerEvents = 'none';
+				document.getElementById("skrzynki2").style.pointerEvents = 'none';
+				document.getElementById("skrzynki3").style.pointerEvents = 'none';
+				document.getElementById("skrzynki4").style.pointerEvents = 'none';
+				document.getElementById("skrzynki5").style.pointerEvents = 'none';
+				document.getElementById("skrzynki6").style.pointerEvents = 'none';
+				document.getElementById("skrzynki7").style.pointerEvents = 'none';
+				document.getElementById("skrzynki8").style.pointerEvents = 'none';
+				document.getElementById("skrzynki9").style.pointerEvents = 'none';
+				document.getElementById("skrzynki10").style.pointerEvents = 'none';
+				document.getElementById("skrzynki11").style.pointerEvents = 'none';
+				document.getElementById("skrzynki12").style.pointerEvents = 'none';
+				}
+				
+				function enableclick()
+				{
+				document.getElementById("skrzynki1").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki2").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki3").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki4").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki5").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki6").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki7").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki8").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki9").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki10").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki11").style.pointerEvents = 'auto';
+				document.getElementById("skrzynki12").style.pointerEvents = 'auto';
+				}
+			
+			
+			
+			function fadeallbonus()
+			{
+				$("#skrzynki1").fadeTo(600, 0);
+					
+				$("#skrzynki2").fadeTo(600, 0);
+			
+				$("#skrzynki3").fadeTo(600, 0);
+			
+				$("#skrzynki4").fadeTo(600, 0);
+			
+				$("#skrzynki5").fadeTo(600, 0);
+			
+				$("#skrzynki6").fadeTo(600, 0);
+				
+			
+				$("#skrzynki7").fadeTo(600, 0);
+			
+				$("#skrzynki8").fadeTo(600, 0);
+			
+				$("#skrzynki9").fadeTo(600, 0);
+			
+				$("#skrzynki10").fadeTo(600, 0);
+			
+				$("#skrzynki11").fadeTo(600, 0);
+			
+				$("#skrzynki12").fadeTo(600, 0);
+				}
+			
+            
+            
+            
+            
+			
+			
+			function fadeall()
+			{
+				
+				
+				
+				
+				$("#skrzynki1").fadeTo(600, 0);
+					
+				$("#skrzynki2").fadeTo(600, 0);
+			
+				$("#skrzynki3").fadeTo(600, 0);
+			
+				$("#skrzynki4").fadeTo(600, 0);
+			
+				$("#skrzynki5").fadeTo(600, 0);
+			
+				$("#skrzynki6").fadeTo(600, 0);
+				
+			
+				$("#skrzynki7").fadeTo(600, 0);
+			
+				$("#skrzynki8").fadeTo(600, 0);
+			
+				$("#skrzynki9").fadeTo(600, 0);
+			
+				$("#skrzynki10").fadeTo(600, 0);
+			
+				$("#skrzynki11").fadeTo(600, 0);
+			
+				$("#skrzynki12").fadeTo(600, 0);
+				
+				setTimeout(zestaw1, 700);
+				}
+				
+				
+				function pominstart()
+				{
+					pomin1 = 1;
+					pomin2 = 1;
+					pomin3 = 1;
+					pomin4 = 1;
+					pomin5 = 1;
+					pomin6 = 1;
+					pomin7 = 1;
+					pomin8 = 1;
+					pomin9 = 1;
+					pomin10 = 1;
+					pomin11 = 1;
+					pomin12 = 1;
+					}
+			
+			
+				
+				function pominresetuj()
+				{
+					pomin1 = 0;
+					pomin2 = 0;
+					pomin3 = 0;
+					pomin4 = 0;
+					pomin5 = 0;
+					pomin6 = 0;
+					pomin7 = 0;
+					pomin8 = 0;
+					pomin9 = 0;
+					pomin10 = 0;
+					pomin11 = 0;
+					pomin12 = 0;
+					}
+			
+			
+			function pokaz4()
+			{
+				hideall();
+			$("#skrzynki1").fadeTo(1000, 1);
+			$("#skrzynki2").fadeTo(1000, 1);
+			$("#skrzynki3").fadeTo(1000, 1);
+			$("#skrzynki4").fadeTo(1000, 1);
+			$("#skrzynki5").fadeTo(1000, 1);
+			$("#skrzynki6").fadeTo(1000, 1);
+			$("#skrzynki7").fadeTo(1000, 1);
+			$("#skrzynki8").fadeTo(1000, 1);
+			$("#skrzynki9").fadeTo(1000, 1);
+			$("#skrzynki10").fadeTo(1000, 1);
+			
+			}
+			
+			
+			
+			function pokaz3()
+			{
+				hideall();
+			$("#skrzynki1").fadeTo(1000, 1);
+			$("#skrzynki2").fadeTo(1000, 1);
+			$("#skrzynki3").fadeTo(1000, 1);
+			$("#skrzynki4").fadeTo(1000, 1);
+			$("#skrzynki5").fadeTo(1000, 1);
+			$("#skrzynki6").fadeTo(1000, 1);
+			$("#skrzynki7").fadeTo(1000, 1);
+			$("#skrzynki8").fadeTo(1000, 1);
+			
+			}
+			
+			
+			
+			
+			function pokaz2()
+			{
+				hideall();
+			$("#skrzynki1").fadeTo(1000, 1);
+			$("#skrzynki2").fadeTo(1000, 1);
+			$("#skrzynki3").fadeTo(1000, 1);
+			
+			$("#skrzynki4").fadeTo(1000, 1);
+			$("#skrzynki5").fadeTo(1000, 1);
+			$("#skrzynki6").fadeTo(1000, 1);
+			
+			}
+			
+			function pokaz1()
+			{
+				hideall();
+			$("#skrzynki1").fadeTo(1000, 1);
+			$("#skrzynki2").fadeTo(1000, 1);
+			$("#skrzynki3").fadeTo(1000, 1);
+			$("#skrzynki4").fadeTo(1000, 1);
+			
+			}
+			
+			
+			function pokaz()
+			{
+			hideall();
+			$("#skrzynki1").fadeTo(1000, 1);
+			$("#skrzynki2").fadeTo(1000, 1);
+			$("#skrzynki3").fadeTo(1000, 1);
+			$("#skrzynki4").fadeTo(1000, 1);
+			$("#skrzynki5").fadeTo(1000, 1);
+			$("#skrzynki6").fadeTo(1000, 1);
+			$("#skrzynki7").fadeTo(1000, 1);
+			$("#skrzynki8").fadeTo(1000, 1);
+			$("#skrzynki9").fadeTo(1000, 1);
+			$("#skrzynki10").fadeTo(1000, 1);
+			$("#skrzynki11").fadeTo(1000, 1);
+			$("#skrzynki12").fadeTo(1000, 1);
+				}
+			
+			function playSound() 
+			{
+			    document.getElementById('play').play();
+			}
+			
+			function playSound2() 
+			{
+			    document.getElementById('play2').play();
+			}
+			function playSound3() 
+			{
+			    document.getElementById('play3').play();
+			}
+			
+			function playSound4() 
+			{
+			    document.getElementById('play4').play();
+			}
+			
+			function playSound5() 
+			{
+			    document.getElementById('play5').play();
+			}
+			
+			function playSound6() 
+			{
+			    document.getElementById('play6').play();
+			}
+			
+			function playSound7() 
+			{
+			    document.getElementById('play7').play();
+			}
+			
+			function playSound8() 
+			{
+			    document.getElementById('play8').play();
+			}
+			
+			function playSound9() 
+			{
+			    document.getElementById('play9').play();
+			}
+			
+			function playSound10() 
+			{
+			    document.getElementById('play10').play();
+			}
+			
+			function playSound11() 
+			{
+			    document.getElementById('play11').play();
+			}
+			
+			function playSound13() 
+			{
+			    document.getElementById('play13').play();
+			}
+			
+			function playSound14() 
+			{
+			    document.getElementById('play14').play();
+			}
+			
+			function playSound15() 
+			{
+			    document.getElementById('play15').play();
+			}
+				function playSound16() 
+			{
+			    document.getElementById('play16').play();
+			}
+			
+            		function playSound17() 
+			{
+			    document.getElementById('play17').play();
+			}
+            
+                   		function playSound18() 
+			{
+			    document.getElementById('play18').play();
+			}
+            
+                      		function playSound19() 
+			{
+			    document.getElementById('play19').pause();
+			}
+            
+			function clock() 
+			{
+			    document.getElementById('clock').play();
+			}
+			
+			
+			
+			
+			function fading()
+			{
+				
+				document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;
+				if(zanik1==1)
+				{
+				$("#skrzynki1").fadeTo(500, 0);
+				pomin1 = 1;
+				}
+				
+				if(zanik2==1)
+				{
+				$("#skrzynki2").fadeTo(500, 0);
+				 pomin2 = 1;
+				}
+				
+				if(zanik3==1)
+				{
+				$("#skrzynki3").fadeTo(500, 0);
+				pomin3 = 1;
+				}
+				if(zanik4==1)
+				{
+				$("#skrzynki4").fadeTo(500, 0);
+				pomin4 = 1;
+				}
+				if(zanik5==1)
+				{
+				$("#skrzynki5").fadeTo(500, 0);
+				pomin5 = 1;
+				}
+				if(zanik6==1)
+				{
+				$("#skrzynki6").fadeTo(500, 0);
+				pomin6 = 1;
+				}
+				if(zanik7==1)
+				{
+				$("#skrzynki7").fadeTo(500, 0);
+				pomin7 = 1;
+				}
+				if(zanik8==1)
+				{
+				$("#skrzynki8").fadeTo(500, 0);
+				pomin8 = 1;
+				}
+				if(zanik9==1)
+				{
+				$("#skrzynki9").fadeTo(500, 0);
+				pomin9 = 1;
+				}
+				if(zanik10==1)
+				{
+				$("#skrzynki10").fadeTo(500, 0);
+				pomin10 = 1;
+				}
+				if(zanik11==1)
+				{
+				$("#skrzynki11").fadeTo(500, 0);
+				pomin11 = 1;
+				}
+				if(zanik12==1)
+				{
+				$("#skrzynki12").fadeTo(500, 0);
+				pomin12 = 1;
+				}
+			
+				
+
+                if((znaleziona==2)&&(level<1))
+                {
+                last=0;
+                pominresetuj();
+                poziom_value++;
+                stopuj = 1;
+                if(locale==0)
+                document.getElementById("poziom").innerHTML ="POZIOM: " + poziom_value;
+                else
+                document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+
+                              
+                if(trudnosc_level==1)
+                odliczanie_sec = odliczanie_sec + 3;    
+                else if(trudnosc_level==2)
+                odliczanie_sec = odliczanie_sec + 2;    
+
+
+                 bonustime = 0;
+                 document.getElementById("wartosczegara").style.color = "green" ;
+                playSound2();
+                    
+                    
+                if(gamemode==0)   
+                {
+                if(trudnosc_level==0)  
+                ilosc_ruchu = 7;                  
+                else if(trudnosc_level==1)
+                ilosc_ruchu = 5;
+                else if(trudnosc_level==2)
+                ilosc_ruchu = 4;
+                }
+                level=1;             
+                setTimeout(fireworks1);
+                }
+				
+				
+                if((znaleziona==3)&&(level<2))
+                {
+           
+                last=0;
+                pominresetuj();
+                poziom_value++;
+                stopuj = 1;
+                    
+                if(trudnosc_level==1)
+                odliczanie_sec = odliczanie_sec + 7;    
+                else if(trudnosc_level==2)
+                odliczanie_sec = odliczanie_sec + 5;  
+                    
+                odliczanie_sec = odliczanie_sec + combo_time;
+                combo_time = 0;
+                    
+                 bonustime = 0;
+                 if(locale==0)
+                 document.getElementById("poziom").innerHTML ="POZIOM: " + poziom_value;
+                 else
+                 document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+                 document.getElementById("wartosczegara").style.color = "green" ;
+ 
+                playSound();
+
+                if(gamemode==0)
+                {
+                if(trudnosc_level==0)  
+                ilosc_ruchu = 9;                  
+                else if(trudnosc_level==1)
+                ilosc_ruchu = 7;
+                else if(trudnosc_level==2)
+                ilosc_ruchu = 5;
+                }
+                ilosc_ruchu = ilosc_ruchu + combo_move;
+                combo_move = 0;
+                    
+                ilosc_ruchu = ilosc_ruchu + bonusmove;
+                level = 2;
+                setTimeout(fireworks2, 800);
+                }
+
+				if((znaleziona==4)&&(level<3))
+				{
+              
+				last=0;
+				pominresetuj();
+			    poziom_value++;
+				stopuj = 1;
+                    
+				if(trudnosc_level==1)
+                odliczanie_sec = odliczanie_sec + 9;    
+                else if(trudnosc_level==2)
+                odliczanie_sec = odliczanie_sec + 7;  
+                    
+                odliczanie_sec = odliczanie_sec + combo_time;
+                combo_time = 0;
+                    
+                    
+				bonustime = 0;
+			    if(locale==0)
+				document.getElementById("poziom").innerHTML ="POZIOM: " + poziom_value;
+			    else
+			     document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+				document.getElementById("wartosczegara").style.color = "green" ;
+				
+				playSound2();
+                  
+                if(gamemode==0)   
+                {
+				if(trudnosc_level==0)  
+                ilosc_ruchu = 10;                  
+                else if(trudnosc_level==1)
+                ilosc_ruchu = 8;
+                else if(trudnosc_level==2)
+                ilosc_ruchu = 7;
+                }
+                ilosc_ruchu = ilosc_ruchu + combo_move;
+                combo_move = 0;
+                    
+				level = 3;
+				setTimeout(fireworks3, 800);
+				}
+			  
+                
+                
+                
+			  if((znaleziona==5)&&(level<4))
+				{
+              
+				last=0;
+				poziom_value++;
+				 pominresetuj();
+				 stopuj = 1;
+                    
+				if(trudnosc_level==1)
+                odliczanie_sec = odliczanie_sec + 11;    
+                else if(trudnosc_level==2)
+                odliczanie_sec = odliczanie_sec + 9;  
+                    
+                odliczanie_sec = odliczanie_sec + combo_time;
+                combo_time = 0;
+                    
+				 bonustime = 0;
+			     if(locale==0)
+				 document.getElementById("poziom").innerHTML ="POZIOM: " + poziom_value;
+			     else
+			     document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+			     document.getElementById("wartosczegara").style.color = "green" ;
+				playSound();
+                    
+                if(gamemode==0)
+                {
+				if(trudnosc_level==0)  
+                ilosc_ruchu = 12;                  
+                else if(trudnosc_level==1)
+                ilosc_ruchu = 9;
+                else if(trudnosc_level==2)
+                ilosc_ruchu = 8;
+                }
+                ilosc_ruchu = ilosc_ruchu + combo_move;
+                combo_move = 0;
+                    
+				level = 4;
+				playSound2();
+				setTimeout(fireworks4, 800);
+				}
+				
+                
+                
+			  if(znaleziona==6)
+			  {
+           
+			  last=0;
+			  pominresetuj();
+			  poziom_value++;
+			  stopuj = 1;
+                  
+			  if(trudnosc_level==1)
+              odliczanie_sec = odliczanie_sec + 13;    
+              else if(trudnosc_level==2)
+              odliczanie_sec = odliczanie_sec + 10;  
+                    
+              odliczanie_sec = odliczanie_sec + combo_time;
+              combo_time = 0;
+			 
+			 odliczanie_sec = odliczanie_sec + combo_time;
+             combo_time = 0;
+			 
+             bonustime = 0;
+			 if(locale==1)
+             document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+             else
+             document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+                                          if(locale==0)
+			  document.getElementById("poziom").innerHTML ="POZIOM: " + poziom_value;
+			  else
+			  document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+			  document.getElementById("wartosczegara").style.color = "green" ;
+			  
+			  playSound();
+               if(gamemode==0)
+               {
+			   if(trudnosc_level==0)  
+               ilosc_ruchu = 15;                  
+               else if(trudnosc_level==1)
+               ilosc_ruchu = 10;
+               else if(trudnosc_level==2)
+               ilosc_ruchu = 9;
+               }
+			  ilosc_ruchu = ilosc_ruchu + combo_move;
+              combo_move = 0;
+                  
+			  if((trudnosc_level==2)&&(odliczanie_sec>30))
+			  odliczanie_sec=30+ bonustime;
+			  
+			  if(locale==1)
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                else
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+                  
+             setTimeout(fireworks4, 800);
+			 }
+			  
+            if(locale==1)
+            document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+            else
+            document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+				    check = 0;
+					pierwsza=0;
+					druga=0;
+					zanikzero();
+					stopuj = 1;
+			}
+				
+				function zanikzero()
+				{
+			 zanik1 = 0;
+			 zanik2 = 0;
+			 zanik3 = 0;
+			 zanik4 = 0;
+			 zanik5 = 0;
+			 zanik6 = 0;
+			 zanik7 = 0;
+			 zanik8 = 0;
+			 zanik9 = 0;
+			 zanik10 = 0;
+			 zanik11= 0;
+			 zanik12 = 0;
+					}
+			
+			
+			function resetpowtorzen()
+			{
+			 powtorz1 = 0;
+			 powtorz2 = 0;
+			 powtorz3 = 0;
+			 powtorz4 = 0;
+			 powtorz5 = 0;
+			 powtorz6 = 0;
+			 powtorz7 = 0;
+			 powtorz8 = 0;
+			 powtorz9 = 0;
+			 powtorz10 = 0;
+			 powtorz11 = 0;
+			 powtorz12 = 0;
+			
+			}
+			
+			
+			function joker()
+			
+			{
+                  
+              fadeallbonus();
+                
+				     if(level<1)
+						znaleziona=2;
+					else if(level<2)
+						znaleziona=3;
+					else if(level<3)
+						znaleziona=4;
+					 else if(level<4)
+						znaleziona=5;
+					else
+						znaleziona=6;
+					
+					var ile_punktow3 = ile_punktow2 / 7;
+					var zaokraglone = Math.round(ile_punktow3);
+					ile_punktow2 = ile_punktow2 - zaokraglone;
+                
+     
+        document.getElementById("get_diamond_info").style.color = "red";
+        if(locale==1)
+        {
+        document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+        document.getElementById("get_diamond_info").innerHTML = "JOCKER PENALTY - " + zaokraglone + " POINTS";
+        }
+        else
+        {
+        document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+        document.getElementById("get_diamond_info").innerHTML = "KARA ZA JOKERA  - " + zaokraglone + " PUNKTÓW";
+        }
+			  
+                
+                
+                 
+                  $("#get_diamond_info").fadeIn(4000);
+                 document.getElementById("get_diamond_info").style.color = "grey" ;
+						playSound13(); 
+						fading();
+					}
+			
+			
+			function paircheck()
+			{      
+			parax = 0;
+			combo_move = 0;
+            combo_time = 0;    
+                
+                
+                
+                
+                
+					if(parki[1]==parki[2])
+					{
+                        paratrafiona=1;
+			            ile_punktow2++;
+						stopuj = 0;
+						stopuj2 = 0;
+						
+						
+						if(parki[1]==52)
+						{
+					    bonus_x2=1;
+						extrabonus = 1;
+						playSound9(); 						
+                        $("#bonusx2").fadeIn(600); 
+						
+						}
+						
+						if(parki[1]==51)
+						{
+							playSound13(); 
+							bonusgrab = 1;
+							$("#bonusextrainfo").fadeTo(1000, 1);
+						   $("#tap").fadeTo(3000, 1);
+						
+						}
+                        
+						if(parki[1]==53)
+						{	
+                            $("#combo").fadeIn(700);
+					        $("#combo").fadeOut(700);
+				            playSound16(); 
+						
+                          	$("#diament_info").fadeIn(1000);
+                            document.getElementById("diament_add").innerHTML = "+1";
+                            $("#diament_add").fadeIn(1000);
+                            
+                            $("#diament_info").fadeOut(2000);
+                            $("#diament_add").fadeOut(2000);
+						    diamenty++;
+                            
+						}
+						
+                     
+                   
+                    
+						
+						
+					  document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;
+					  parax = 1;
+					  combo++;
+					
+					
+			          znaleziona++;
+			        if(locale==1)
+                    document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                    else
+                    document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+                    if(locale==1)
+                    document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                    else
+                    document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+
+			          if(bonussfx==0);
+			          x13.play();   
+			          
+			          bonusfx = 0;
+			          temp_para = 0;
+			          fading();
+			          resetpowtorzen();
+			 }  
+			       
+			if(parki[1]!=parki[2])
+			{
+				stopuj1 =1;
+				stopuj2 = 0;
+				temp_para = 0;
+				combo = 0;
+				zanikzero();
+				
+				resetpowtorzen();
+			}
+				
+					    if(combo==2)
+					  {
+                      
+						ile_punktow2 = ile_punktow2 + 1;
+			           					if(locale==1)
+                        document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                        else
+                        document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+						combo_amount++;
+						document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;  
+						$("#combo").fadeIn(400);
+					    $("#combo").fadeOut(400);
+					    if(combo_amount==combo_counter)
+					    playSound10(); 
+					    else
+					    playSound4(); 
+					    
+					    odliczanie_sec = odliczanie_sec + 1; 
+                        combo_time = 1;
+					    if(locale==0)
+					    document.getElementById("combo").style.backgroundImage = "url('combo1pl.png')";
+					    else
+					    document.getElementById("combo").style.backgroundImage = "url('combo1new.png')";
+					   if(locale==1)
+                        document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                        else
+                        document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;  
+					    
+						
+						
+			if(combo_amount==combo_counter)
+			  {
+			  	pominstart();
+			  	stopuj = 1;
+			  	document.getElementById("combodiv").style.color = "red" ;
+			  	document.getElementById("combo_req").style.color = "red" ;
+			      document.getElementById("combo_ilosc").style.color = "red" ;
+			      document.getElementById("combodiv").style.color = "Combo :" ;
+			
+			    document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;  
+			      setTimeout(bonusstart, 1300);
+			      }
+			 }
+					
+					   else if(combo==3)
+					  {
+                
+						ile_punktow2 = ile_punktow2 + 2;
+			           	if(locale==1)
+                        document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                        else
+                        document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+						combo_amount++;
+						document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+						$("#combo").fadeIn(400);
+					    $("#combo").fadeOut(400);
+					    if(combo_amount==combo_counter)
+					    playSound10(); 
+					    else
+					    playSound5(); 
+					    
+					    odliczanie_sec = odliczanie_sec + 2;  
+                        combo_time = 2;
+                        if(locale==1)
+                        document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                        else
+                        document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+					    if(locale==0)
+					    document.getElementById("combo").style.backgroundImage = "url('combo2pl.png')";
+					    else
+					    document.getElementById("combo").style.backgroundImage = "url('combo2new.png')";
+					   if(locale==1)
+                            document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                            else
+                            document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec; 
+					    
+			if(combo_amount==combo_counter)
+			  {
+			  	pominstart();
+			  	stopuj = 1;
+			  	document.getElementById("combodiv").style.color = "red" ;
+			  	document.getElementById("combo_req").style.color = "red" ;
+			      document.getElementById("combo_ilosc").style.color = "red" ;
+			      document.getElementById("combodiv").style.color = "Combo :" ;
+			
+			      document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+			      setTimeout(bonusstart, 1300);
+			      }
+			 }
+					  
+					  else if((combo==4)&&(trudnosc_level>0))
+					   {
+                           
+                     
+                           
+                           
+                          
+                           
+                       
+						ile_punktow2 = ile_punktow2 + 3;
+			           					if(locale==1)
+                        document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                        else
+                        document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+						combo_amount++;
+						document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+						$("#combo").fadeIn(400);
+					    $("#combo").fadeOut(400);
+					    if(combo_amount==combo_counter)
+					    playSound10(); 
+					    else
+					    playSound6(); 
+					    
+					    odliczanie_sec = odliczanie_sec + 2;  
+                        combo_time = 2;
+					  
+					    ilosc_ruchu = ilosc_ruchu + 1;
+                        combo_move = 1;
+		              	if(locale==1)
+                        document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                        else
+                        document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+					    if(locale==0)
+					    document.getElementById("combo").style.backgroundImage = "url('combo3pl.png')";
+					    else
+					    document.getElementById("combo").style.backgroundImage = "url('combo3new.png')";
+					    if(locale==1)
+                        document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                        else
+                        document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+						
+						
+                        if(combo_amount==combo_counter)
+                          {
+                        pominstart();
+                        stopuj = 1;
+                        document.getElementById("combodiv").style.color = "red" ;
+                        document.getElementById("combo_req").style.color = "red" ;
+                          document.getElementById("combo_ilosc").style.color = "red" ;
+                          document.getElementById("combodiv").style.color = "Combo :" ;
+
+                          document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+                          setTimeout(bonusstart, 1300);
+                          }
+                     }
+					  
+					  
+					  else if((combo==5)&(trudnosc_level>0))
+					   {
+                       
+                            $("#diament_info").fadeIn(1000);
+                           document.getElementById("diament_add").innerHTML = "+1";
+                            $("#diament_add").fadeIn(1000);
+                            
+                            $("#diament_info").fadeOut(2000);
+                            $("#diament_add").fadeOut(2000);
+				            playSound16(); 
+						
+						    diamenty++;
+                        
+                            localStorage.setItem('diamenty', diamenty);
+                           
+                           
+                         
+                        
+						ile_punktow2 = ile_punktow2 + 4;
+			          	if(locale==1)
+                        document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                        else
+                        document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+						combo_amount++;
+						document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+						fireworksa();
+					    $("#combo").fadeIn(400);
+					    $("#combo").fadeOut(400);
+					    if(combo_amount==combo_counter)
+					    playSound10(); 
+					    else
+					    playSound7(); 
+					    
+					    odliczanie_sec = odliczanie_sec + 3;
+                        combo_time = 3;
+					   
+					    ilosc_ruchu = ilosc_ruchu + 2;
+                        combo_move = 2;
+					   if(locale==1)
+                        document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                        else
+                        document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+					    if(locale==0)
+					    document.getElementById("combo").style.backgroundImage = "url('combo4pl.png')";
+					    else
+					    document.getElementById("combo").style.backgroundImage = "url('combo4new.png')";
+					   if(locale==1)
+                        document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                        else
+                        document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec; 
+						
+						
+						
+			             if(combo_amount==combo_counter)
+                          {
+                            pominstart();
+                            stopuj = 1;
+                    document.getElementById("combodiv").style.color = "red" ;
+                    document.getElementById("combo_req").style.color = "red" ;
+			      document.getElementById("combo_ilosc").style.color = "red" ;
+			      document.getElementById("combodiv").style.color = "Combo :" ;
+			
+			      document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+			      setTimeout(bonusstart, 1300);
+			      }
+			 }
+					  
+					 
+					else if((combo==6)&&(trudnosc_level>1))
+					   {
+                           
+                            $("#diament_info").fadeIn(1000);
+                            $("#diament_add").fadeIn(1000);
+                            document.getElementById("diament_add").innerHTML = "+5";   
+                           
+                            $("#diament_info").fadeOut(2000);
+                            $("#diament_add").fadeOut(2000);
+				            playSound16(); 
+						
+						    diamenty++;
+                            diamenty++;
+                            diamenty++;
+                            diamenty++;
+                            localStorage.setItem('diamenty', diamenty);
+                 
+						ile_punktow2 = ile_punktow2 + 5;
+			            if(locale==1)
+                        document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                        else
+                        document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+						combo_amount++;
+						document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+						fireworksa();
+					    $("#combo").fadeIn(400);
+					    $("#combo").fadeOut(400);
+					    if(combo_amount==combo_counter)
+					    playSound10(); 
+					    else
+					    playSound11(); 
+					  
+					    odliczanie_sec = odliczanie_sec +4;
+                        combo_time = 4;
+					  
+					    ilosc_ruchu = ilosc_ruchu +2;
+                        combo_move = 0;
+					    if(locale==1)
+                        document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                        else
+                        document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+					    if(locale==0)
+					    document.getElementById("combo").style.backgroundImage = "url('combo5pl.png')";
+					    else
+					    document.getElementById("combo").style.backgroundImage = "url('combo5new.png')";
+					    if(locale==1)
+                        document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                        else
+                        document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec; 
+						
+                        if(combo_amount==combo_counter)
+                          {
+                        pominstart();
+                        stopuj = 1;
+			  	document.getElementById("combodiv").style.color = "red" ;
+			  	document.getElementById("combo_req").style.color = "red" ;
+			      document.getElementById("combo_ilosc").style.color = "red" ;
+			      document.getElementById("combodiv").style.color = "Combo :" ;
+			
+			      document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+			      setTimeout(bonusstart, 1300);
+			      }
+			 }
+					  
+				
+					
+					if((parax==0)&&(bonusmove>=1))
+					{
+				    combo = 0;
+					bonusmove--;
+                        
+		            if(locale==1)
+                    document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu + bonusmove;
+                    else
+                    document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu + bonusmove;
+					funkcjahide = setTimeout(hideall, czas);
+					}
+					else if((parax==0)&&(bonusmove<1))
+					{
+					combo = 0;
+			        ilosc_ruchu--;
+                    if(locale==1)
+                    document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                    else
+                    document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+                        
+			        funkcjahide =  setTimeout(hideall, czas);
+			        }
+			        
+			        if((ilosc_ruchu==1)&&(last==0))
+				{
+				$("#combo").fadeIn(900);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('ostatniruch.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('lastmove.png')";
+				$("#combo").fadeOut(900);
+				last=1;
+			        }
+			        
+			        if(ilosc_ruchu==0)
+					{
+						disableclick();
+					pominstart();
+					clearTimeout(funkcjahide);
+					playSound3(); 
+					stopuj = 1;
+					$("#combo").fadeIn(2000);
+					if(locale==0)
+				    document.getElementById("combo").style.backgroundImage = "url('koniecgry.png')";
+				    else
+				    document.getElementById("combo").style.backgroundImage = "url('gameover.png')";
+				           $("#combo").fadeOut(1000);
+				           setTimeout(movekoniec, 3000);
+					
+					
+					newgame = 1;		
+					}
+                
+			
+                    wyzwanie_nagrody();
+                      
+                     localStorage.setItem('diamenty', diamenty);
+                           
+                        }
+                           
+                        
+                
+                
+                
+                      
+                        
+                    
+                
+                
+					
+					
+				function movekoniec()
+				
+				{
+					$("#napisy").fadeIn(2000);
+					document.getElementById("wynik").innerHTML=ile_punktow2;
+					if(locale==0)
+					document.getElementById("game").style.backgroundImage = "url('brakruchu.png')";
+					else
+					document.getElementById("game").style.backgroundImage = "url('nomove.png')";
+					}
+			
+			
+				
+				function hideall()
+				{
+					
+					stopuj1 = 0;
+				    stopuj2 = 0;
+					check=0;
+					temp_para = 0,
+				    pierwsza=0;
+				    druga=0;
+					document.getElementById("skrzynki1").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki2").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki3").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki4").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki5").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki6").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki7").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki8").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki9").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki10").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki11").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki12").style.backgroundImage = "url('chest.jpg')";
+					}
+				
+				function hideall2()
+				{
+					stopuj2 = 1;
+					document.getElementById("skrzynki1").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki2").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki3").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki4").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki5").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki6").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki7").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki8").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki9").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki10").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki11").style.backgroundImage = "url('chest.jpg')";
+					document.getElementById("skrzynki12").style.backgroundImage = "url('chest.jpg')";
+					}
+				
+				
+				
+				function hideall3()
+				{
+					stopuj1 = 0;
+					stopuj2 = 0;
+					check=0;
+					temp_para = 0,
+				    pierwsza=0;
+				    druga=0;
+					}
+				
+						
+			function box1()
+			{
+			document.getElementById("skrzynki1").style.backgroundImage = "url('otwarta" + obrazek_1 +".jpg\')";
+			}
+			
+			function box2()
+			{
+			document.getElementById("skrzynki2").style.backgroundImage = "url('otwarta" + obrazek_2 +".jpg\')";
+			
+			}
+			
+			
+			
+			function box3()
+			{
+			document.getElementById("skrzynki3").style.backgroundImage = "url('otwarta" + obrazek_3 +".jpg\')";
+			}
+				
+				
+			function box4()
+			{
+			document.getElementById("skrzynki4").style.backgroundImage = "url('otwarta" + obrazek_4 +".jpg\')";
+			}
+						
+			function box5()
+			{
+			document.getElementById("skrzynki5").style.backgroundImage = "url('otwarta" +  obrazek_5 +".jpg\')";
+			}
+						
+			function box6()
+			{
+			document.getElementById("skrzynki6").style.backgroundImage = "url('otwarta" + obrazek_6 +".jpg\')";
+			}
+						
+			function box7()
+			{
+			document.getElementById("skrzynki7").style.backgroundImage = "url('otwarta" + obrazek_7 +".jpg\')";
+			}
+						
+								
+			function box8()
+			{
+			document.getElementById("skrzynki8").style.backgroundImage = "url('otwarta" + obrazek_8 +".jpg\')";
+			}
+						
+						
+						
+			function box9()
+			{
+			document.getElementById("skrzynki9").style.backgroundImage = "url('otwarta" + obrazek_9 +".jpg\')";
+			}
+						
+			function box10()
+			{
+			document.getElementById("skrzynki10").style.backgroundImage = "url('otwarta" + obrazek_10 +".jpg\')";
+			}
+			
+			function box11()
+			{
+			document.getElementById("skrzynki11").style.backgroundImage = "url('otwarta" + obrazek_11 +".jpg\')";
+			}
+				
+			function box12()
+			{
+			document.getElementById("skrzynki12").style.backgroundImage = "url('otwarta" + obrazek_12 +".jpg\')";
+			}
+					
+					function bonusclose()
+					{
+						stopuj = 1;
+				        if(locale==1)
+                        document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                        else
+                        document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+						$("#bonus").fadeOut(1300);
+						document.getElementById("bonus1").style.backgroundImage = "url('chest.jpg\')";   
+			            document.getElementById("bonus2").style.backgroundImage = "url('chest.jpg\')";   
+			            document.getElementById("bonus3").style.backgroundImage = "url('chest.jpg\')";   
+						setTimeout(koncze , 1000);
+						}
+						
+					function koncze()
+					{
+                        document.getElementById("bonusextrainfo").style.pointerEvents = 'auto'; 
+                        $("#bonusx2").fadeOut(600); 
+						document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+						stopuj = 1;
+						$("#boxes").fadeTo(1000, 1);
+						extrabonus = 0;
+						stopuj1 = 0;
+						stopuj2 = 0;
+						if(trudnosc_level==2)
+                        combo_counter=combo_counter + 8 ;
+                        else
+						combo_counter=combo_counter + 7 ;
+						
+						document.getElementById("bonus_wynik").innerHTML = " ";
+						bonuswziety1 = 0;
+						bonuswziety2 = 0;
+						bonuswziety3 = 0;
+						
+                          document.getElementById("combo_req").style.color = "yellow" ;
+                          document.getElementById("combo_ilosc").style.color = "yellow" ;
+                          document.getElementById("combodiv").style.color = "white" ;
+
+                          document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+                          pominresetuj();
+                          document.getElementById("bonus1").innerHTML = " ";
+                          document.getElementById("bonus2").innerHTML = " ";
+                          document.getElementById("bonus3").innerHTML = " " ;
+                        ile_zostalo = diament_get - ile_punktow2;
+                            bonus_x2=0;
+                
+             
+                wyzwanie_nagrody();
+                localStorage.setItem('diamenty', diamenty);
+                           
+                        }
+                        
+			      
+						
+					
+					
+					
+						function boxmove1()
+					{
+							playSound9(); 
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						playSound9(); 
+                        if(locale==1)
+                        document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                        else
+                        document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+						if(locale==0)
+						document.getElementById("bonus1").style.backgroundImage = "url('boxmovepl.png\')";  
+						else
+						document.getElementById("bonus1").style.backgroundImage = "url('movebox.png\')";  
+                        document.getElementById("bonus1").innerHTML = "+" + bonus_move;
+                      
+						}
+						
+					function boxtime1()
+					{
+						playSound9(); 
+						
+					    stopuj1 = 0;
+					    stopuj2 = 0;
+					    if(locale==0)
+						document.getElementById("bonus1").style.backgroundImage = "url('boxtimepl.png\')";  
+						else
+						document.getElementById("bonus1").style.backgroundImage = "url('timebox.png\')";  
+                          document.getElementById("bonus1").innerHTML = "+" + bonus_time;
+						}
+						
+					function boxzonk1()
+					{ 
+			            
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						playSound8(); 
+						document.getElementById("bonus1").style.backgroundImage = "url('zonkbox.png\')"; 
+						playSound8(); 
+						}
+					
+					function boxpoints1()
+					{
+						
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						playSound9(); 
+						
+						if(locale==0)
+						document.getElementById("bonus1").style.backgroundImage = "url('boxpointspl.png\')";  
+						else
+						document.getElementById("bonus1").style.backgroundImage = "url('pointsbox.png\')";  
+                        document.getElementById("bonus1").innerHTML = "+" + points_reward;
+						}
+						
+					
+					function boxjoker1()
+					{
+					
+					    document.getElementById("bonus1").style.backgroundImage = "url('otwarta51.jpg\')";  
+						playSound13(); 
+						bonusgrab = 1;
+						$("#bonusextrainfo").fadeTo(1000, 1);
+						$("#tap").fadeTo(3000, 1);
+					
+					}
+					
+						function boxdiament1()
+					{
+                            $("#diament_info").fadeIn(1000);
+                            document.getElementById("diament_add").innerHTML = "+1";
+                            $("#diament_add").fadeIn(1000);
+                            
+                            $("#diament_info").fadeOut(2000);
+                            $("#diament_add").fadeOut(2000);
+						    document.getElementById("bonus1").style.backgroundImage = "url('otwarta53.jpg\')";  
+				
+				            playSound16(); 
+						
+						    diamenty++;
+                      
+                            localStorage.setItem('diamenty', diamenty);
+					
+					}
+					
+					
+					
+					function boxmove2()
+					{
+						playSound9(); 
+					
+						if(locale==0)
+						document.getElementById("bonus2").style.backgroundImage = "url('boxmovepl.png\')";  
+						else
+						document.getElementById("bonus2").style.backgroundImage = "url('movebox.png\')";  
+						stopuj1 = 0;
+					    stopuj2 = 0;
+                         document.getElementById("bonus2").innerHTML = "+" + bonus_move;
+						}
+						
+					function boxtime2()
+					{
+						playSound9(); 
+						
+					    stopuj1 = 0;
+					    stopuj2 = 0;
+					    if(locale==0)
+						document.getElementById("bonus2").style.backgroundImage = "url('boxtimepl.png\')";  
+						else
+						document.getElementById("bonus2").style.backgroundImage = "url('timebox.png\')";  
+                          document.getElementById("bonus2").innerHTML = "+" + bonus_time;
+						}
+						
+					function boxzonk2()
+					{
+						playSound8(); 
+						document.getElementById("bonus2").style.backgroundImage = "url('zonkbox.png\')"; 
+						playSound8(); 
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						}
+						
+				function boxpoints2()
+					{
+						
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						playSound9(); 
+					
+						if(locale==0)
+						document.getElementById("bonus2").style.backgroundImage = "url('boxpointspl.png\')";  
+						else
+						document.getElementById("bonus2").style.backgroundImage = "url('pointsbox.png\')";  
+                         document.getElementById("bonus2").innerHTML = "+" + points_reward;
+						}
+						
+					function boxjoker2()
+					{
+					
+					    document.getElementById("bonus2").style.backgroundImage = "url('otwarta51.jpg\')";  
+						playSound13(); 
+						bonusgrab = 1;
+						$("#bonusextrainfo").fadeTo(1000, 1);
+						$("#tap").fadeTo(3000, 1);
+					
+					}
+					
+							function boxdiament2()
+					{
+                         $("#diament_info").fadeIn(1000);
+                           document.getElementById("diament_add").innerHTML = "+1";
+                            $("#diament_add").fadeIn(1000);
+                            
+                            $("#diament_info").fadeOut(2000);
+                            $("#diament_add").fadeOut(2000);
+						    document.getElementById("bonus2").style.backgroundImage = "url('otwarta53.jpg\')";  
+				
+				            playSound16(); 
+						
+						    diamenty++;
+                      
+                            localStorage.setItem('diamenty', diamenty);
+					
+					}
+					
+					
+					
+					
+					function boxmove3()
+					{
+						playSound9(); 
+				
+						stopuj = 0;
+						stopuj1 = 1;
+					    stopuj2 = 0;
+					    if(locale==0)
+						document.getElementById("bonus3").style.backgroundImage = "url('boxmovepl.png\')";   
+						else
+						document.getElementById("bonus3").style.backgroundImage = "url('movebox.png\')"; 
+                         document.getElementById("bonus3").innerHTML = "+" + bonus_move;
+						}
+						
+					function boxtime3()
+					{
+						
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						playSound9(); 
+						if(locale==0)
+						document.getElementById("bonus3").style.backgroundImage = "url('boxtimepl.png\')";   
+						else
+						document.getElementById("bonus3").style.backgroundImage = "url('timebox.png\')";  
+                          document.getElementById("bonus3").innerHTML = "+" + bonus_time;
+						}
+						
+					function boxzonk3()
+					{
+						playSound8(); 
+						document.getElementById("bonus3").style.backgroundImage = "url('zonkbox.png\')";   
+						playSound8(); 
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						}
+					
+            
+            
+            
+            
+			function boxpoints3()
+					{
+						
+						stopuj1 = 0;
+					    stopuj2 = 0;
+						playSound9(); 
+					
+						if(locale==0)
+						document.getElementById("bonus3").style.backgroundImage = "url('boxpointspl.png\')";  
+						else
+						document.getElementById("bonus3").style.backgroundImage = "url('pointsbox.png\')"; 
+                         document.getElementById("bonus3").innerHTML = "+" + points_reward;
+						
+						}
+						
+				
+				
+				function boxjoker3()
+					{
+					
+					    document.getElementById("bonus3").style.backgroundImage = "url('otwarta51.jpg\')";  
+						playSound13(); 
+						bonusgrab = 1;
+						$("#bonusextrainfo").fadeTo(1000, 1);
+						$("#tap").fadeTo(3000, 1);
+					
+					}
+				
+            		function boxdiament3()
+					{
+                         $("#diament_info").fadeIn(1000);
+                           document.getElementById("diament_add").innerHTML = "+1";
+                            $("#diament_add").fadeIn(1000);
+                            
+                            $("#diament_info").fadeOut(2000);
+                            $("#diament_add").fadeOut(2000);
+						    document.getElementById("bonus3").style.backgroundImage = "url('otwarta53.jpg\')";  
+				
+				            playSound16(); 
+						
+						    diamenty++;
+                      
+                            localStorage.setItem('diamenty', diamenty);
+					
+					}
+            
+            
+				
+				
+				
+				
+				function bonus1check() 
+			{ 
+				if(bonuswziety1==0)
+				{
+				bonuswziety1++;
+				numerbonusu = "bonus1";
+			    x2.play();  
+				document.getElementById("bonus1").style.backgroundImage = "url('open.jpg\')";   
+			
+				bonus_time = Math.floor(Math.random()*4)+3;
+				bonus_move = Math.floor(Math.random()*4)+2;
+				if(trudnosc_level==2)
+				points_reward = Math.floor(Math.random()*20)+20;
+				else
+				points_reward = Math.floor(Math.random()*20)+10;
+				
+				if((liczbabonus1==1)||(liczbabonus1==2))
+			{
+			    
+				setTimeout(boxmove1, 1500);
+			
+				
+				combo_move = bonus_move;
+				ilosc_ruchu = ilosc_ruchu + bonus_move;
+				if(locale==1)
+                document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                else
+                document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+				
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				if((liczbabonus1==5)||(liczbabonus1==6)||(liczbabonus1==7))
+			{
+				
+				setTimeout(boxtime1, 1500);
+				combo_time = bonus_time;
+			
+				odliczanie_sec = odliczanie_sec + bonus_time;
+				if(locale==1)
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                else
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;   
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				if(liczbabonus1==3)
+			{
+				
+				setTimeout(boxpoints1, 1500);
+				
+			
+				ile_punktow2 = ile_punktow2 + points_reward;
+				if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				
+				
+				if(liczbabonus1==4)
+			{
+				setTimeout(boxzonk1, 1500);
+				
+				
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			  } 
+			    
+				if(liczbabonus1==8)
+			{
+				setTimeout(boxjoker1, 1500);
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+			  } 
+				
+				
+				
+				
+			}
+			if(liczbabonus1==9)
+			{
+				setTimeout(boxdiament1, 1500);
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+			  } 
+				
+				
+				
+				
+			}
+                    
+                    
+                    
+                    
+			}
+			}
+			
+			
+			
+			
+			
+			
+			
+				function bonus2check() 
+			{ 
+				if(bonuswziety1==0)
+			{
+				bonuswziety1++;
+				numerbonusu = "bonus2";
+			    x2.play();  
+				document.getElementById("bonus2").style.backgroundImage = "url('open.jpg\')";   
+				
+				
+				bonus_time = Math.floor(Math.random()*3)+2;
+				bonus_move = Math.floor(Math.random()*4)+1;
+				if(trudnosc_level==2)
+				points_reward = Math.floor(Math.random()*20)+20;
+				else
+				points_reward = Math.floor(Math.random()*20)+10;
+				
+				if((liczbabonus2==1)||(liczbabonus2==2))
+			{
+			  
+				setTimeout(boxmove2, 1500);
+			    combo_move = bonus_move;
+				
+			
+				ilosc_ruchu = ilosc_ruchu + bonus_move;
+	           if(locale==1)
+                document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                else
+                document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose, 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				if((liczbabonus2==5)||(liczbabonus2==6)||(liczbabonus2==7))
+				{
+			
+				setTimeout(boxtime2, 1500);
+		     	combo_time = bonus_time;
+                    
+				odliczanie_sec = odliczanie_sec + bonus_time;
+				if(locale==1)
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                else
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;    
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				if(liczbabonus2==3)
+			{
+				
+				setTimeout(boxpoints2, 1500);
+				
+			
+				ile_punktow2 = ile_punktow2 + points_reward;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				
+				
+				if(liczbabonus2==4)
+				{
+				setTimeout(boxzonk2, 1500);
+			
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+					if(liczbabonus2==8)
+			{
+				setTimeout(boxjoker2, 1500);
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+			  } 
+				
+				
+				
+				
+			}
+					if(liczbabonus2==9)
+			{
+				setTimeout(boxdiament2, 1500);
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+			  } 
+				
+				
+				
+				
+			}
+				
+				
+				
+				}
+				
+			} 
+			
+			
+			
+			
+			
+			
+			
+				function bonus3check() 
+			{ 
+				if(bonuswziety1==0)
+				{
+			    bonuswziety1++;
+			    x2.play();  
+				document.getElementById("bonus3").style.backgroundImage = "url('open.jpg\')";   
+				
+				
+				bonus_time = Math.floor(Math.random()*3)+2;
+				bonus_move = Math.floor(Math.random()*4)+1;
+				if(trudnosc_level==2)
+				points_reward = Math.floor(Math.random()*20)+20;
+				else
+				points_reward = Math.floor(Math.random()*20)+10;
+				
+				if((liczbabonus3==1)||(liczbabonus3==2))
+				{
+			
+				setTimeout(boxmove3, 1500);
+				combo_move = bonus_move;
+				
+			
+				ilosc_ruchu = ilosc_ruchu + bonus_move;
+                 if(locale==1)
+                document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                else
+                document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				if((liczbabonus3==5)||(liczbabonus3==6)||(liczbabonus3==7))
+				{
+				
+				setTimeout(boxtime3, 1500);
+			    combo_time = bonus_time;
+                    
+				odliczanie_sec = odliczanie_sec + bonus_time;
+				if(locale==1)
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                else
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;    
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				if(liczbabonus3==3)
+			{
+				
+				setTimeout(boxpoints3, 1500);
+			
+			
+				ile_punktow2 = ile_punktow2 + points_reward;
+								if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+				
+				
+				if(liczbabonus3==4)
+				{
+				setTimeout(boxzonk3, 1500);
+				
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+				}
+			}
+					if(liczbabonus3==8)
+			{
+				setTimeout(boxjoker3, 1500);
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+			  } 
+				
+				
+				
+				
+			}
+					if(liczbabonus3==9)
+			{
+				setTimeout(boxdiament3, 1500);
+				if(extrabonus==0)
+				{
+				setTimeout(bonusclose , 3000);
+				}
+				else
+				{
+				extrabonus--;
+				bonuswziety1=0;
+			  } 
+				
+				
+				
+				
+			}
+				
+				
+				
+				
+				}
+				
+			} 
+			
+				
+				
+				
+				
+				
+				
+			
+				
+						
+			function playAudio1() 
+			{  
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+			    if((check<2)&&(powtorz1==0)&&(pomin1==0))
+				{
+				powtorz1++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+			    zanik1 = 1;
+				
+			    x.play(); 
+			    document.getElementById("skrzynki1").style.backgroundImage = "url('open.jpg\')";   
+			    box1(); 
+				
+			    parki[temp_para] = obrazek_1;
+			 
+			    if(check==2)
+			    paircheck(); 
+				 }
+				if(stopuj2==1)
+				hideall3();
+			} 
+			
+			
+			
+			function playAudio2() 
+			{ 
+				
+			if(stopuj1==1)
+			{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				if((check<2)&&(powtorz2==0)&&(pomin2==0))
+				{
+				powtorz2++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik2 = 1;
+			    
+			    x2.play();  
+				document.getElementById("skrzynki2").style.backgroundImage = "url('open.jpg\')";   
+				box2(); 
+				
+				parki[temp_para] = obrazek_2;
+			   
+				if(check==2)
+				paircheck();
+				}
+				
+				if(stopuj2==1)
+				hideall3();
+			} 
+			
+			
+			function playAudio3() 
+			{ 
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+				if((check<2)&&(powtorz3==0)&&(pomin3==0))
+				{
+				powtorz3++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik3=1;
+				
+				
+			    x3.play();  
+				document.getElementById("skrzynki3").style.backgroundImage = "url('open.jpg\')";   
+				box3(); 
+				
+				parki[temp_para] = obrazek_3;
+			
+				if(check==2)
+				paircheck();
+			    }
+			    
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function playAudio4() 
+			{ 	
+			  if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+			      if((check<2)&&(powtorz4==0)&&(pomin4==0))
+				{
+				powtorz4++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik4=1;
+				
+			     x4.play();  
+				document.getElementById("skrzynki4").style.backgroundImage = "url('open.jpg\')";   
+				box4(); 
+				
+				parki[temp_para] = obrazek_4;
+			
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			
+			function playAudio5() 
+			{    
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+				if((check<2)&&(powtorz5==0)&&(pomin5==0))
+				{
+				powtorz5++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik5=1;
+				
+			     x5.play();  
+				document.getElementById("skrzynki5").style.backgroundImage = "url('open.jpg\')";   
+				box5(); 
+				
+				parki[temp_para] = obrazek_5;
+			
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function playAudio6() 
+			{
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+			 
+				if((check<2)&&(powtorz6==0)&&(pomin6==0))
+				{
+				powtorz6++;
+				check++;
+				stopuj = 0;
+				zanik6=1;
+				temp_para++;
+				
+				document.getElementById("skrzynki6").style.backgroundImage = "url('open.jpg\')";   
+				box6(); 
+				
+				parki[temp_para] = obrazek_6;
+				
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function playAudio7() 
+			  {
+			  
+			  if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+				if((check<2)&&(powtorz7==0)&&(pomin7==0))
+				{
+				temp_para++;
+				powtorz7++;
+				check++;
+				stopuj = 0;
+				zanik7 = 1;
+				
+			     x7.play();  
+				document.getElementById("skrzynki7").style.backgroundImage = "url('open.jpg\')";   
+				box7(); 
+				
+				parki[temp_para] = obrazek_7;
+				
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function playAudio8() 
+			{   
+			
+			if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+			
+			     if((check<2)&&(powtorz8==0)&&(pomin8==0))
+				{
+				temp_para++;
+				powtorz8++;
+				check++;
+				stopuj = 0;
+				zanik8 = 1;
+				
+			    x8.play(); 
+				document.getElementById("skrzynki8").style.backgroundImage = "url('open.jpg\')";   
+				box8(); 
+				
+				parki[temp_para] = obrazek_8;
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function playAudio9() 
+			{ 
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+				if((check<2)&&(powtorz9==0)&&(pomin9==0))
+				{
+				powtorz9++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik9=1;
+				
+			    x9.play(); 
+				document.getElementById("skrzynki9").style.backgroundImage = "url('open.jpg\')";   
+				box9();
+				
+			    parki[temp_para] = obrazek_9;
+			
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function playAudio10() 
+			{  
+				
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+				if((check<2)&&(powtorz10==0)&&(pomin10==0))
+				{
+				powtorz10++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik10=1;
+				
+			    x10.play(); 
+				document.getElementById("skrzynki10").style.backgroundImage = "url('open.jpg\')";   
+				box10(); 
+				
+				parki[temp_para] = obrazek_10;
+				
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			
+			function playAudio11() 
+			{ 
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				
+				if((check<2)&&(powtorz11==0)&&(pomin11==0))
+				{
+				powtorz11++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik11=1;
+				
+				
+			    x11.play(); 
+				document.getElementById("skrzynki11").style.backgroundImage = "url('open.jpg\')";   
+				box11(); 
+				
+				parki[temp_para] = obrazek_11;
+			
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			
+			
+			function playAudio12() 
+			{ 
+				if(stopuj1==1)
+				{
+			    clearTimeout(funkcjahide);
+				hideall2();
+			}
+			
+				if((check<2)&&(powtorz12==0)&&(pomin12==0))
+				{
+				powtorz12++;
+				temp_para++;
+				check++;
+				stopuj = 0;
+				zanik12=1;
+				
+			     x12.play(); 
+				document.getElementById("skrzynki12").style.backgroundImage = "url('open.jpg\')";   
+				box12(); 
+				
+				parki[temp_para] = obrazek_12;
+				
+				if(check==2)
+				paircheck();
+			    }
+			    if(stopuj2==1)
+				hideall3();
+			} 
+			
+			function zestaw4()
+			{
+				
+			
+				$("#skrzynki11").fadeOut(1);
+				$("#skrzynki12").fadeOut(1);
+				
+				
+				znaleziona=0;
+				pokaz4();
+				level4_random();
+				}
+			
+			
+			function zestaw3()
+			{
+				
+			
+				$("#skrzynki9").fadeOut(1);
+				$("#skrzynki10").fadeOut(1);
+				$("#skrzynki11").fadeOut(1);
+				$("#skrzynki12").fadeOut(1);
+				
+			
+				znaleziona=0;
+				pokaz3();
+				level3_random();
+				}
+			
+			function fireworksa()
+			{
+			
+				$("#fire2").fadeIn(300);
+				$("#fire2").fadeOut(600);
+			}
+			
+			
+			function fireworksstart()
+				{
+				$("#fire2").fadeIn(1);
+				$("#fire2").fadeOut(700);
+				$("#fire1").fadeIn(300);
+				$("#fire1").fadeOut(900);
+				$("#fire3").fadeIn(800);
+				$("#fire3").fadeOut(800);
+				playSound2();
+				}
+			
+			
+			
+			
+				
+			function fireworks4()
+			{
+				playSound2();
+				$("#fire1").fadeIn(1);
+				$("#fire1").fadeOut(2000);
+			
+				$("#fire2").fadeIn(300);
+				$("#fire2").fadeOut(2500);
+				
+				$("#fire3").fadeIn(500);
+				$("#fire3").fadeOut(1000);
+				
+				setTimeout(zestaw, 1100); 
+			}
+			
+			
+			function fireworks3()
+			{
+				$("#fire3").fadeIn(1);
+				$("#fire3").fadeOut(2000);
+				$("#fire2").fadeIn(300);
+				$("#fire2").fadeOut(2500);
+				$("#fire1").fadeIn(1000);
+				$("#fire1").fadeOut(1000);
+				setTimeout(zestaw4, 1100); 
+				}
+			
+				function fireworks2()
+				{
+				$("#fire2").fadeIn(1);
+				$("#fire2").fadeOut(2000);
+				$("#fire1").fadeIn(300);
+				$("#fire1").fadeOut(2500);
+				$("#fire3").fadeIn(500);
+				$("#fire3").fadeOut(1000);
+				setTimeout(zestaw3, 1100); 
+				}
+			
+				function fireworks1()
+				{
+				$("#fire1").fadeIn(1);
+				$("#fire1").fadeOut(2000);
+				$("#fire2").fadeIn(300);
+				$("#fire2").fadeOut(2500);
+				$("#fire3").fadeIn(1000);
+				$("#fire3").fadeOut(1000);
+				setTimeout(zestaw2, 1100); 
+			}
+				
+			
+			
+			function zestaw2()
+			{
+				
+				
+				para1 = Math.floor(Math.random()*5)+33;
+				para2 = Math.floor(Math.random()*5)+22;
+				para3 = Math.floor(Math.random()*8)+14;
+				
+				$("#skrzynki7").fadeOut(1);
+			
+				$("#skrzynki8").fadeOut(1);
+			
+				$("#skrzynki9").fadeOut(1);
+				
+				$("#skrzynki10").fadeOut(1);
+			
+				$("#skrzynki11").fadeOut(1);
+			
+				$("#skrzynki12").fadeOut(1);
+				znaleziona=0;
+				pokaz2();
+				level2_random();
+				}
+			
+			function zestaw1()
+			{  
+			    
+				
+				hideall();
+				if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+                if(locale==1)
+                document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                else
+                document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+			
+				
+				$("#napisy").fadeOut(0);
+				
+				
+				$("#fire1").fadeOut(0);
+				$("#fire2").fadeOut(0);
+				$("#fire3").fadeOut(0);
+			
+			
+				$("#skrzynki5").fadeOut(1);
+				$("#skrzynki6").fadeOut(1);
+				$("#skrzynki7").fadeOut(1);
+				$("#skrzynki8").fadeOut(1);
+				$("#skrzynki9").fadeOut(1);
+				$("#skrzynki10").fadeOut(1);
+				$("#skrzynki11").fadeOut(1);
+				$("#skrzynki12").fadeOut(1);
+			
+				
+				znaleziona = 0;
+				pokaz1();
+			    level1_random();
+				if(trudnosc_level==1)
+				ilosc_ruchu = 3;
+				else
+				ilosc_ruchu = 4;
+				}
+			
+			function extrapoints()
+			{
+				
+				if((poziom_value==5)&&(trudnosc_level==1))
+				{
+                    
+				
+				if(locale==0)
+                {
+                $("#combo").fadeIn(500);
+				document.getElementById("combo").style.backgroundImage = "url('punkty5.png')";
+                }
+				else
+                {
+                $("#combo").fadeIn(500);
+				document.getElementById("combo").style.backgroundImage = "url('extra5.png')";
+                }
+                    
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 5;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==5)&&(trudnosc_level==2))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty10.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra10.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 10;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				
+				
+				if((poziom_value==10)&&(trudnosc_level==1))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty10.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra10.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 10;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==10)&&(trudnosc_level==2))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==15)&&(trudnosc_level==2))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+			
+				if((poziom_value==20)&&(trudnosc_level==1))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('pumkty15.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra15.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 15;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==20)&&(trudnosc_level==2))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('pumkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				
+				if((poziom_value==30)&&(trudnosc_level==1))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+								if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==30)&&(trudnosc_level==2))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('pumkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+								if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==40)&&(trudnosc_level==2))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('pumkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				
+				if((poziom_value==40)&&(trudnosc_level==1))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+                if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				if((poziom_value==50)&&(trudnosc_level==1))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+								if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+                 }
+				
+				if((poziom_value==60)&&(trudnosc_level==1))
+				{
+				$("#combo").fadeIn(500);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('punkty20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('extra20.png')";
+				$("#combo").fadeOut(600);
+				ile_punktow2 = ile_punktow2 + 20;
+									if(locale==1)
+                document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+                else
+                document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+				}
+				
+				
+                ile_zostalo = diament_get - ile_punktow2;
+                wyzwanie_nagrody();
+                localStorage.setItem('diamenty', diamenty);
+                           
+                        }
+                
+                
+                
+                
+				
+				
+				
+				
+				
+				
+			
+			
+			
+			function zestaw()
+			{
+				
+				$("#skrzynki1").fadeTo(0, 0);
+					
+				$("#skrzynki2").fadeTo(0, 0);
+			
+				$("#skrzynki3").fadeTo(0, 0);
+			
+				$("#skrzynki4").fadeTo(0, 0);
+			
+				$("#skrzynki5").fadeTo(0, 0);
+			
+				$("#skrzynki6").fadeTo(0, 0);
+				
+			
+				$("#skrzynki7").fadeTo(0, 0);
+			
+				$("#skrzynki8").fadeTo(0, 0);
+			
+				$("#skrzynki9").fadeTo(0, 0);
+			
+				$("#skrzynki10").fadeTo(0, 0);
+			
+				$("#skrzynki11").fadeTo(0, 0);
+			
+				$("#skrzynki12").fadeTo(0, 0);
+					
+				if(poziom_value==5)
+				{
+				$("#combo").fadeIn(900);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('poziom5.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('level5.png')";
+				$("#combo").fadeOut(900);
+				}
+					
+					
+				if(poziom_value==10)
+				{
+				$("#combo").fadeIn(900);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('poziom10.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('level10.png')";
+				$("#combo").fadeOut(900);
+				}
+				
+				if(poziom_value==15)
+				{
+				$("#combo").fadeIn(900);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('poziom15.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('level15.png')";
+				$("#combo").fadeOut(900);
+				}
+				
+				
+				
+				
+				if(poziom_value==20)
+				{
+				$("#combo").fadeIn(900);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('poziom20.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('level20.png')";
+				$("#combo").fadeOut(900);
+				}
+				
+				if(poziom_value==30)
+				{
+				$("#combo").fadeIn(900);
+				if(locale==0)
+				document.getElementById("combo").style.backgroundImage = "url('poziom30.png')";
+				else
+				document.getElementById("combo").style.backgroundImage = "url('level30.png')";
+				$("#combo").fadeOut(900);
+				}
+				
+				
+				
+				setTimeout(extrapoints, 1700);
+				
+				
+				znaleziona = 0;
+				pokaz();
+				level5_random();
+				
+			}
+			
+					
+			
+					
+					
+					
+				function odliczanie2()
+					{
+					     
+					    if((stopuj==0)&&(timer==1))
+						odliczanie_sec--;
+                       
+						
+                        
+                        
+						if(odliczanie_sec>40)
+			           document.getElementById("zegar").style.color = "blue" ;
+			           else
+			           document.getElementById("zegar").style.color = "white" ;
+						
+						
+						if(locale==1)
+                        document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                        else
+                        document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+
+					
+                     
+                       if((timer==0)&&(locale==1))  
+                       document.getElementById("zegar").innerHTML = "TIME: --"; 
+                           if((timer==0)&&(locale!=1))  
+                       document.getElementById("zegar").innerHTML = "CZAS: --";   
+                        
+                        if(odliczanie_sec<=10)
+						{
+						    document.getElementById("zegar").style.color = "orange" ;
+						
+						
+						}
+                        
+						if(odliczanie_sec<=5)
+						{
+						    document.getElementById("zegar").style.color = "red" ;
+						
+						x15.play();
+						}
+                        
+						else
+						{
+							warning=0;
+						x15.pause();
+						}
+						if(odliczanie_sec==5)
+						var warning=1;
+						
+						
+                        
+						if(warning==1)
+						{
+						$("#combo").fadeIn(900);
+						if(locale==0)
+				       document.getElementById("combo").style.backgroundImage = "url('5secpl.png')";
+				      else
+				      document.getElementById("combo").style.backgroundImage = "url('5sec.png')";
+				      $("#combo").fadeOut(900);
+                            warning=0;
+						}
+						
+						if(odliczanie_sec==0)
+						{
+			                playSound3(); 
+						    disableclick();
+							stopuj = 1;
+					       $("#combo").fadeIn(2000);
+					       if(locale==0)
+				           document.getElementById("combo").style.backgroundImage = "url('koniecgry.png')";
+				           else
+				            document.getElementById("combo").style.backgroundImage = "url('gameover.png')";
+				           $("#combo").fadeOut(1000);
+				           setTimeout(timekoniec, 3000);
+							odliczanie_sec = 20;
+							
+							document.getElementById("wartosczegara").style.color = "green" ;
+							if(locale==0)
+							document.getElementById("game").style.backgroundImage = "url('koniecczasupl.png')";
+							else
+							document.getElementById("game").style.backgroundImage = "url('notime.png')";
+							newgame = 1;  
+                            
+                            
+                      
+                        
+							
+			          }
+			               
+			               
+			               
+					 
+			               
+					    if(odliczanie_sec<0)
+						odliczanie_sec=0;
+			
+					
+						odliczanie();
+						}
+					
+					   function odliczanie()
+					   {
+					       setTimeout(odliczanie2, 1000);
+						  
+						}
+						
+			
+							function timekoniec()
+							
+							{
+							if(locale==1)
+                            document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                            else
+                            document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+							$("#napisy").fadeIn(2000);
+							document.getElementById("wynik").innerHTML = ile_punktow2;
+								}
+							
+							
+							
+					
+			function* shuffle(array) {
+			
+			    var i = array.length;
+			
+			    while (i--) {
+			        yield array.splice(Math.floor(Math.random() * (i+1)), 1)[0];
+			    }
+			
+			}
+			
+			function level1_random()
+			{
+				
+				talia = 10;
+
+					var liczba1;
+					var liczba2;
+
+					liczba1 = Math.floor(Math.random()*talia)+1;
+	
+						do
+						{
+							liczba2 = Math.floor(Math.random()*talia)+1;
+						   } while (liczba2==liczba1)
+
+				
+			     var ranNums = shuffle([liczba1,  liczba2, liczba1,  liczba2]);
+
+				para1 = ranNums.next().value; 
+				para2 = ranNums.next().value; 
+				para3 = ranNums.next().value;
+				para4 = ranNums.next().value; 
+			
+				
+				obrazek_1 = para1;
+				obrazek_2 = para2;
+				obrazek_3 = para3;
+				obrazek_4 = para4;
+			
+			}
+			
+			
+			
+			
+			
+			function level2_random()
+			{
+				
+				talia = 10;
+		
+				
+					
+					var liczba1;
+					var liczba2;
+					var liczba3;
+      
+					
+						liczba1 = Math.floor(Math.random()*talia)+11;
+						
+						
+						
+						do
+						{
+							liczba2 = Math.floor(Math.random()*talia)+11;
+						   } while (liczba2==liczba1)
+						
+					
+						
+						do
+						{
+							liczba3 = Math.floor(Math.random()*talia)+11;
+						}while ((liczba3==liczba1)||(liczba3==liczba2))
+						
+					
+	
+					
+			     var ranNums = shuffle([liczba1,  liczba2,  liczba3, liczba1,  liczba2,  liczba3]);
+				
+				
+			
+				para1 = ranNums.next().value; 
+				para2 = ranNums.next().value; 
+				para3 = ranNums.next().value;
+				para4 = ranNums.next().value; 
+				para5 = ranNums.next().value; 
+				para6 = ranNums.next().value; 
+				
+				obrazek_1 = para1;
+				obrazek_2 = para2;
+				obrazek_3 = para3;
+				
+				obrazek_4 = para4;
+				obrazek_5 = para5;
+			    obrazek_6 = para6;
+			}
+			
+			
+			function level3_random()
+			{
+				
+             talia = 10;
+                
+             if(multiplier==1)
+             bonuschance = Math.floor(Math.random()*10)+1; 
+             else
+             bonuschance = Math.floor(Math.random()*15)+1;  
+             bonuschance2 = Math.floor(Math.random()*4)+1;
+             if(multiplier2==1)
+             jokerchance = Math.floor(Math.random()*10)+1; 
+             else
+             jokerchance = Math.floor(Math.random()*15)+1;  
+             jokerchance2 = Math.floor(Math.random()*4)+1;  
+              
+                
+             
+		
+		
+				
+					
+					var liczba1;
+					var liczba2;
+					var liczba3;
+					var liczba4;
+					
+					
+			        
+					
+						liczba1 = Math.floor(Math.random()*talia)+21;
+						
+						
+						
+						do
+						{
+							liczba2 = Math.floor(Math.random()*talia)+21;
+						   } while (liczba2==liczba1)
+						
+					
+						
+						do
+						{
+							liczba3 = Math.floor(Math.random()*talia)+21;
+						}while ((liczba3==liczba1)||(liczba3==liczba2))
+						
+					
+						do
+					    {
+							liczba4 = Math.floor(Math.random()*talia)+21;
+							}while ((liczba4==liczba1)||(liczba4==liczba2)||(liczba4==liczba3))
+					
+                                
+                                
+               if(((bonuschance==5)||(bonuschance==8))&&(odblokuj2==1))
+                {    
+               
+               if((bonuschance2==1)&&(extrabonus==0))
+               liczba1=52;
+               if((bonuschance2==2)&&(extrabonus==0))
+               liczba2=52;
+               if((bonuschance2==3)&&(extrabonus==0))
+               liczba3=52;
+               if((bonuschance2==4)&&(extrabonus==0))
+               liczba4=52;
+                }
+                  
+                if(((jokerchance==5)||(jokerchance==8))&&((odblokuj3==1)&&(gamemode!=1)))
+                {    
+               
+               if((jokerchance2==1)&&(bonusgrab==0))
+               liczba1=51;
+               if((jokerchance2==2)&&(bonusgrab==0))
+               liczba2=51;
+               if((jokerchance2==3)&&(bonusgrab==0))
+               liczba3=51;
+               if((jokerchance2==4)&&(bonusgrab==0))
+               liczba4=51;
+                }
+                
+                
+                                
+                                
+			     var ranNums = shuffle([liczba1,  liczba2,  liczba3, liczba4, liczba1,  liczba2,  liczba3, liczba4]);
+				
+				
+			
+				para1 = ranNums.next().value; 
+				para2 = ranNums.next().value; 
+				para3 = ranNums.next().value;
+				para4 = ranNums.next().value; 
+				para5 = ranNums.next().value; 
+				para6 = ranNums.next().value; 
+				para7 = ranNums.next().value; 
+				para8 = ranNums.next().value; 
+				
+				obrazek_1 = para1;
+				obrazek_2 = para2;
+				obrazek_3 = para3;
+				obrazek_4 = para4;
+				
+			
+				obrazek_5 = para5;
+			    obrazek_6 = para6;
+				obrazek_7 = para7;
+				obrazek_8 = para8;
+			}
+			
+			
+			function level4_random()
+			{
+				
+				talia = 10;
+				
+				if(multiplier==1)
+                bonuschance = Math.floor(Math.random()*10)+1; 
+                else
+                bonuschance = Math.floor(Math.random()*15)+1;   
+                bonuschance2 = Math.floor(Math.random()*5)+1;
+                
+                if(multiplier2==1)
+                jokerchance = Math.floor(Math.random()*10)+1; 
+                else
+                jokerchance = Math.floor(Math.random()*15)+1; 
+                jokerchance2 = Math.floor(Math.random()*5)+1;  
+                
+                diamondchance = Math.floor(Math.random()*10)+1; 
+                
+                if(trudnosc_level==2)
+                diamondchance = Math.floor(Math.random()*5)+1; 
+					
+					var liczba1;
+					var liczba2;
+					var liczba3;
+					var liczba4;
+					var liczba5;
+					
+					
+			        
+					
+						liczba1 = Math.floor(Math.random()*talia)+31;
+						
+						
+						
+						do
+						{
+							liczba2 = Math.floor(Math.random()*talia)+31;
+						   } while (liczba2==liczba1)
+						
+					
+						
+						do
+						{
+							liczba3 = Math.floor(Math.random()*talia)+31;
+						}while ((liczba3==liczba1)||(liczba3==liczba2))
+						
+					
+						do
+					    {
+							liczba4 = Math.floor(Math.random()*talia)+31;
+							}while ((liczba4==liczba1)||(liczba4==liczba2)||(liczba4==liczba3))
+					
+						do
+					   {
+							liczba5 = Math.floor(Math.random()*talia)+31;
+							}while ((liczba5==liczba1)||(liczba5==liczba2)||(liczba5==liczba3)||(liczba5==liczba4))
+					
+					
+               if(((bonuschance==5)||(bonuschance==8))&&(odblokuj2==1))
+                {    
+               
+               if((bonuschance2==1)&&(extrabonus==0))
+               liczba1=52;
+               if((bonuschance2==2)&&(extrabonus==0))
+               liczba2=52;
+               if((bonuschance2==3)&&(extrabonus==0))
+               liczba3=52;
+               if((bonuschance2==4)&&(extrabonus==0))
+               liczba4=52;
+               if((bonuschance2==5)&&(extrabonus==0))
+               liczba5=52;
+                }            
+                                
+              if(((jokerchance==5)||(jokerchance==8))&&((odblokuj3==1)&&(gamemode!=1)))
+                {    
+               
+               if((jokerchance2==1)&&(bonusgrab==0))
+               liczba1=51;
+               if((jokerchance2==2)&&(bonusgrab==0))
+               liczba2=51;
+               if((jokerchance2==3)&&(bonusgrab==0))
+               liczba3=51;
+               if((jokerchance2==4)&&(bonusgrab==0))
+               liczba4=51;
+               if((jokerchance2==5)&&(bonusgrab==0))
+               liczba5=51;
+                }
+                
+                		
+				if((diamondchance==5)||(diamondchance==3))
+                {    
+               
+               if((diamondchance2==1)&&(trudnosc_level==2))
+               liczba1=53;
+               if((diamondchance2==2)&&(trudnosc_level==2))
+               liczba2=53;
+               if((diamondchance2==3)&&(trudnosc_level==2))
+               liczba3=53;
+               if((diamondchance2==4)&&(trudnosc_level==2))
+               liczba4=53;
+               if((diamondchance2==5)&&(trudnosc_level==2))
+               liczba5=53;
+               if((diamondchance2==6)&&(trudnosc_level==2))
+               liczba6=53;
+                }
+                
+                
+					
+				
+			     var ranNums = shuffle([liczba1, liczba2, liczba3, liczba4, liczba5, liczba1, liczba2, liczba3, liczba4, liczba5]);
+				
+				
+			
+				para1 = ranNums.next().value; 
+				para2 = ranNums.next().value; 
+				para3 = ranNums.next().value;
+				para4 = ranNums.next().value; 
+				para5 = ranNums.next().value; 
+				para6 = ranNums.next().value; 
+				para7 = ranNums.next().value; 
+				para8 = ranNums.next().value; 
+				para9 = ranNums.next().value; 
+				para10 = ranNums.next().value; 
+				
+				obrazek_1 = para1;
+				obrazek_2 = para2;
+				obrazek_3 = para3;
+				obrazek_4 = para4;
+				obrazek_5 = para5;
+				
+			    obrazek_6 = para6;
+				obrazek_7 = para7;
+				obrazek_8 = para8;
+				obrazek_9 = para9;
+				obrazek_10 = para10;
+			}
+			
+			
+			function level5_random()
+			{
+				
+							
+				talia = 50;
+                
+                  bonuschance = Math.floor(Math.random()*15)+1;
+                
+			     if(multiplier==1)
+                 bonuschance = Math.floor(Math.random()*10)+1; 
+                 
+                 
+                
+                bonuschance2 = Math.floor(Math.random()*6)+1;
+                
+                jokerchance = Math.floor(Math.random()*15)+1; 
+                
+                if(multiplier2==1)
+                jokerchance = Math.floor(Math.random()*10)+1; 
+                
+                
+                
+                jokerchance2 = Math.floor(Math.random()*6)+1; 
+                
+				diamondchance = Math.floor(Math.random()*10)+1; 
+                
+                if(trudnosc_level==2)
+                diamondchance = Math.floor(Math.random()*5)+1; 
+                
+				
+					
+			
+			        var liczba1;
+					var liczba2;
+					var liczba3;
+					var liczba4;
+					var liczba5;
+					var liczba6;
+					
+			        
+					
+						liczba1 = Math.floor(Math.random()*talia)+1;
+						
+						
+						
+						do
+						{
+							liczba2 = Math.floor(Math.random()*talia)+1;
+						   } while (liczba2==liczba1)
+						
+					
+						
+						do
+						{
+							liczba3 = Math.floor(Math.random()*talia)+1;
+						}while ((liczba3==liczba1)||(liczba3==liczba2))
+						
+					
+						do
+					    {
+							liczba4 = Math.floor(Math.random()*talia)+1;
+							}while ((liczba4==liczba1)||(liczba4==liczba2)||(liczba4==liczba3))
+					
+						do
+					   {
+							liczba5 = Math.floor(Math.random()*talia)+1;
+							}while ((liczba5==liczba1)||(liczba5==liczba2)||(liczba5==liczba3)||(liczba5==liczba4))
+					
+						do
+					{
+						liczba6= Math.floor(Math.random()*talia)+1;
+						}while ((liczba6==liczba1)||(liczba6==liczba2)||(liczba6==liczba3)||(liczba6==liczba4)||(liczba6==liczba5))
+					
+				if(((bonuschance==5)||(bonuschance==8))&&(odblokuj2==1))
+                {    
+               
+               if((bonuschance2==1)&&(extrabonus==0))
+               liczba1=52;
+               if((bonuschance2==2)&&(extrabonus==0))
+               liczba2=52;
+               if((bonuschance2==3)&&(extrabonus==0))
+               liczba3=52;
+               if((bonuschance2==4)&&(extrabonus==0))
+               liczba4=52;
+               if((bonuschance2==5)&&(extrabonus==0))
+               liczba5=52;
+               if((bonuschance2==6)&&(extrabonus==0))
+               liczba6=52;
+                }      
+					
+					                       
+                 if(((jokerchance==5)||(jokerchance==8))&&(odblokuj3==1)&&(gamemode!=1))
+                {    
+               
+               if((jokerchance2==1)&&(bonusgrab==0))
+               liczba1=51;
+               if((jokerchance2==2)&&(bonusgrab==0))
+               liczba2=51;
+               if((jokerchance2==3)&&(bonusgrab==0))
+               liczba3=51;
+               if((jokerchance2==4)&&(bonusgrab==0))
+               liczba4=51;
+               if((jokerchance2==5)&&(bonusgrab==0))
+               liczba5=51;
+               if((jokerchance2==6)&&(bonusgrab==0))
+               liczba6=51;
+                }
+
+				
+				if((diamondchance==5)||(diamondchance==3))
+                {    
+               
+               if((diamondchance2==1)&&(trudnosc_level==2))
+               liczba1=53;
+               if((diamondchance2==2)&&(trudnosc_level==2))
+               liczba2=53;
+               if((diamondchance2==3)&&(trudnosc_level==2))
+               liczba3=53;
+               if((diamondchance2==4)&&(trudnosc_level==2))
+               liczba4=53;
+               if((diamondchance2==5)&&(trudnosc_level==2))
+               liczba5=53;
+               if((diamondchance2==6)&&(trudnosc_level==2))
+               liczba6=53;
+                }
+				
+                
+				
+				
+			   var ranNums = shuffle([liczba1, liczba2, liczba3, liczba4, liczba5, liczba6, liczba1, liczba2, liczba3, liczba4, liczba5, liczba6]);
+				
+				
+			
+				para1 = ranNums.next().value; 
+				para2 = ranNums.next().value; 
+				para3 = ranNums.next().value;
+				para4 = ranNums.next().value; 
+				para5 = ranNums.next().value; 
+				para6 = ranNums.next().value; 
+				para7 = ranNums.next().value; 
+				para8 = ranNums.next().value; 
+				para9 = ranNums.next().value; 
+				para10 = ranNums.next().value; 
+				para11 = ranNums.next().value; 
+				para12 = ranNums.next().value; 
+				
+				obrazek_1 = para1;
+				obrazek_2 = para2;
+				obrazek_3 = para3;
+				obrazek_4 = para4;
+				obrazek_5 = para5;
+				
+			    obrazek_6 = para6;
+				obrazek_7 = para7;
+				obrazek_8 = para8;
+				obrazek_9 = para9;
+				obrazek_10 = para10;
+				obrazek_11 = para11;
+				obrazek_12 = para12;
+			}
+			
+			function unlock()
+            {    
+            
+             if(diamenty<1)
+             diamenty=0;
+           
+             playSound16(); 
+               
+                $("#diamenty_png2").fadeIn(1000);
+                $("#bonus_bonus").fadeOut(1000); 
+                $("#joker_bonus").fadeOut(1000); 
+                if(odblokuj2==1)
+                {
+                if(locale==1)
+                document.getElementById("unlock1").innerHTML ="UNLOCKED";
+                else
+                document.getElementById("unlock1").innerHTML ="ODBLOKOWANE";  
+              	document.getElementById("unlock1").style.pointerEvents = 'none'; 
+                    
+                    
+                document.getElementById("diamenty_png2").innerHTML ="--";   
+                $("#diamenty_png3").fadeIn(1000);
+                }
+                if(odblokuj3==1)
+                    {
+                if(locale==1)
+                document.getElementById("unlock2").innerHTML ="UNLOCKED";
+                else
+                document.getElementById("unlock2").innerHTML ="ODBLOKOWANE";  
+                document.getElementById("unlock2").style.pointerEvents = 'none';
+                document.getElementById("diamenty_png3").innerHTML ="--";   
+                $("#diamenty_png4").fadeIn(1000);
+                }
+                if(odblokuj4==1)
+                {
+                if(locale==1)
+                document.getElementById("unlock3").innerHTML ="UNLOCKED";
+                else
+                document.getElementById("unlock3").innerHTML ="ODBLOKOWANE";  
+                document.getElementById("unlock3").style.pointerEvents = 'none';
+                document.getElementById("diamenty_png4").innerHTML ="--";   
+                $("#diamenty_png5").fadeIn(1000);
+                }
+              
+                if(odblokuj4==1)
+                $("#diamenty_png6").fadeIn(1000);
+                
+                $("#unlock1").fadeIn(1000);
+                  if(odblokuj2==1)
+                $("#unlock2").fadeIn(1000);
+                  if(odblokuj3==1)
+                $("#unlock3").fadeIn(1000);
+                  if(odblokuj4==1)
+                $("#unlock4").fadeIn(1000);
+                  if(odblokuj4==1)
+                $("#unlock5").fadeIn(1000);
+          
+          
+                $("#unlock1opis").fadeIn(1000);
+                   if(odblokuj2==1)
+                $("#unlock2opis").fadeIn(1000);
+                    if(odblokuj3==1)
+                $("#unlock3opis").fadeIn(1000);
+                    if(odblokuj4==1)
+                $("#unlock4opis").fadeIn(1000);
+                    if(odblokuj4==1)
+                $("#unlock5opis").fadeIn(1000);
+                  
+                $("#title").fadeOut(100);
+                if(locale==1)
+                document.getElementById("diamenty_div").innerHTML ="DIAMONDS: " + diamenty;
+                else
+                document.getElementById("diamenty_div").innerHTML ="DIAMENTY: " + diamenty;
+                $("#diamenty_png").fadeIn(1000);
+                $("#diamenty_div").fadeIn(1000);
+                fadeallbonus();
+                
+                 if(unlock_menu==0)
+                {
+                 if(locale==1)
+                document.getElementById("button4a").innerHTML = "BACK";
+                else
+                document.getElementById("button4a").innerHTML = "POWRÓT";
+                     unlock_menu=1;
+                   
+                }
+                else 
+                {
+                    
+                    
+                pokaz();  
+                $("#unlock1opis").fadeOut(0);
+             
+                $("#unlock2opis").fadeOut(0);
+                $("#unlock3opis").fadeOut(0);
+                $("#unlock4opis").fadeOut(0);
+                $("#unlock5opis").fadeOut(0);   
+              
+                $("#diamenty_png2").fadeOut(0);
+                    
+                $("#diamenty_png3").fadeOut(0);
+                $("#diamenty_png4").fadeOut(0);
+                $("#diamenty_png5").fadeOut(0);
+                $("#diamenty_png6").fadeOut(0);
+                    
+                $("#unlock1").fadeOut(0);
+              
+                $("#unlock2").fadeOut(0);
+                $("#unlock3").fadeOut(0);
+                $("#unlock4").fadeOut(0);
+                $("#unlock5").fadeOut(0);
+                $("#unlock6").fadeOut(0);
+                
+                $("#diamenty_png").fadeOut(500);
+                $("#diamenty_div").fadeOut(500);
+                $("#title").fadeIn(1000);
+         
+                    
+                if(locale==1)
+                document.getElementById("button4a").innerHTML = "UNLOCK";
+                else
+                document.getElementById("button4a").innerHTML = "ODBLOKUJ";
+                    
+                    
+                unlock_menu=0;
+               
+                 }
+              
+                 if(unlock1check==1)
+                 {
+                document.getElementById("diamenty_png2").innerHTML ="--";    
+                if(locale==1)
+                document.getElementById("unlock1").innerHTML ="UNLOCKED";
+                else
+                document.getElementById("unlock1").innerHTML ="ODBLOKOWANE";  
+                        
+                    }
+                
+                         if(unlock2chec==1)
+                         {
+                         document.getElementById("diamenty_png3").innerHTML ="--";   
+                          if(locale==1)
+                         document.getElementById("unlock2").innerHTML ="UNLOCKED";
+                         else
+                        document.getElementById("unlock2").innerHTML ="ODBLOKOWANE"; 
+                         }
+                
+                
+                
+                
+                
+                
+            }
+            
+          
+            
+            
+            
+            
+            
+            function unlock1()
+            {
+                
+                if(unlock1check!=1)
+                {
+                if((diamenty<5)&&(odblokuj2!=1))
+                {
+                playSound14();
+                if(locale==1)
+                document.getElementById("no_diamonds").innerHTML = "YOU NEED MORE DIAMONDS";
+                else
+                document.getElementById("no_diamonds").innerHTML = "POTRZEBA WIĘCEJ DIAMENTÓW";
+                $("#no_diamonds").fadeIn(1000); 
+                $("#no_diamonds").fadeOut(1000); 
+                }
+                    
+                    
+                    
+                 if(diamenty>=5)
+                {
+                playSound17(); 
+                diamenty=diamenty-5;
+                localStorage.setItem('diamenty', diamenty);
+                if(locale==2)
+                document.getElementById("diamenty_div").innerHTML = "DIAMONDS: " + diamenty;
+                else
+                document.getElementById("diamenty_div").innerHTML = "DIAMENTY: " + diamenty;
+                document.getElementById("diamenty_png2").innerHTML ="--";   
+                if(locale==2)
+                document.getElementById("unlock1").innerHTML ="UNLOCKED";
+                else
+                document.getElementById("unlock1").innerHTML ="ODBLOKOWANE";  
+              	document.getElementById("unlock1").style.pointerEvents = 'none';
+                odblokuj2=1;
+                localStorage.setItem('combo_unlocked', 1);
+                $("#unlock2").fadeIn(1000);
+                $("#unlock2opis").fadeIn(1000);
+                $("#diamenty_png3").fadeIn(1000);
+                }   
+                   
+                    
+                }
+                 else
+                {
+                document.getElementById("diamenty_png2").innerHTML ="--";    
+                if(locale==2)
+                document.getElementById("unlock1").innerHTML ="UNLOCKED";
+                else
+                document.getElementById("unlock1").innerHTML ="ODBLOKOWANE";  
+                }
+                
+               
+                
+                
+            }
+            
+            function unlock2()
+            {
+             if(unlock2check!=1)
+                {
+                if((diamenty<10)&&(odblokuj3!=1))
+                {
+                playSound14();
+                if(locale==1)
+                document.getElementById("no_diamonds").innerHTML = "YOU NEED MORE DIAMONDS";
+                else
+                document.getElementById("no_diamonds").innerHTML = "POTRZEBA WIĘCEJ DIAMENTÓW";
+                $("#no_diamonds").fadeIn(1000); 
+                $("#no_diamonds").fadeOut(1000); 
+                }
+                    
+                    
+                    
+                 if(diamenty>=10)
+                {
+                playSound17(); 
+                diamenty=diamenty-10;
+                localStorage.setItem('diamenty', diamenty);
+                if(locale==2)
+                document.getElementById("diamenty_div").innerHTML = "DIAMONDS: " + diamenty;
+                else
+                document.getElementById("diamenty_div").innerHTML = "DIAMENTY: " + diamenty;
+                document.getElementById("diamenty_png3").innerHTML ="--";   
+                    if(locale==2)
+                document.getElementById("unlock2").innerHTML ="UNLOCKED";
+                    else
+                       document.getElementById("unlock2").innerHTML ="ODBLOKOWANE";  
+              document.getElementById("unlock2").style.pointerEvents = 'none';
+                    odblokuj3=1;
+                   localStorage.setItem('joker_unlocked', 1);
+                    $("#unlock3").fadeIn(1000);
+                    $("#unlock3opis").fadeIn(1000);
+                    $("#diamenty_png4").fadeIn(1000);
+                }   
+                    }
+                 else
+                    {
+                       document.getElementById("diamenty_png3").innerHTML ="--";    
+                          if(locale==2)
+                document.getElementById("unlock2").innerHTML ="UNLOCKED";
+                    else
+                       document.getElementById("unlock2").innerHTML ="ODBLOKOWANE";  
+                        
+                    }
+            }
+            function unlock3()
+                {
+                
+                    if(unlock3check!=1)
+                    {
+                 if((diamenty<15)&&(odblokuj4!=1))
+                {
+                playSound14();
+                if(locale==1)
+                document.getElementById("no_diamonds").innerHTML = "YOU NEED MORE DIAMONDS";
+                else
+                document.getElementById("no_diamonds").innerHTML = "POTRZEBA WIĘCEJ DIAMENTÓW";
+                $("#no_diamonds").fadeIn(1000); 
+                $("#no_diamonds").fadeOut(1000); 
+                }
+                    
+                        
+                     if(diamenty>=15)
+                    {
+                    playSound17(); 
+                    diamenty=diamenty-15;
+                         localStorage.setItem('diamenty', diamenty);
+                    if(locale==2)
+                    document.getElementById("diamenty_div").innerHTML = "DIAMONDS: " + diamenty;
+                    else
+                    document.getElementById("diamenty_div").innerHTML = "DIAMENTY: " + diamenty;
+                    document.getElementById("diamenty_png4").innerHTML ="--";   
+                        if(locale==2)
+                    document.getElementById("unlock3").innerHTML ="UNLOCKED";
+                        else
+                           document.getElementById("unlock3").innerHTML ="ODBLOKOWANE";  
+                        choose=2;
+                  document.getElementById("unlock3").style.pointerEvents = 'none';
+                        odblokuj4=1;
+                       localStorage.setItem('hard_unlocked', 1);
+                        $("#unlock4").fadeIn(1000);
+                        $("#unlock4opis").fadeIn(1000);
+                        $("#diamenty_png5").fadeIn(1000);
+                         $("#unlock5").fadeIn(1000);
+                        $("#unlock5opis").fadeIn(1000);
+                        $("#diamenty_png6").fadeIn(1000);
+                    }   
+                        }
+                     else
+                        {
+                        document.getElementById("diamenty_png4").innerHTML ="--";    
+                        if(locale==2)
+                        document.getElementById("unlock3").innerHTML ="UNLOCKED";
+                        else
+                        document.getElementById("unlock3").innerHTML ="ODBLOKOWANE";  
+
+                        }
+
+                }
+            function unlock4()
+            {
+                
+                  
+                	
+                    if(unlock4check!=1)
+                    {
+                if((diamenty<10)&&(multiplier!=1))
+                {
+                playSound14();
+                if(locale==1)
+                document.getElementById("no_diamonds").innerHTML = "YOU NEED MORE DIAMONDS";
+                else
+                document.getElementById("no_diamonds").innerHTML = "POTRZEBA WIĘCEJ DIAMENTÓW";
+                $("#no_diamonds").fadeIn(1000); 
+                $("#no_diamonds").fadeOut(1000); 
+                }
+                    
+                        
+                        
+                     if(diamenty>=10)
+                    {
+                        multiplier = 1;
+                                                                         
+                    playSound17(); 
+                    diamenty=diamenty-10;
+                    localStorage.setItem('diamenty', diamenty);
+                    if(locale==1)
+                    document.getElementById("diamenty_div").innerHTML = "DIAMONDS: " + diamenty;
+                    else
+                    document.getElementById("diamenty_div").innerHTML = "DIAMENTY: " + diamenty;
+                    document.getElementById("diamenty_png5").innerHTML ="--";   
+                    if(locale==1)
+                    document.getElementById("unlock4").innerHTML ="ACTIVE";
+                    else
+                    document.getElementById("unlock4").innerHTML ="AKTYWNE";  
+                    choose=2;
+                    document.getElementById("unlock4").style.pointerEvents = 'none';
+                    odblokuj5=1;
+               
+                  
+                    }   
+                        }
+                     else
+                        {
+                        document.getElementById("diamenty_png5").innerHTML ="--";    
+                        if(locale==2)
+                        document.getElementById("unlock4").innerHTML ="ACTIVE";
+                        else
+                        document.getElementById("unlock4").innerHTML ="AKTYWNE";  
+
+                        }
+
+               
+            }
+            
+            function unlock5()
+            {
+                	
+                    if(unlock5check!=1)
+                    {
+                if((diamenty<10)&&(multiplier2!=1))
+                {
+                playSound14();
+                if(locale==1)
+                document.getElementById("no_diamonds").innerHTML = "YOU NEED MORE DIAMONDS";
+                else
+                document.getElementById("no_diamonds").innerHTML = "POTRZEBA WIĘCEJ DIAMENTÓW";
+                $("#no_diamonds").fadeIn(1000); 
+                $("#no_diamonds").fadeOut(1000); 
+                }
+                     if(diamenty>=10)
+                    {
+                        multiplier2 = 1;
+
+                    playSound17(); 
+                    diamenty=diamenty-10;
+                    localStorage.setItem('diamenty', diamenty);
+                    if(locale==1)
+                    document.getElementById("diamenty_div").innerHTML = "DIAMONDS: " + diamenty;
+                    else
+                    document.getElementById("diamenty_div").innerHTML = "DIAMENTY: " + diamenty;
+                    document.getElementById("diamenty_png6").innerHTML ="--";   
+                    if(locale==1)
+                    document.getElementById("unlock5").innerHTML ="ACTIVE";
+                    else
+                    document.getElementById("unlock5").innerHTML ="AKTYWNE";  
+                    choose=2;
+                    document.getElementById("unlock5").style.pointerEvents = 'none';
+                    odblokuj5=1;
+                    localStorage.setItem('multiplier_1_2', 1);
+               
+                    }   
+                        }
+                     else
+                        {
+                          document.getElementById("diamenty_png6").innerHTML ="--";    
+                          if(locale==2)
+                          document.getElementById("unlock5").innerHTML ="ACTIVE";
+                        else
+                           document.getElementById("unlock5").innerHTML ="AKTYWNE";  
+
+                        }
+
+            }
+            
+            
+            
+			function startx()
+			
+			{
+ 
+                $("#page").fadeIn(2000); 
+                    $("#bonusx2").fadeOut(0); 
+                
+                   $("#no_diamonds").fadeOut(0); 
+                    $("#bonusx2").fadeOut(0); 
+
+                    
+                
+                     $("#bonus_bonus").fadeOut(0); 
+                     $("#joker_bonus").fadeOut(0);           
+                    $("#get_diamond_info").fadeOut(0);
+                
+                
+           x16.play();
+                
+            checkunlockedbonuses();
+              
+          
+
+                var diamenty2 =  parseInt(localStorage.getItem('diamenty'));
+                if(diamenty2>0)
+                diamenty = parseInt(localStorage.getItem('diamenty')); 
+                else
+                diamenty=0;
+                
+             document.getElementById("diamenty_div").innerHTML ="DIAMONDS: " + diamenty;
+                
+                var rekordpoziomu3 = parseInt(localStorage.getItem('rekordpoziomu'));
+                if(rekordpoziomu3>0)
+             rekordpoziomu = parseInt(localStorage.getItem('rekordpoziomu'));
+                else
+                rekordpoziomu = 0;
+                
+                
+          
+      
+                $("#diamenty_png2").fadeOut(0);
+                $("#diamenty_png3").fadeOut(0);
+                $("#diamenty_png4").fadeOut(0);
+                $("#diamenty_png5").fadeOut(0);
+                $("#diamenty_png6").fadeOut(0);
+                $("#unlock1").fadeOut(0);
+                $("#unlock2").fadeOut(0);
+                $("#unlock3").fadeOut(0);
+                $("#unlock4").fadeOut(0);
+                $("#unlock5").fadeOut(0);
+                $("#unlock6").fadeOut(0);
+                $("#unlock1opis").fadeOut(0);
+                $("#unlock2opis").fadeOut(0);
+                $("#unlock3opis").fadeOut(0);
+                $("#unlock4opis").fadeOut(0);
+                $("#unlock5opis").fadeOut(0);
+                
+                	$("#diamenty_png").fadeOut(0);
+                	$("#diamenty_div").fadeOut(0);
+           
+                   	$("#diament_info").fadeOut(0);
+                	$("#diament_add").fadeOut(0);
+                
+			document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+			document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;   
+			localization();
+			$("#xbutton").fadeOut(0);
+			$("#exit").fadeOut(0);
+			$("#exityes").fadeOut(0);
+			$("#exitno").fadeOut(0);
+                
+                gamemode=0;
+                trudnosc_level=1;
+                
+                
+				disableclick();
+				odliczanie();
+				startgame();
+                 locale=0;
+                localization();
+        
+            }
+			
+			
+			function start()
+			{
+             start_game = 1;
+                
+                document.getElementById("balony2").setAttribute("id", "balony");
+                
+                 if(multiplier==1)
+                $("#bonus_bonus").fadeIn(2000); 
+                if((multiplier2==1)&&(gamemode!=1))
+                $("#joker_bonus").fadeIn(2000); 
+                
+                 $("#nagroda_info").fadeOut(0);  
+                
+                  
+
+                
+
+                
+                $("#autor").fadeOut(1000); 
+                $("#version").fadeOut(1000); 
+                if(multiplier!=1)
+                $("#bonus_bonus").fadeOut(0); 
+                if(multiplier2!=1)
+                $("#joker_bonus").fadeOut(0); 
+             
+                if(trudnosc_level==2)
+                diament_get = 40;
+                
+                if(gamemode==1)
+                diament_get = 20;
+                
+                if((gamemode==1)&&(trudnosc_level==2))
+                diament_get = 30;
+                
+                if(trudnosc_level==0)
+                diament_get = 15;
+                 
+                 
+                ile_zostalo = diament_get - ile_punktow2;
+                
+                wyzwanie_nagrody();
+                
+                x16.pause();
+                if(music_play==1)  
+               document.getElementById('music_tlo').play();
+			
+                
+                
+                document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;
+                stopuj=1;
+				enableclick();
+				odliczanie_sec=odliczanie_sec + extraczas;
+			
+				playSound9(); 
+				playSound2();
+				fireworksstart();
+				if(trudnosc_level==1)
+				ilosc_ruchu = 3;
+				if(trudnosc_level==0)
+			    ilosc_ruchu = 4;
+			
+			
+                
+                     $("#get_diamond_info").fadeTo(1500, 1);
+			        $("#poziom_ilosc").fadeTo(2500, 1);
+					$("#poziom").fadeTo(1000, 1);
+					$("#menuglowne").fadeOut(100);
+					$("#title").fadeOut(1000, 0);
+					$("#boxes").fadeTo(2500, 1);
+					$("#info").fadeTo(1000,1);
+			
+			
+					
+				    $("#button4a").fadeOut(1000, 0);
+					$("#combogif").fadeOut(0);
+					$("#bonusextrainfo").fadeTo(0, 0);
+					$("#tap").fadeTo(0, 0);
+					$("#bonus").fadeOut(0);
+					$("#combo").fadeOut(0);
+				    enableclick();
+				    $("#xbutton").fadeIn(1000);
+			        zestaw1();
+               
+                if(gamemode==0)
+                {
+				
+                var  rekordpoziomu2 = parseInt(localStorage.getItem('rekordpoziomu'));
+                if(rekordpoziomu2>0)
+                rekordpoziomu = parseInt(localStorage.getItem('rekordpoziomu'));
+                else
+                rekordpoziomu=0;
+                       
+                var  rekordpunktow2 = parseInt(localStorage.getItem('rekordpunktow'));
+                if(rekordpunktow2>0)
+                rekordpunktow = parseInt(localStorage.getItem('rekordpunktow'));
+                else
+                rekordpunktow=0;
+                  
+				var  rekordcombo2 = parseInt(localStorage.getItem('rekordcombo'));
+                if(rekordcombo2>0)
+                rekordcombo = parseInt(localStorage.getItem('rekordcombo'));
+                else
+                rekordcombo=0;
+               
+ 
+                    document.getElementById("combomax1").innerHTML = rekordcombo;
+                    document.getElementById("levelmax1").innerHTML = rekordpoziomu;
+                    document.getElementById("pointsmax1").innerHTML = rekordpunktow;                    
+                   }
+                
+                   if(gamemode==1)
+                   {
+                var  rekordpoziomu3 = parseInt(localStorage.getItem('rekordpoziomu2'));
+                if(rekordpoziomu>0)
+                rekordpoziomu = parseInt(localStorage.getItem('rekordpoziomu2'));
+                else
+                rekordpoziomu=0;
+                       
+                       
+                       var  rekordpunktow3 = parseInt(localStorage.getItem('rekordpunktow2'));
+                if(rekordpunktow3>0)
+                rekordpunktow = parseInt(localStorage.getItem('rekordpunktow2'));
+                else
+                rekordpunktow=0;
+                       
+                       
+		             var  rekordcombo3 = parseInt(localStorage.getItem('rekordcombo2'));
+                if(rekordcombo3>0)
+                rekordcombo = parseInt(localStorage.getItem('rekordcombo2'));
+                else
+                rekordcombo=0;
+                       
+ 
+                    document.getElementById("combomax1").innerHTML = rekordcombo2;
+                    document.getElementById("levelmax1").innerHTML = rekordpoziomu2;
+                    document.getElementById("pointsmax1").innerHTML = rekordpunktow2;                    
+                   }
+                
+                
+                    if(gamemode==1)
+                    ilosc_ruchu = 20;
+                	if(locale==1)
+                    document.getElementById("licznik").innerHTML="MOVE: " + ilosc_ruchu;
+                    else
+                    document.getElementById("licznik").innerHTML="RUCH: " + ilosc_ruchu;
+                    wyzwanie_nagrody();
+                
+                if(locale==1)
+                {
+                    if(gamemode==0)
+                    document.getElementById("rekord").innerHTML = "NORMAL GAME MODE";
+                    else
+                    document.getElementById("rekord").innerHTML = "CHALLENGE MODE";   
+                }
+                else  
+                {
+                    if(gamemode==0)
+                    document.getElementById("rekord").innerHTML = "NORMALNY TRYB GRY";
+                    else
+                    document.getElementById("rekord").innerHTML = "TRYB WYZWANIE"; 
+                  }
+                
+           
+              
+                    
+                
+                
+			}	
+			
+			
+            
+
+            
+			function nowagra()
+			{      
+                
+                start_game = 1;
+                
+                document.getElementById("balony").setAttribute("id", "balony2");
+                  $("#poziom").fadeTo(100,0); 
+                  $("#info").fadeTo(100,0); 
+                $("#bonus_bonus").fadeOut(1000);           
+                $("#joker_bonus").fadeOut(1000); 
+               pokaz();
+                $("#bonusx2").fadeOut(500); 
+                $("#get_diamond_info").fadeOut(200);
+                $("#autor").fadeIn(1000); 
+                $("#version").fadeIn(1000); 
+                multiplier = 0;
+                multiplier2 = 0;
+                document.getElementById("unlock5").style.pointerEvents = 'auto';
+                document.getElementById("unlock4").style.pointerEvents = 'auto';
+                
+                 document.getElementById('unlock4').innerHTML ="BETTER CHANCE";
+                 document.getElementById('unlock5').innerHTML ="BETTER CHANCE";
+                 document.getElementById('diamenty_png5').innerHTML ="x10";
+                 document.getElementById('diamenty_png6').innerHTML ="x10";
+                
+               
+               
+                diament_get = 30;
+                x16.play();
+                document.getElementById('music_tlo').pause();
+                
+                $("#diament_info").fadeOut(0);
+                $("#diament_add").fadeOut(0);
+                $("#diamenty_png3").fadeOut(0);
+                $("#diamenty_png2").fadeOut(0);
+                $("#diamenty_png3").fadeOut(0);
+                $("#diamenty_png4").fadeOut(0);
+                $("#diamenty_png5").fadeOut(0);
+                $("#diamenty_png6").fadeOut(0);
+                $("#unlock1").fadeOut(0);
+                $("#unlock2").fadeOut(0);
+                $("#unlock3").fadeOut(0);
+                $("#unlock4").fadeOut(0);
+                $("#unlock5").fadeOut(0);
+                $("#unlock6").fadeOut(0);
+                $("#unlock1opis").fadeOut(0);
+                $("#unlock2opis").fadeOut(0);
+                $("#unlock3opis").fadeOut(0);
+                $("#unlock4opis").fadeOut(0);
+                $("#unlock5opis").fadeOut(0);
+                $("#diamenty_png").fadeOut(0);
+                $("#diamenty_div").fadeOut(0);
+            document.getElementById("diamenty_div").innerHTML ="DIAMONDS: " + diamenty;
+            $("#button4a").fadeIn(1000, 0);
+            pokaz();
+            $("#title").fadeIn(1000);
+            stopuj=1;
+			enableclick();
+            $("#xbutton").fadeOut(1000);
+			disableclick();
+			document.getElementById("bonus_napis").style.backgroundImage = "url('bonus.png')";
+			ilosc_ruchu = 3;
+			odliczanie_sec = 20;
+			if(locale==1)
+            document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+            else
+            document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+			$("#exit").fadeOut(100);
+			$("#exitno").fadeOut(100);
+			$("#exityes").fadeOut(100);
+			$("#bonusextrainfo").fadeTo(0, 0);
+			$("#tap").fadeTo(0, 0);
+			extrabonus = 0;
+			document.getElementById("bonus1").style.backgroundImage = "url('chest.jpg\')";   
+			document.getElementById("bonus2").style.backgroundImage = "url('chest.jpg\')";   
+			document.getElementById("bonus3").style.backgroundImage = "url('chest.jpg\')";  
+                
+                
+             
+    if(gamemode==0)
+    {
+    if(rekordpoziomu<poziom_value)
+    {
+    rekordpoziomu=poziom_value;
+
+    localStorage.setItem('rekordpoziomu', rekordpoziomu);
+    }
+    if(rekordpunktow<ile_punktow2)
+    {
+    rekordpunktow=ile_punktow2;
+     localStorage.setItem('rekordpunktow', rekordpunktow);
+     }
+    if(rekordcombo<combo_amount)
+    {
+    rekordcombo=combo_amount;
+     localStorage.setItem('rekordcombo', rekordcombo);
+     }
+     }
+                
+             if(gamemode==1)
+             {
+			if(rekordpoziomu2<poziom_value)
+			{
+			rekordpoziomu2=poziom_value;
+			
+            localStorage.setItem('rekordpoziomu2', rekordpoziomu2);
+			}
+			if(rekordpunktow2<ile_punktow2)
+			{
+			 rekordpunktow2=ile_punktow2;
+			 localStorage.setItem('rekordpunktow2', rekordpunktow2);
+			 }
+			if(rekordcombo2<combo_amount)
+			{
+			rekordcombo2=combo_amount;
+			 localStorage.setItem('rekordcombo2', rekordcombo2);
+			 }
+             }  
+                
+                
+                
+                
+                
+			document.getElementById("combomax1").innerHTML = rekordcombo;
+			document.getElementById("levelmax1").innerHTML = rekordpoziomu;
+			document.getElementById("pointsmax1").innerHTML = rekordpunktow;
+			
+			extrabonus =0;
+			bonusgrab =0;
+			combo_amount = 0;
+			combo_counter = 5;
+			document.getElementById("combodiv").innerHTML = "COMBO: " + combo_amount + " / " + combo_counter;
+			
+			
+			
+			bonuswziety=0;
+			pominresetuj();
+			fireworksa();
+			bonusmove = 0;
+			bonustime = 0;
+			zanikzero();
+			resetpowtorzen();
+			czas=1200;
+			         if(locale==0)
+				     document.getElementById("poziom").innerHTML ="POZIOM: " + poziom_value;
+			        else
+			         document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+			ile_punktow2 = 0;
+			znaleziona = 0;
+			poziom_value = 1;
+			level = 0;
+			if(locale==0)
+			document.getElementById("poziom").innerHTML ="Poziom: " + poziom_value;
+                else
+			         document.getElementById("poziom").innerHTML ="LEVEL: " + poziom_value;
+			   
+			combo = 0;
+			x13.play(); 
+							if(locale==1)
+            document.getElementById("points").innerHTML = "POINTS: " + ile_punktow2;
+            else
+            document.getElementById("points").innerHTML = "PUNKTY: " + ile_punktow2;
+                        if(locale==1)
+            document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+            else
+            document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+			$("#napisy").fadeOut(1000);
+                pokaz();
+			startgame2();
+			
+			}
+			
+			function wyjsciedomenu()
+			{
+                
+            
+                x16.play();
+                document.getElementById('music_tlo').pause();
+                $("#get_diamond_info").fadeOut(200);
+                stopuj=1;
+                $("#diament_info").fadeIn(1000);
+                document.getElementById("diament_add").innerHTML = "x " + diamenty;
+                $("#diament_add").fadeIn(1000);
+                            
+                          
+			playSound14();
+			if(locale==0)
+			$("#exit").fadeIn(1000);
+			else
+			{
+			document.getElementById("exit").style.backgroundImage = "url('exiteng.png')";   
+			$("#exit").fadeIn(1000);
+			}
+			if(locale==0)
+			$("#exityes").fadeIn(1000);
+			else
+			{
+			document.getElementById("exityes").style.backgroundImage = "url('yes.png')"; 
+			$("#exityes").fadeIn(1000);  
+			}
+			if(locale==0)
+			$("#exitno").fadeIn(1000);
+			else
+			{
+			document.getElementById("exitno").style.backgroundImage = "url('no.png')";  
+			$("#exitno").fadeIn(1000); 
+			}
+			
+			}
+			
+			
+			function niewychodz()
+			{
+                    x16.pause();
+                if(music_play==1)
+               document.getElementById('music_tlo').play();
+                
+                 $("#get_diamond_info").fadeIn(200);
+                stopuj=0;
+                $("#diament_info").fadeOut(1000);
+            
+                $("#diament_add").fadeOut(1000);
+			playSound14();
+			$("#exit").fadeOut(1000);
+			$("#exityes").fadeOut(1000);
+			$("#exitno").fadeOut(1000);
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			function bonusactivation()
+			{
+				
+				if(bonusgrab==1)
+				{
+					 x17.play();
+				    $("#bonusextrainfo").fadeTo(1000, 0);
+				    $("#tap").fadeTo(1000, 0);
+				    bonusgrab = 0;
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus2.png')";
+				joker();
+				}
+			}
+			
+			
+			
+			
+			function startgame()
+			{
+				    $("#diamenty_png").fadeOut(1000);
+                    $("#diamenty_div").fadeOut(1000);
+					$("#poziom_ilosc").fadeTo(0, 0);
+					$("#poziom").fadeTo(0, 0);
+					
+					$("#info").fadeTo(0, 0);
+					$("#combogif").fadeOut(0);
+				    $("#bonusextrainfo").fadeOut(0);
+					$("#tap").fadeTo(0, 0);
+				    $("#bonus").fadeOut(0);
+				    $("#combo").fadeOut(0);
+					$("#napisy").fadeOut(0);
+					$("#fire1").fadeOut(0);
+					$("#fire2").fadeOut(0);
+					$("#fire3").fadeOut(0);
+			
+			}
+			
+			function startgame2()
+			{
+				    disableclick();
+				     hideall();
+				     $("#menuglowne").fadeIn(500);
+					$("#poziom_ilosc").fadeTo(0, 0);
+					$("#poziom").fadeTo(0, 0);
+					
+					$("#info").fadeTo(0, 0);
+					$("#combogif").fadeOut(0);
+				    $("#bonusextrainfo").fadeOut(0);
+					$("#tap").fadeTo(0, 0);
+				    $("#bonus").fadeOut(0);
+				    $("#combo").fadeOut(0);
+					$("#napisy").fadeOut(0);
+					$("#fire1").fadeOut(0);
+					$("#fire2").fadeOut(0);
+					$("#fire3").fadeOut(0);
+					
+			
+			}
+			
+			
+			
+			
+			function bonusstart()
+			{
+                document.getElementById("bonusextrainfo").style.pointerEvents = 'none'; 
+				if(timer==0)
+				{
+				liczbabonus1 = Math.floor(Math.random()*4)+1;
+				liczbabonus2 = Math.floor(Math.random()*4)+1;
+				liczbabonus3 = Math.floor(Math.random()*4)+1;
+				}
+				else if(timer==1)
+				{
+				liczbabonus1 = Math.floor(Math.random()*7)+1;
+				liczbabonus2 = Math.floor(Math.random()*7)+1;
+				liczbabonus3 = Math.floor(Math.random()*7)+1;
+				}
+				
+                	
+				joker_chance = Math.floor(Math.random()*7)+1;
+				if(trudnosc_level==2)
+                joker_chance = Math.floor(Math.random()*4)+1;
+                
+				if((joker_chance==4)&&(bonusgrab==0))
+				{
+				joker_box = Math.floor(Math.random()*3)+1;
+				if(joker_box==1)
+				liczbabonus1 = 8;
+				if(joker_box==2)
+				liczbabonus2 = 8;
+				if(joker_box==3)
+				liczbabonus3 = 8;
+				}
+                
+                
+                
+               var diament_chance = Math.floor(Math.random()*6)+1;
+                
+               if(trudnosc_level==2)
+               diament_chance = Math.floor(Math.random()*4)+1;
+                
+                if(((diament_chance==4)||(diament_chance==2))&&(trudnosc_level>0))
+				{
+				var diament_box = Math.floor(Math.random()*3)+1;
+				if(diament_box==1)
+				liczbabonus1 = 9;
+				if(diament_box==2)
+				liczbabonus2 = 9;
+				if(diament_box==3)
+				liczbabonus3 = 9;
+				}
+                
+                
+                
+				pominstart();
+				playSound10();
+				stopuj = 1;
+				$("#boxes").fadeTo(1000, 0);
+				
+				$("#bonus").fadeIn(2000);
+				
+				if((extrabonus==1)&&(bonus_x2==1))
+				document.getElementById("bonus_napis").style.backgroundImage = "url('bonus2.png')";
+				
+				}
+			
+
+				
+            
+            
+            
+            
+				function music()
+				{
+				playSound14();
+				muzyka_check++;
+				if(muzyka_check==1)
+				{
+				if(locale==0)
+				{
+				
+				music_play = 1;
+				document.getElementById("button1b").innerHTML = "WŁĄCZONA";
+				document.getElementById("button1b").style.color = "green" ;
+				
+				}
+				if(locale==1)
+				{
+				
+				music_play = 1;
+				document.getElementById("button1b").innerHTML = "ON";
+			
+				}
+				}
+				
+				if(muzyka_check==2)
+				{
+				if(locale==0)
+				{
+				
+				music_play = 2;
+				document.getElementById("button1b").innerHTML = "WYŁĄCZONA";
+				document.getElementById("button1b").style.color = "red" ;
+				
+				muzyka_check=0;
+				}
+				if(locale==1)
+				{
+			
+				music_play = 2;
+				document.getElementById("button1b").innerHTML = "OFF";
+				document.getElementById("button1b").style.color = "red" ;
+			
+				muzyka_check=0;
+				}
+				}
+				}
+				
+			
+				
+
+                function difficult1()
+                {
+                choose++;
+
+
+                if(choose==1)
+                {
+                playSound14();
+
+                if(locale==0)
+                document.getElementById("button3").innerHTML ="ŁATWY";
+                else
+                document.getElementById("button3").innerHTML = "EASY";
+
+                document.getElementById("button3").style.color = "white" ;
+            
+                trudnosc="easy";
+                extraczas=5;
+
+                if(locale==1)
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                else
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+
+                if(locale==0)
+                document.getElementById("zegar").innerHTML ="CZAS --";
+                else
+                document.getElementById("zegar").innerHTML ="TIME --";
+                timer = 0;
+                trudnosc_level = 0;  
+                    
+               if(gamemode==1)
+                {
+                if(locale==0)
+                document.getElementById("button3").innerHTML ="NORMALNY";
+                else
+                document.getElementById("button3").innerHTML ="NORMAL";
+
+                document.getElementById("button3").style.color = "green" ;
+                trudnosc="hard";
+                extraczas = 0;
+                timer = 1;
+                trudnosc_level=1;
+                choose=2;
+                }
+                    
+                }
+
+
+                                            else if(choose==2)
+                                            { 
+                                            playSound14();
+                                            if(locale==0)
+                                            document.getElementById("button3").innerHTML ="NORMALNY";
+                                            else
+                                            document.getElementById("button3").innerHTML ="NORMAL";
+                                            document.getElementById("button3").style.color = "green" ;
+                                            trudnosc="hard";
+                                            extraczas = 0;
+                                            timer = 1;
+                                            trudnosc_level= 1;
+                                            }
+
+
+                else if(choose==3)
+                {
+                playSound14();
+                if(locale==0)
+                document.getElementById("button3").innerHTML ="TRUDNY";
+                else
+                document.getElementById("button3").innerHTML ="HARD";
+                document.getElementById("button3").style.color = "red" ;
+
+                trudnosc="extrahard";
+                extraczas=-2;
+          
+                choose=0;
+
+                if(locale==0)
+                {
+                if(locale==1)
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                else
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+
+                }
+                else
+                {
+                document.getElementById("zegar").innerHTML ="TIME:";
+
+                }
+
+                time="on";
+                timer = 1;
+                trudnosc_level=2;
+                }
+                  
+                }
+
+            
+            
+            
+            
+
+
+                function game_mode()
+                {
+
+                if((gamemode==0)&&(odblokuj4==1))
+                {
+                playSound14();
+
+                if(locale==0)
+                document.getElementById("button1").innerHTML ="WYZWANIE";
+                else
+                document.getElementById("button1").innerHTML = "CHALLENGE";
+                gamemode = 1;
+                }
+
+                else if(gamemode==1)
+                {
+                playSound14();
+
+                if(locale==0)  
+                document.getElementById("button1").innerHTML ="NORMALNY";
+                else
+                document.getElementById("button1").innerHTML = "NORMAL";
+                gamemode = 0;
+                }
+
+
+
+                }
+
+			
+            
+            
+            
+            
+            
+			function localization()
+			{
+				
+				locale++;
+				if(locale==1)
+				{
+                    playSound14();
+			    document.getElementById("button2").innerHTML = "DIFFICULT";
+				if(choose==1)
+				document.getElementById("button3").innerHTML = "EASY";
+				if(choose==2)
+				document.getElementById("button3").innerHTML = "NORMAL";
+				if(trudnosc_level==2)
+				document.getElementById("button3").innerHTML = "HARD";
+				
+				document.getElementById("button2a").innerHTML = "GAME MODE";
+				
+				if(gamemode==1)
+				document.getElementById("button1").innerHTML = "CHALLENGE";
+				
+				if(gamemode==0)
+				document.getElementById("button1").innerHTML = "NORMAL";
+				
+				document.getElementById("button2b").innerHTML = "LANGUAGE";
+				document.getElementById("button1a").innerHTML = "ENGLISH";
+				
+				document.getElementById("poziom").innerHTML = "LEVEL: " + poziom_value;
+				document.getElementById("zegar").innerHTML = "TIME:";
+				document.getElementById("licznik").innerHTML = "MOVE:";
+                document.getElementById("diamenty_div").innerHTML ="DIAMONDS: " + diamenty;
+				document.getElementById("points").innerHTML = "POINTS:";
+                    if(gamemode==0)
+				document.getElementById("rekord").innerHTML = "NORMAL MODE";
+                    else
+                     document.getElementById("rekord").innerHTML = "CHALLENGE MODE";   
+                    if(unlock_menu==0)
+                    document.getElementById("button4a").innerHTML = "UNLOCK";
+                    else
+                 document.getElementById("button4a").innerHTML = "BACK";
+				document.getElementById("levelmax").innerHTML = "Level";
+				document.getElementById("pointsmax").innerHTML = "Points";
+                    
+           
+                         document.getElementById("unlock1opis").innerHTML = "- chance to get extra bonus chest";
+                      document.getElementById("unlock2opis").innerHTML = "- chance to get JOKER";
+                      document.getElementById("unlock5opis").innerHTML = "- for 1 play joker chance increased, not working in CHALLENGE MODE";
+                    document.getElementById("unlock4opis").innerHTML = "- for 1 play bonus x2 chance increased";
+
+         
+                     
+                      document.getElementById("unlock3opis").innerHTML = "- new game mode!";
+                    
+                    if(multiplier2==1)
+                    document.getElementById("unlock5").innerHTML ="ACTIVE";
+                    else
+                    document.getElementById("unlock5").innerHTML ="BETTER CHANCE";
+                    if(multiplier==1)
+                    document.getElementById("unlock4").innerHTML ="ACTIVE";
+                    else
+                    document.getElementById("unlock4").innerHTML ="BETTER CHANCE";  
+                    
+                         if(odblokuj2==1)              
+                         document.getElementById("unlock1").innerHTML ="UNLOCKED";
+                    else
+                              document.getElementById("unlock1").innerHTML ="BONUS x2";
+                                 
+                        if(odblokuj3==1)                 
+                        document.getElementById("unlock2").innerHTML ="UNLOCKED";
+                    else
+                         document.getElementById("unlock2").innerHTML ="JOKER";
+                    
+                          if(unlock3check==1)
+                         document.getElementById("unlock3").innerHTML ="UNLOCKED";
+              else
+                      document.getElementById("unlock3").innerHTML ="CHALLENGE MODE";
+              
+                    
+                          document.getElementById("joker_bonus").innerHTML = "more";
+                         document.getElementById("bonus_bonus").innerHTML = "more";
+                    
+                     
+                    
+              
+                    
+				document.getElementById("tap").innerHTML = "TAP TO SKIP CURRENT LEVEL";
+				document.getElementById("combodiv").innerHTML = "COMBO:";
+				document.getElementById("summary").style.backgroundImage = "url('pointseng.png')";
+				document.getElementById("button2c").innerHTML = "MUSIC";
+			
+				document.getElementById("button1b").innerHTML = "OFF";
+				if(music_play==1)
+				document.getElementById("button1b").innerHTML = "ON";
+				locale=1;
+				}
+				
+				if(locale==2)
+				{
+                playSound14();
+				document.getElementById("button2").innerHTML = "POZIOM";
+				if(choose==1)
+				document.getElementById("button3").innerHTML = "ŁATWY";
+				if(choose==2)
+				document.getElementById("button3").innerHTML = "NORMALNY";
+				if(trudnosc_level==2)
+				document.getElementById("button3").innerHTML = "TRUDNY";
+				document.getElementById("button2a").innerHTML = "TRYB GRY";
+				if(gamemode==1)
+				document.getElementById("button1").innerHTML = "WYZWANIE";
+				if(gamemode==0)
+				document.getElementById("button1").innerHTML = "NORMALNY";
+				document.getElementById("button2b").innerHTML = "JĘZYK";
+				document.getElementById("button1a").innerHTML = "POLSKI";
+            
+				document.getElementById("button2c").innerHTML = "MUZYKA";
+				
+				document.getElementById("button1b").innerHTML = "WYŁĄCZONA";
+				if(music_play==1)
+				document.getElementById("button1b").innerHTML = "WŁĄCZONA";
+				
+				document.getElementById("poziom").innerHTML = "POZIOM: " + poziom_value;
+				document.getElementById("zegar").innerHTML = "CZAS:";
+				document.getElementById("licznik").innerHTML = "RUCH:";
+                        
+                   if(unlock_menu==0)
+                document.getElementById("button4a").innerHTML = " ODBLOKUJ";
+                    else
+                 document.getElementById("button4a").innerHTML = "POWRÓT";
+				document.getElementById("points").innerHTML = "PUNKTY:";
+                if(gamemode==0)
+				document.getElementById("rekord").innerHTML = "TRYB NORMALNY";
+        	   else
+            document.getElementById("rekord").innerHTML = "TRYB WYZWANIE";
+				document.getElementById("levelmax").innerHTML = "Poziom:";
+                document.getElementById("unlock1opis").innerHTML = "- szansa na dodatkową skrzynkę bonusową";
+                document.getElementById("unlock2opis").innerHTML = "- szansa na JOKERA";
+                     document.getElementById("unlock5opis").innerHTML = "- zwiększona szansa na JOKERA na 1 grę, nie działa w trybie WYZWANIE";
+                     document.getElementById("unlock4opis").innerHTML = "- zwiększona szansa na BONUS x2 na 1 grę";
+                document.getElementById("unlock3opis").innerHTML = "- nowy tryb gry!";
+           
+                    if(multiplier2==1)
+                    document.getElementById("unlock5").innerHTML ="AKTYWNE";
+                    else
+                    document.getElementById("unlock5").innerHTML ="WIĘKSZA SZANSA";
+                    if(multiplier==1)
+                    document.getElementById("unlock4").innerHTML ="AKTYWNE";
+                    else
+                    document.getElementById("unlock4").innerHTML ="WIĘKSZA SZANSA";
+                    
+                    
+                         if(odblokuj2==1)
+                     
+                         document.getElementById("unlock1").innerHTML ="ODBLOKOWANE";
+                             else    
+                                   document.getElementById("unlock1").innerHTML ="BONUS x2";
+                        if(odblokuj3==1)
+                   
+                        document.getElementById("unlock2").innerHTML ="ODBLOKOWANE";
+                    else
+                        document.getElementById("unlock2").innerHTML ="JOKER";
+                    
+                         if(unlock3check==1)
+                         document.getElementById("unlock3").innerHTML ="ODBLOKOWANE";
+          else
+                 document.getElementById("unlock3").innerHTML ="TRYB WYZWANIE";
+                                 
+                    
+            
+                 
+                    
+                        document.getElementById("joker_bonus").innerHTML = "więcej";
+                        document.getElementById("bonus_bonus").innerHTML = "więcej";
+                 
+                 
+ 
+             
+               
+                document.getElementById("diamenty_div").innerHTML ="DIAMENTY: " + diamenty;
+				document.getElementById("pointsmax").innerHTML = "Punkty:";
+				document.getElementById("tap").innerHTML = "NACIŚNIJ BY ZALICZYĆ DANY POZIOM ";
+				document.getElementById("summary").style.backgroundImage = "url('wynikpl.png')";
+			    locale=0;
+				}
+			
+			}
+            
+              function checkunlockedbonuses()
+            {
+              
+                
+      
+ 
+                 odblokuj2 =parseInt(localStorage.getItem('combo_unlocked')); 
+                 odblokuj3 =parseInt(localStorage.getItem('joker_unlocked'));
+                 odblokuj4 =parseInt(localStorage.getItem('hard_unlocked')); 
+                
+                
+            }
+            
+            
+            
+            function wyzwanie_nagrody()
+            {
+                
+                
+                if(nagroda_wybrana==0)
+                {
+                if(gamemode==1)
+                nagroda_typ = Math.floor(Math.random()*4)+1;
+
+                if(gamemode==0)
+                nagroda_typ= Math.floor(Math.random()*2)+1; 
+                    
+                if((gamemode==0)&&(trudnosc_level==2))                 
+                nagroda_typ= Math.floor(Math.random()*3)+1;
+                    
+                if((gamemode==0)&&(trudnosc_level==1)) 
+                nagroda_typ= Math.floor(Math.random()*3)+1;   
+                    
+                if((gamemode==0)&&(trudnosc_level==2)&&(odblokuj2==1))
+                nagroda_typ= Math.floor(Math.random()*4)+1;
+                    
+                if((gamemode==0)&&(trudnosc_level==2)&&(odblokuj3==1))
+                nagroda_typ= Math.floor(Math.random()*5)+1;    
+             
+                    
+                   if(trudnosc_level==2)
+                   {
+                   nagroda_typ1= Math.floor(Math.random()*3)+2;
+                   nagroda_typ2= Math.floor(Math.random()*2)+5;
+                   nagroda_typ3= Math.floor(Math.random()*2)+1;
+                    }
+                   else
+                   {
+                    nagroda_typ1 = 2; 
+                    nagroda_typ2 = 5; 
+                    nagroda_typ3 = 1;  
+                   }
+                    
+                if(start_game==1)
+                {
+                nagroda_typ1 = 2; 
+                nagroda_typ2 = 5; 
+                nagroda_typ3 = 1;      
+                nagroda_typ=1;
+                }
+                    
+                    
+                if(nagroda_typ==1)
+                {
+                if(locale==1)
+                description = " more points to get extra move + " + nagroda_typ1;
+                else
+                description = " punktów by zdobyć dodatkowy ruch + " + nagroda_typ1;
+                }
+                if(nagroda_typ==2)
+                {
+                if(locale==1)     
+                description = " more points to get time + " + nagroda_typ2;
+                else
+                description = " punktów by zdobyć dodatkowy czas + " + nagroda_typ2;
+                }
+                if(nagroda_typ==3)
+                {
+                if(locale==1)              
+                description = " more points to get diamond +" + " " + nagroda_typ3;
+                else
+                description = " punktów by zdobyć diament + " + " " + nagroda_typ3;
+                }
+                if(nagroda_typ==4)
+                {
+                if(locale==1)      
+                description = " more points to get BONUS x2";
+                else
+                description = " punktów by zdobyć BONUS x2";  
+                }
+                if(nagroda_typ==5)
+                {
+                if(locale==1)      
+                description = " more points to get joker";    
+                else
+                description = " punktów by zdobyć jokera";    
+                }    
+                }
+                 
+                  nagroda_wybrana = 1;
+                  start_game = 0;
+                    
+                    
+     
+                
+                
+                
+                    
+                    
+                ile_zostalo = diament_get - ile_punktow2;
+                
+                if(locale==1)
+                document.getElementById("get_diamond_info").innerHTML = "Get  " + ile_zostalo + " " + description;   
+                else             
+                document.getElementById("get_diamond_info").innerHTML = "Zbierz jeszcze " + " " + ile_zostalo + description;
+                
+                if(ile_zostalo<=0)
+                {
+                ile_zostalo = 0;
+                nagroda_wybrana = 0;
+                
+             
+                
+                if((gamemode==1)&&(trudnosc_level==1))
+                diament_get = diament_get + 20;
+                
+                else if((gamemode==1)&&(trudnosc_level==2))
+                diament_get = diament_get + 30;
+                
+                else if((trudnosc_level==2)&&(gamemode==0))
+                diament_get = diament_get + 40;   
+                    
+                if((gamemode==0)&&(trudnosc_level==1))
+                diament_get = diament_get + 30;  
+                    
+                else 
+                diament_get = diament_get + 15;
+                     
+                 ile_zostalo = diament_get - ile_punktow2;
+                    
+                    
+                if(locale==1)
+                document.getElementById("get_diamond_info").innerHTML = "Get  " + ile_zostalo + " " + description;   
+                else             
+                document.getElementById("get_diamond_info").innerHTML = "Zbierz jeszcze " + ile_zostalo + " " + description;
+                     
+
+                
+			 			
+                
+             
+             
+                $("#get_diamond_info").fadeOut(500);
+                if(nagroda_typ!=3) 
+                $("#nagroda_info").fadeIn(1000);    
+                     
+                     
+                if(nagroda_typ==1)
+                {
+                ilosc_ruchu = ilosc_ruchu +2;             
+                if(locale==1)
+                {
+                document.getElementById("licznik").innerHTML = "MOVE: " + ilosc_ruchu;
+                document.getElementById("nagroda_info").innerHTML = "MOVE +2";
+                }
+                else
+                {
+                document.getElementById("licznik").innerHTML = "RUCH: " + ilosc_ruchu;
+                document.getElementById("nagroda_info").innerHTML = "RUCH +2";
+                }
+                    
+                } 
+                    
+                if(nagroda_typ==2) 
+                {
+                odliczanie_sec = odliczanie_sec +5;   
+                if(locale==1)
+                {
+                document.getElementById("zegar").innerHTML = "TIME: " + odliczanie_sec;
+                document.getElementById("nagroda_info").innerHTML = "TIME +5";
+                }
+                else
+                {
+                document.getElementById("zegar").innerHTML = "CZAS: " + odliczanie_sec;
+                document.getElementById("nagroda_info").innerHTML = "CZAS +5";
+                }
+                }
+                    
+                    
+                if(nagroda_typ==3)
+                {
+                $("#diament_info").fadeIn(1000);
+                $("#diament_add").fadeIn(1000);    
+                document.getElementById("diament_add").innerHTML = " +1"; 
+                playSound16();    
+                diamenty++;
+                localStorage.setItem('diamenty', diamenty);
+                }
+                     
+                if(nagroda_typ==5)
+                {
+                playSound13(); 
+				bonusgrab = 1;
+				$("#bonusextrainfo").fadeTo(1000, 1);
+				$("#tap").fadeTo(3000, 1);                               
+                }
+			    if(nagroda_typ==4)
+                {
+                document.getElementById("nagroda_info").innerHTML = "BONUS x2";    
+                extrabonus = 1;
+				playSound9(); 						
+                $("#bonusx2").fadeIn(600);                               
+                }
+  
+                $("#diament_info").fadeOut(1000);
+                $("#diament_add").fadeOut(1000);
+                $("#nagroda_info").fadeOut(1000);     
+                $("#get_diamond_info").fadeIn(3000);
+                  
+                if(nagroda_wybrana==0)
+                {
+                nagroda_typ= Math.floor(Math.random()*4)+1;         
+                 if(nagroda_typ==1)
+                {
+                if(locale==1)
+                description = " more points to get extra move + " + nagroda_typ1;
+                else
+                description = " punktów by zdobyć dodatkowy ruch + " + nagroda_typ1;
+                }
+                if(nagroda_typ==2)
+                {
+                if(locale==1)     
+                description = " more points to get time + " + nagroda_typ2;
+                else
+                description = " punktów by zdobyć dodatkowy czas + " + nagroda_typ2;
+                }
+                if(nagroda_typ==3)
+                {
+                if(locale==1)              
+                description = " more points to get diamond +" + " " + nagroda_typ3;
+                else
+                description = " punktów by zdobyć diament + " + " " + nagroda_typ3;
+                }
+                if(nagroda_typ==4)
+                {
+                if(locale==1)      
+                description = " more points to get BONUS x2";
+                else
+                description = " punktów by zdobyć BONUS x2";  
+                }
+                if(nagroda_typ==5)
+                {
+                if(locale==1)      
+                description = " more points to get joker";    
+                else
+                description = " punktów by zdobyć jokera";    
+                }        
+                     
+                    
+                } 
+                    
+                if(locale==1)
+                document.getElementById("get_diamond_info").innerHTML = "Get  " + ile_zostalo + " " + description;   
+                else             
+                document.getElementById("get_diamond_info").innerHTML = "Zbierz jeszcze " + " " + ile_zostalo + description; 
+                    
+                    
+                    
+                  nagroda_wybrana = 1;    
+                
+                  }
+                    
+       
+                
+            
+            }
+            
+            
+            
+            
+     
+            
+            
+		</script>
+		<script src="cordova.js"></script>
+	</head>
+
+
+
+</html>
